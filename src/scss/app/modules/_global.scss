@@ -7,7 +7,7 @@ $header-height-control: 70px; // Header
 $mobile-navbar-height: 56px; // Mobile header
 $video-bg-height: 490px; // Hero Unit and Videocover
 $user-card-height: 42px; // User cards
-$user-card-width: 70px;
+$user-card-width: 63px;
 
 html,
 body {
@@ -20,6 +20,12 @@ body {
 .site-wrapper,
 .site-content {
 	position: relative;
+	overflow: hidden;
+}
+
+.site-content {
+	padding: ($header-height-control + ($header-height-control / 2)) 0;
+	min-height: 100vh;
 }
 
 // HERO UNIT
@@ -49,3 +55,236 @@ body {
 [data-href]{
 	cursor: pointer;
 }
+
+/* Pins */
+$pin-height-control: 350px;
+$pin-bg-color: white;
+.pin {
+	background-color: $pin-bg-color;
+	border-radius: $border-radius-base;
+	// min-height: $pin-height-control;
+	position: relative;
+	@include normalize-text;
+	@include box-shadow(0px 1px 3px 0px rgba($gray-light, 0.3));
+	.pin-top,
+	.pin-center {
+		background-color: $pin-bg-color;
+	}
+	.pin-top,
+	.pin-center,
+	.pin-bottom {
+		@include clearfix;
+		min-height: $pin-height-control / 7;
+	}
+	.pin-top {
+		@include border-top-radius($border-radius-base);
+		padding: $container-fluid;
+	}
+	.pin-center {
+		overflow: hidden;
+		@include border-bottom-radius($border-radius-base);
+		.pin-pic {
+			height: $pin-height-control - 170;
+			overflow: hidden;
+			position: relative;
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+		.overlay {
+			@include position(absolute, 0 0 0 0);
+			@include border-bottom-radius($border-radius-base);
+			@include flex-middle-end;
+			.pin-bottom {
+				width: 100%;
+				padding: $container-fluid;
+			}
+		}
+		// .pin-content {
+		// 	padding: $container-fluid;
+		// 	.score-nav {
+		// 		color: $gray-light;
+		// 		font-size: 9px;
+		// 		span {
+		// 			font-weight: 500;
+		// 			&:hover,
+		// 			&.active {
+		// 				color: $brand-success;
+		// 			}
+		// 			&:hover {
+		// 				cursor: pointer;
+		// 			}
+		// 		}
+		// 	}
+		// 	[class*="pin-content-"] {
+		// 		padding: ($container-fluid / 2) 0;
+		// 	}
+		// }
+	}
+	// .pin-bottom {
+	// 	// @include position(absolute, null 0 0 0);
+	// 	@include border-bottom-radius($border-radius-base);
+	// 	padding: $container-fluid;
+	// 	border-top: 1px solid $gray-lighter;
+	// 	width: 100%;
+	// }
+	.pin-onload {
+		@include position(absolute, 0 0 0 0);
+		border-radius: $border-radius-base;
+		background-color: $gray-darker;
+		.pin-onload-top,
+		.pin-onload-center,
+		.pin-onload-bottom {
+			min-height: $pin-height-control / 7;
+		}
+		.pin-onload-top,
+		.pin-onload-bottom {
+			background-color: lighten($gray-darker, 1%);
+		}
+		.pin-onload-center {
+			font-size: $font-size-h1;
+		}
+		.pin-onload-bottom {
+			@include position(absolute, null 0 0 0);
+			@include border-bottom-radius($border-radius-base);
+			width: 100%;
+		}
+	}
+	.pin-onload-pic {
+		@include flex-middle-center;
+		min-height: $pin-height-control;
+		color: $gray-light;
+		// @include animation-name(fadeIn);
+	 //  @include animation-timing-function(ease-in-out);
+	 //  @include animation-iteration-count(infinite);
+	 //  @include animation-fill-mode(both);
+	 //  @include animation-duration(6s);
+	}
+	.pin-onload-content {
+		padding: $container-fluid;
+		.pin-onload-placeholder {
+			@include list-unstyled;
+			li {
+				height: 6px;
+				background-color: $gray-light;
+				margin-bottom: 6px;
+				overflow: hidden;
+				span {
+					display: block;
+					width: 6px;
+					height: 6px;
+					background-color: $gray-lighter;
+					// @include transform(skew(-35deg));
+					@include animation-name(loading);
+				  @include animation-timing-function(ease-in-out);
+				  @include animation-iteration-count(infinite);
+				  @include animation-fill-mode(both);
+				  @include animation-duration(2s);
+				}
+				@for $i from 1 through 5 {
+					&:nth-child(n+#{$i}) {
+						$rand-width: random();
+						width: percentage($rand-width);
+						span {
+							@include animation-delay(#{$i}s);
+						}
+					}
+				}
+			}
+		}
+	}
+	.pin-category,
+	.pin-title {
+		text-transform: uppercase;
+	}
+	.pin-category {}
+	.pin-title {
+		color: $gray-darker;
+		font-size: $font-size-h3;
+		margin: 3px 0;
+		margin: rem(3px) 0;
+		a {
+			color: $gray-darker;
+			&:hover {
+				color: $brand-primary;
+			}
+		}
+	}
+	.pin-location,
+	.pin-category {
+		font-size: 12px;
+		font-size: rem(12px);
+	}
+}
+
+
+/*
+	Filters control
+*/
+.site-wrapper {
+	&.filters-on {
+		.filters-wrapper {
+			@include transform(translateY(0));
+			@include transition(all 0.2s $ease-out-quint);
+		}
+		.header {
+			@include box-shadow(none);
+			background-color: $gray-darker;
+			.logo {
+				background-image: url(../img/logo_LVL.white.png);
+			}
+		}
+	}
+}
+.filters-wrapper {
+	@include position(absolute, 0 0 0 0);
+	@include transition(all 0.2s $ease-out-quint);
+	@include transform(translateY(-100%));
+	@include flex-middle-center;
+	padding: $header-height-control 0;
+	background-color: $gray-darker;
+	z-index: 500;
+	overflow: hidden;
+	.filters-close {
+		@include position(absolute, ($header-height-control + $container-fluid) 0 null 0);
+		width: 100%;
+		text-align: right;
+		a {
+			font-size: $font-size-h1;
+		}
+	}
+	[class*="filter-module-"] {
+		@include position(absolute, 35% null null null);
+		@include transform(translateX(100%));
+		@include transition(all 0.2s $ease-out-quint);
+		// opacity: 0;
+		width: 100%;
+		&.on-screen {
+			@include transform(translateX(0));
+			@include transition(all 0.2s $ease-out-quint);
+		}
+		&.animated {
+			// opacity: 1;
+			.filter-module-title {
+				// opacity: 1;
+			}
+		}
+	}
+	.filter-title {
+		@include normalize-text;
+		color: white;
+		h3 {
+			text-transform: uppercase;
+		}
+	}
+	.filters-submit {
+		@include position(absolute, null 0 ($header-height-control * 2) 0);
+		text-align: right;
+		width: 100%;
+	}
+}
+
+
+
+

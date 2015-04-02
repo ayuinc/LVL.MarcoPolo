@@ -167,9 +167,9 @@ module.exports = function (grunt) {
             // '<%= project.src %>/js/lib/ScrollToPlugin.js',
             // '<%= project.src %>/js/lib/ScrollMagic.js',
             // '<%= project.src %>/js/lib/jquery.scrollmagic.debug.js',
-            // '<%= project.src %>/js/lib/imagesloaded.pkgd.min.js',
-            // '<%= project.src %>/js/lib/isotope.pkgd.min.js',
-            // '<%= project.src %>/js/lib/lickity.pkgd.min.js',
+            '<%= project.src %>/js/lib/imagesloaded.pkgd.js',
+            '<%= project.src %>/js/lib/isotope.pkgd.js',
+            '<%= project.src %>/js/lib/flickity.pkgd.js',
             // '<%= project.src %>/js/lib/transformicons.js',
             '<%= project.src %>/js/lib/coffeeCompile.js'
           ]
@@ -275,9 +275,9 @@ module.exports = function (grunt) {
       dev: {
         install: {
           options: {
-            targetDir: '<%= project.assets %>/components/',
-            cleanTargetDir: true,
-            cleanBowerDir: true
+            targetDir: '<%= project.assets %>/components/'
+            // cleanTargetDir: true,
+            // cleanBowerDir: true
           }
         }
       },
@@ -423,9 +423,9 @@ module.exports = function (grunt) {
    */
   grunt.registerTask('default', [
     'coffee:dev',
-    'sass:ebm',
-    'sass:dev',
-    'bower:dev',
+    // 'sass:ebm',
+    // 'sass:dev',
+    // 'bower:dev',
     // 'autoprefixer:dev',
     // 'cssmin:dev',
     // 'jshint',
@@ -434,7 +434,7 @@ module.exports = function (grunt) {
     'responsive_images_extender:dev',
     'connect:livereload',
     'uglify',
-    'open',
+    // 'open',
     'watch'
   ]);
 

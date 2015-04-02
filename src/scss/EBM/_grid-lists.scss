@@ -3,8 +3,6 @@ $grid-list-item-height: 350px;
 .grid-list {
 	@include clearfix;
 	padding: 0;
-	margin: 0;
-	@include list-unstyled;
 	.grid-list-item,
 	> li {
 		float: left;
@@ -65,5 +63,13 @@ $grid-list-item-height: 350px;
 		> li {
 			width: 100%;
 		}
+	}
+}
+
+ul.grid-list {
+	@include list-unstyled;
+	&.row {
+		margin-left: -($container-fluid) !important;
+		margin-right: -($container-fluid) !important;
 	}
 }

@@ -6,13 +6,193 @@
   <meta name="keywords" content=""> 
   <meta name="author" content="@MadeByGus">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <link rel="shortcut icon" href="assets/icons/favicon.ico">
+  <link rel="shortcut icon" href="assets/img/favicon.png">
+  <script src="//use.typekit.net/lkq6yqu.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
   <link href="assets/css/style.css" rel="stylesheet"> <!-- App styles -->
   <link href="assets/css/ebm.css" rel="stylesheet">
   
   <div class="site-wrapper"> <!-- Body -->
-    <div class="site-menu"></div>
-    <div class="site-content"></div>
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="left col-sm-3">
+            <form action="" class="search-form">
+              <div class="input-group">
+                <input type="search" class="form-control" placeholder="MARCO POLO" autofocus>
+                <span class="input-group-btn">
+                  <button class="btn btn-gray-darker" type="button"><i class="icon-magnifier"></i></button>
+                </span>
+              </div>
+            </form>
+          </div>
+          <div class="center col-sm-6">
+            <ul class="filter-triggers">
+              <li><a href="#filter-module-1">Categories <i class="icon-chevron-down"></i></a></li>
+              <li><a href="#filter-module-2">Industry <i class="icon-chevron-down"></i></a></li>
+              <li><a href="#filter-module-3">Location <i class="icon-chevron-down"></i></a></li>
+            </ul>
+          </div>
+          <div class="right col-sm-3">
+            <a href="#" class="logo">
+              <!-- <img src="assets/img/logo_LVL.black.png" alt="La Victoria Labs" class="ignore-srcset"> -->
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <form class="filters-wrapper">
+      <div class="filters-close">
+        <div class="container">
+          <a href="#" class="icon-cross"></a>
+        </div>
+      </div>
+      <div class="filter-module-1" id="filter-module-1">
+        <div class="container-sm">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="filter-title">
+                <h4>Filter posts by:</h4>
+                <h3>Category</h3>
+              </div>
+            </div>
+            <div class="col-sm-8">
+              <select multiple name="" id="" class="multiselect-custom form-control">
+                <optgroup label="A">
+                  <option value="Category 1">Category 1</option>
+                  <option value="Category 1">Category 1</option>
+                  <option value="Category 1">Category 1</option>
+                  <option value="Category 1">Category 1</option>
+                </optgroup>
+                <optgroup label="B">
+                  <option value="Category 1">Category 1</option>
+                  <option value="Category 1">Category 1</option>
+                  <option value="Category 1">Category 1</option>
+                  <option value="Category 1">Category 1</option>
+                </optgroup>
+                <optgroup label="C">
+                  <option value="Category 1">Category 1</option>
+                  <option value="Category 1">Category 1</option>
+                  <option value="Category 1">Category 1</option>
+                  <option value="Category 1">Category 1</option>
+                </optgroup>
+                <optgroup label="D">
+                  <option value="Category 1">Category 1</option>
+                  <option value="Category 1">Category 1</option>
+                  <option value="Category 1">Category 1</option>
+                  <option value="Category 1">Category 1</option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filter-module-2" id="filter-module-2">
+        <div class="container-sm">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="filter-title">
+                <h4>Filter posts by:</h4>
+                <h3>Industry</h3>
+              </div>
+            </div>
+            <div class="col-sm-8">
+              <select multiple name="" id="" class="multiselect-custom form-control">
+                <optgroup label="A">
+                  <option value="Category 1">Category 1</option>
+                  <option value="Category 1">Category 1</option>
+                  <option value="Category 1">Category 1</option>
+                  <option value="Category 1">Category 1</option>
+                </optgroup>
+                <optgroup label="B">
+                  <option value="Category 1">Category 1</option>
+                  <option value="Category 1">Category 1</option>
+                  <option value="Category 1">Category 1</option>
+                  <option value="Category 1">Category 1</option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filter-module-3" id="filter-module-3">
+        <div class="container-sm">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="filter-title">
+                <h4>Filter posts by:</h4>
+                <h3>Location</h3>
+              </div>
+            </div>
+            <div class="col-sm-8">
+              <select multiple name="" id="" class="multiselect-custom form-control">
+                <optgroup label="A">
+                  <option value="Category 1">Category 1</option>
+                  <option value="Category 1">Category 1</option>
+                  <option value="Category 1">Category 1</option>
+                  <option value="Category 1">Category 1</option>
+                </optgroup>
+                <optgroup label="B">
+                  <option value="Category 1">Category 1</option>
+                  <option value="Category 1">Category 1</option>
+                  <option value="Category 1">Category 1</option>
+                  <option value="Category 1">Category 1</option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filters-submit">
+        <div class="container">
+          <button type="submit" class="btn btn-icon-custom btn-primary">
+            <span>FILTER</span>
+            <i class="icon-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+    <main role="main" class="site-content">
+      <section class="container">
+        <header class="toolbar">
+          <div class="left">
+            <div class="toolbar-results">
+              <small>Showing results for: <span>All</span></small>
+            </div>
+          </div>
+          <div class="right">
+            <nav class="toolbar-filters">
+              <a href="#">Top Rated</a>
+              <a href="#">Newest</a>
+            </nav>
+          </div>
+        </header>
+        <div class="row grid-list grid-list-4 grid-list-3-sm grid-list-1-xs pins-grid">
+          <div class="grid-list-item">
+            <div class="pin">
+              <div class="pin-top">
+                <small class="pin-category">Building community in fast-food</small>
+                <h2 class="pin-title"><a href="#">Mall Sport</a></h2>
+                <em class="pin-location">Santiago de Chile, CH</em>
+              </div>
+              <div class="pin-center">
+                <div class="pin-pic">
+                  <img src="assets/img/img.png" alt="Grid 1" class="ignore-srcset">
+                  <a href="#" class="overlay">
+                    <div class="pin-bottom">
+                      <button class="btn btn-icon-custom btn-gray-darker btn-icon-left btn-sm">
+                        <i>45</i>
+                        <span>VOTE</span>
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </div>
   <script src="assets/js/jquery.min.js"></script> <!-- App scripts -->
   <script src="assets/js/scripts.min.js"></script>

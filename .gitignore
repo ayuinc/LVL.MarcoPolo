@@ -27,11 +27,11 @@ src/components
 lib
 
 ## Images
-app/assets/img/*.jpg
-app/assets/img/*.png
-app/assets/img/*.JPEG
-app/assets/img/*.gif
-app/assets/img/*.tiff
+# app/assets/img/*.jpg
+# app/assets/img/*.png
+# app/assets/img/*.JPEG
+# app/assets/img/*.gif
+# app/assets/img/*.tiff
 # src/img/*.jpg
 # src/img/*.png
 # src/img/*.gif
@@ -39,10 +39,10 @@ app/assets/img/*.tiff
 # src/img/*.tiff
 
 ## Icons
-app/assets/button-icons/*.svg
-app/assets/button-icons/*.eot
-app/assets/button-icons/*.ttf
-app/assets/button-icons/*.woff
+# app/assets/button-icons/*.svg
+# app/assets/button-icons/*.eot
+# app/assets/button-icons/*.ttf
+# app/assets/button-icons/*.woff
 
 ## Sass
 .sass-cache

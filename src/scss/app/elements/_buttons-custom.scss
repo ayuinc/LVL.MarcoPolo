@@ -1,5 +1,5 @@
 // Bootstrap 3 Custom Buttons
-$buttons-custom-border-size: 2px;
+$buttons-custom-border-size: 0px;
 $buttons-custom-border-style: solid;
 $buttons-custom-color-control: 18%;
 
@@ -47,6 +47,32 @@ a.btn,
 button.btn,
 input[type="submit"].btn,
 .btn {
+	// Grayscale Buttons Extension
+	@for $i from 1 through length($grayscale-sufix-list) {
+		&.btn-#{nth($grayscale-sufix-list, $i)} { 
+			color: white;
+			border-color: #{nth($grayscale-list, $i)};
+		  background-color: #{nth($grayscale-list, $i)}; 
+			&:hover {
+				background-color: #{darken(nth($grayscale-list, $i), $buttons-custom-color-control)};
+				color: darken(white, 3%);
+				border-color: #{darken(nth($grayscale-list, $i), 3%)};
+			}
+		}
+	}
+	// Brand colors and bluescale extension
+	@for $i from 1 through length($brand-colors-sufix-list) {
+		&.btn-#{nth($brand-colors-sufix-list, $i)} { 
+			color: white;
+			border-color: #{nth($brand-colors-list, $i)};
+		  background-color: #{nth($brand-colors-list, $i)}; 
+			&:hover {
+				background-color: #{darken(nth($brand-colors-list, $i), $buttons-custom-color-control)};
+				color: darken(white, 3%);
+				border-color: #{darken(nth($brand-colors-list, $i), 3%)};
+			}
+		}
+	}
 	// OUTLINE BUTTONS
 	@for $i from 1 through length($brand-colors-sufix-list) {
 		&.btn-#{nth($brand-colors-sufix-list, $i)}.btn-outline {
@@ -71,6 +97,52 @@ input[type="submit"].btn,
 				background: none;
 				border: $buttons-custom-border-size $buttons-custom-border-style #{darken(nth($grayscale-list, $i), $buttons-custom-color-control)};
 				color: #{darken(nth($grayscale-list, $i), $buttons-custom-color-control)};
+			}
+		}
+	}
+	// CUSTOM BUTTONS with border bottom
+	@for $i from 1 through length($brand-colors-sufix-list) {
+		&.btn-#{nth($brand-colors-sufix-list, $i)}.btn-custom {
+			@include background(linear-gradient(#{lighten(nth($brand-colors-list, $i), 7%), nth($brand-colors-list, $i)} top repeat));
+			border: $buttons-custom-border-size $buttons-custom-border-style #{darken(nth($brand-colors-list, $i), 9%)};
+			@include box-shadow(0px 2px 0px 0px #{darken(nth($brand-colors-list, $i), 12%)});
+			border-radius: $border-radius-base;
+			// color: #{nth($brand-colors-list, $i)};
+			&:hover {
+				@include background(linear-gradient(#{lighten(nth($brand-colors-list, $i), 7%), nth($brand-colors-list, $i)} bottom repeat)); 
+				@include box-shadow(0px 2px 0px 0px #{darken(nth($brand-colors-list, $i), 15%)});
+				// border: $buttons-custom-border-size $buttons-custom-border-style #{darken(nth($brand-colors-list, $i), $buttons-custom-color-control)};
+				// color: #{darken(nth($brand-colors-list, $i), $buttons-custom-color-control)};
+			}
+		}
+	}
+	@for $i from 1 through length($social-colors-sufix-list) {
+		&.btn-#{nth($social-colors-sufix-list, $i)}.btn-custom {
+			@include background(linear-gradient(#{lighten(nth($social-colors-list, $i), 7%), nth($social-colors-list, $i)} top repeat));
+			border: $buttons-custom-border-size $buttons-custom-border-style #{darken(nth($social-colors-list, $i), 9%)};
+			@include box-shadow(0px 2px 0px 0px #{darken(nth($social-colors-list, $i), 12%)});
+			border-radius: $border-radius-base;
+			// color: #{nth($social-colors-list, $i)};
+			&:hover {
+				@include background(linear-gradient(#{lighten(nth($social-colors-list, $i), 7%), nth($social-colors-list, $i)} bottom repeat)); 
+				@include box-shadow(0px 2px 0px 0px #{darken(nth($social-colors-list, $i), 15%)});
+				// border: $buttons-custom-border-size $buttons-custom-border-style #{darken(nth($brand-colors-list, $i), $buttons-custom-color-control)};
+				// color: #{darken(nth($brand-colors-list, $i), $buttons-custom-color-control)};
+			}
+		}
+	}
+	@for $i from 1 through length($grayscale-sufix-list) {
+		&.btn-#{nth($grayscale-sufix-list, $i)}.btn-custom {
+			@include background(linear-gradient(#{lighten(nth($grayscale-list, $i), 7%), nth($grayscale-list, $i)} top repeat));
+			border: $buttons-custom-border-size $buttons-custom-border-style #{darken(nth($grayscale-list, $i), 9%)};
+			@include box-shadow(0px 2px 0px 0px #{darken(nth($grayscale-list, $i), 12%)});
+			border-radius: $border-radius-base;
+			// color: #{nth($grayscale-list, $i)};
+			&:hover {
+				@include background(linear-gradient(#{lighten(nth($grayscale-list, $i), 7%), nth($grayscale-list, $i)} bottom repeat)); 
+				@include box-shadow(0px 2px 0px 0px #{darken(nth($grayscale-list, $i), 15%)});
+				// border: $buttons-custom-border-size $buttons-custom-border-style #{darken(nth($grayscale-list, $i), $buttons-custom-color-control)};
+				// color: #{darken(nth($grayscale-list, $i), $buttons-custom-color-control)};
 			}
 		}
 	}
@@ -202,6 +274,191 @@ input[type="submit"].btn,
 					float: left;
 					border-left: none;
 					border-right: $buttons-custom-border-size $buttons-custom-border-style #{nth($grayscale-list, $i)};
+					@include border-left-radius($border-radius-base);
+					@include border-right-radius(0);
+				}
+				&:hover {
+					i {
+						border-right: $buttons-custom-border-size $buttons-custom-border-style #{darken(nth($grayscale-list, $i), $buttons-custom-color-control)};
+					}
+				}
+			}
+			&.btn-xs {
+				span, 
+				i {
+					height: $button-icon-height-control - $padding-base-horizontal;
+				}
+				span {
+					padding: 0 $padding-xs-horizontal;
+				}
+				i {
+					width: $button-icon-height-control - $padding-base-horizontal;
+				}
+			}
+			&.btn-sm {
+				span, 
+				i {
+					height: $button-icon-height-control - $padding-small-horizontal;
+				}
+				span {
+					padding: 0 $padding-small-horizontal;
+				}
+				i {
+					width: $button-icon-height-control - $padding-small-horizontal;
+				}
+			}
+			&.btn-lg {
+				span, 
+				i {
+					height: $button-icon-height-control + $padding-large-horizontal;
+				}
+				span {
+					padding: 0 $padding-large-horizontal;
+				}
+				i {
+					width: $button-icon-height-control + $padding-large-horizontal;
+				}
+			}
+		}
+	}
+	@for $i from 1 through length($brand-colors-sufix-list) {
+		&.btn-#{nth($brand-colors-sufix-list, $i)}.btn-icon-custom {
+			@include background(linear-gradient(#{lighten(nth($brand-colors-list, $i), 7%), nth($brand-colors-list, $i)} top repeat));
+			border: $buttons-custom-border-size $buttons-custom-border-style #{darken(nth($brand-colors-list, $i), 9%)};
+			border-radius: $border-radius-base;
+			// color: #{nth($brand-colors-list, $i)};
+			@include box-shadow(0 1px 1px 0px rgba($gray-darker, 0.3));
+			padding: 0;
+			@include clearfix;
+			span,
+			i {
+				display: inline-block;
+				height: $button-icon-height-control;
+				@include flex-middle-center;
+			}
+			span {
+				float: left;
+				padding: 0 $padding-base-horizontal;
+			}
+			i {
+				width: $button-icon-height-control;
+				float: right;
+				border-left: $buttons-custom-border-size $buttons-custom-border-style #{nth($brand-colors-list, $i)};
+				background-color: white;
+				color: $brand-primary;
+				@include border-right-radius($border-radius-base);
+			}
+			&:hover {
+				@include background(linear-gradient(#{lighten(nth($brand-colors-list, $i), 7%), nth($brand-colors-list, $i)} bottom repeat)); 
+				border: $buttons-custom-border-size $buttons-custom-border-style #{darken(nth($brand-colors-list, $i), 14%)};
+				// color: #{darken(nth($brand-colors-list, $i), $buttons-custom-color-control)};
+				i {
+					border-left: $buttons-custom-border-size $buttons-custom-border-style #{darken(nth($brand-colors-list, $i), 9%)};
+					color: $brand-primary;
+				}
+			}
+			&.btn-icon-left {
+				span {
+					float: right;
+				}
+				i {
+					float: left;
+					border-left: none;
+					border-right: $buttons-custom-border-size $buttons-custom-border-style #{darken(nth($brand-colors-list, $i), 9%)};
+					@include border-left-radius($border-radius-base);
+					@include border-right-radius(0);
+				}
+				&:hover {
+					i {
+						border-right: $buttons-custom-border-size $buttons-custom-border-style #{darken(nth($brand-colors-list, $i), $buttons-custom-color-control)};
+						color: $brand-primary;
+					}
+				}
+			}
+			&.btn-xs {
+				span, 
+				i {
+					height: $button-icon-height-control - $padding-base-horizontal;
+				}
+				span {
+					padding: 0 $padding-xs-horizontal;
+				}
+				i {
+					width: $button-icon-height-control - $padding-base-horizontal;
+				}
+			}
+			&.btn-sm {
+				span, 
+				i {
+					height: $button-icon-height-control - $padding-small-horizontal;
+				}
+				span {
+					padding: 0 $padding-small-horizontal;
+				}
+				i {
+					width: $button-icon-height-control - $padding-small-horizontal;
+				}
+			}
+			&.btn-lg {
+				span, 
+				i {
+					height: $button-icon-height-control + $padding-large-horizontal;
+				}
+				span {
+					padding: 0 $padding-large-horizontal;
+				}
+				i {
+					width: $button-icon-height-control + $padding-large-horizontal;
+				}
+			}
+		}
+	}
+	@for $i from 1 through length($grayscale-sufix-list) {
+		&.btn-#{nth($grayscale-sufix-list, $i)}.btn-icon-custom {
+			@include background(linear-gradient(#{lighten(nth($grayscale-list, $i), 7%), nth($grayscale-list, $i)} top repeat));
+			border: $buttons-custom-border-size $buttons-custom-border-style #{darken(nth($grayscale-list, $i), 9%)};
+			border-radius: $border-radius-base;
+			// color: #{nth($grayscale-list, $i)};
+			padding: 0;
+			@include box-shadow(0 1px 1px 0px rgba($gray-darker, 0.3));
+			@include clearfix;
+			span,
+			i {
+				display: inline-block;
+				height: $button-icon-height-control;
+				@include flex-middle-center;
+				@include light;
+			}
+			span {
+				float: left;
+				padding: 0 $padding-base-horizontal;
+			}
+			i {
+				width: $button-icon-height-control;
+				float: right;
+				border-left: $buttons-custom-border-size $buttons-custom-border-style #{nth($grayscale-list, $i)};
+				background-color: white;
+				color: $gray-darker;
+				@include border-right-radius($border-radius-base);
+			}
+			&:hover {
+				// @include background(linear-gradient(#{lighten(nth($grayscale-list, $i), 7%), nth($grayscale-list, $i)} bottom repeat)); 
+				background-color: $brand-primary;
+				border: $buttons-custom-border-size $buttons-custom-border-style #{darken(nth($grayscale-list, $i), 14%)};
+				// color: #{darken(nth($grayscale-list, $i), $buttons-custom-color-control)};
+				i {
+					border-left: $buttons-custom-border-size $buttons-custom-border-style #{darken(nth($grayscale-list, $i), 9%)};
+					color: $brand-primary;
+				}
+			}
+			&.btn-icon-left {
+				span {
+					float: right;
+				}
+				i {
+					float: left;
+					border-left: none;
+					border-right: $buttons-custom-border-size $buttons-custom-border-style #{darken(nth($grayscale-list, $i), 9%)};
 					@include border-left-radius($border-radius-base);
 					@include border-right-radius(0);
 				}

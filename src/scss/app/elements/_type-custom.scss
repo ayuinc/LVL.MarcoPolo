@@ -4,13 +4,13 @@ html {
 }
 
 // DISABLE ANCHOR UNDERLINE ON HOVER
-// a {
-//   &:hover,
-//   &:focus,
-//   &:active {
-//     text-decoration: none !important;
-//   }
-// }
+a {
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none !important;
+  }
+}
 
 // REMOVE DEFAULT MARGINS MIXIN
 @mixin normalize-text {

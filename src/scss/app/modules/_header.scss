@@ -1,26 +1,33 @@
 header.header {
 	// @include position(absolute, 0 0 null 0);
-	// @include position(fixed, 0 0 null 0);
-	// z-index: 1000;
-	// -webkit-backface-visibility: hidden; 
-	// -webkit-transform: translateZ(0);
+	@include box-shadow(0 1px 1px 0px rgba($gray-light, 0.3));
+	@include position(fixed, 0 0 null 0);
 	@include normalize-text;
-	width: 100%;
 	min-height: $header-height-control;
+	-webkit-backface-visibility: hidden; 
+	-webkit-transform: translateZ(0);
+	background-color: white;
+	z-index: 1000;
+	width: 100%;
 	.container,
 	.container-sm,
 	.container-fluid {
-		@include flex-space-between;
+		.row {
+			@include flex-space-between;
+		}
 	}
 	.left,
 	.right {
 		// width: 50%;
 	}
 	.left,
+	.center {
+		@include flex-middle;
+	}
+	.left,
 	.center,
 	.right {
 		min-height: $header-height-control;
-		@include flex-middle;
 	}
 	.left {
 
@@ -29,9 +36,67 @@ header.header {
 		text-align: center;
 	}
 	.right {
-
+		text-align: right;
+		padding: 8px 0;
+	}
+	.logo {
+		display: inline-block;
+		background-repeat: no-repeat;
+  	background-size: 100%;
+		height: 49px;
+		width: 98px;
+		background-image: url(../img/logo_LVL.black.png);
+		img {
+			width: 88px;
+			height: auto;
+		}
 	}
 }
+
+.filter-triggers {
+	@include list-unstyled;
+	@include clearfix;
+	text-align: center;
+	li {
+		@include flex-middle-center;
+		height: $header-height-control;
+		padding: 0 $container-fluid;
+		text-transform: uppercase;
+		width: 33.33%;
+		float: left;
+		&:hover {
+			cursor: pointer;
+			background-color: $gray-darker;
+			a {
+				color: white;
+			}
+		}
+		&.active {
+			a {
+				color: $brand-primary;
+				i {
+					color: $brand-primary;
+				}
+			}
+			&:hover {
+				a {
+					color: $brand-primary;
+					i {
+						color: $brand-primary;
+					}
+				}	
+			}
+		}
+	}
+	a {
+		color: $gray;
+		i {
+			font-size: 9px;
+		}
+	}
+}
+
+
 // Uncomment for fixed-header on scroll funcionality
 // header.header-fixed {
 // 	@extend header.header;
@@ -74,3 +139,52 @@ header.header {
 // 		}
 // 	}
 // }
+
+.toolbar {
+	@include flex-space-between;
+	border-bottom: 1px solid $gray-dark;
+	padding: 3px 0;
+	.left {}
+	.right {}
+	.toolbar-results {
+		small {
+			color: $gray-dark;
+			text-transform: uppercase;
+		}
+		span {
+			color: $gray-darker;
+		}
+	}
+	.toolbar-filters {
+		text-transform: uppercase;
+		a {
+			display: inline-block;
+			margin-left: $container-fluid;
+			font-size: 12px;
+			font-size: rem(12px);
+			color: $gray-dark;
+			&:hover,
+			&.active {
+				color: $brand-primary;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

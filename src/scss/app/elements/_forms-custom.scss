@@ -35,6 +35,26 @@ $input-type-list:
 // "tel",
 // "color";
 
+/*
+	Search Form
+*/
+.search-form {
+	input,
+	button {
+		border-radius: 0px;
+	}
+	input {
+		height: $header-height-control; 
+		font-size: $font-size-h3;
+	}
+	button {
+		font-size: $font-size-h3;
+		height: $header-height-control;
+		width: $header-height-control;
+	}
+}
+
+
 // Form overrides 
 .select-override {
   @include user-select(none);
@@ -47,22 +67,63 @@ $input-type-list:
   }
 }
 
-form {
-	label {
-		color: white;
-		text-transform: uppercase;
-		font-size: $font-size-h5;
-		@include light;
+/*
+	Multiselect custom
+*/
+.multiselect-custom {
+	@include box-shadow(none);
+	background-color: darken($gray-darker, 3%);
+	border: 1px solid darken($gray-darker, 7%);
+	overflow-y: auto;
+	height: 210px !important;
+	padding: 0 $container-fluid;
+	&::-webkit-scrollbar { 
+    display: none; 
 	}
-	@for $i from 1 through length($input-type-list) {
-		input[type="#{nth($input-type-list, $i)}"] {
-			background-color: transparent;
-			border: 2px solid white;
+	optgroup {}	
+	option {
+		padding: 0;
+		margin: 0 (-$container-fluid);
+		&:checked {
+			background-color: darken($gray-darker, 3%);
+			color: $brand-primary;
+		}
+		&::-moz-selection,
+		&::selection {
+			background-color: darken($gray-darker, 3%);
+			color: $brand-primary;
 		}
 	}
-	select {}
-	textarea.form-control {
-		background-color: transparent;
-		border: 2px solid white;
+	&:focus {
+		@include box-shadow(none);
+		border-color: darken($gray-darker, 9%);
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -39,4 +39,54 @@ $(document).ready ->
 		return
 		)
 
+	# POSTS GALLERY
+	$gallery = $('.gallery')
+	$gallery.flickity({
+		cellAlign: 'left'
+		contain: true
+		wrapAround: true
+		pageDots: false
+		prevNextButtons: false
+		})
+
+	$galleryControlLeft = $('.gallery-control-left')
+	$galleryControlRight = $('.gallery-control-right')
+
+	$galleryControlLeft.on('click', 'a', (e)->
+		e.preventDefault()
+		$gallery.flickity('previous')
+		return
+		)
+
+	$galleryControlRight.on('click', 'a', (e)->
+		e.preventDefault()
+		$gallery.flickity('next')
+		return
+		)
+
 	return # END ON READY
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

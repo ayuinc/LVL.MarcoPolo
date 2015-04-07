@@ -72,6 +72,7 @@ header.header {
 			}
 		}
 		&.active {
+			background-color: $gray-darker;
 			a {
 				color: $brand-primary;
 				i {
@@ -147,7 +148,8 @@ header.header {
 	.left {}
 	.right {}
 	.toolbar-results {
-		small {
+		small,
+		a {
 			color: $gray-dark;
 			text-transform: uppercase;
 		}
@@ -166,6 +168,10 @@ header.header {
 			&:hover,
 			&.active {
 				color: $brand-primary;
+			}
+			i {
+				font-size: 12px;
+				font-size: rem(12px);
 			}
 		}
 	}

@@ -230,10 +230,10 @@ $pin-bg-color: white;
 		}
 		.header {
 			@include box-shadow(none);
-			background-color: $gray-darker;
-			.logo {
-				background-image: url(../img/logo_LVL.white.png);
-			}
+			// background-color: $gray-darker;
+			// .logo {
+			// 	background-image: url(../img/logo_LVL.white.png);
+			// }
 		}
 	}
 }
@@ -273,17 +273,125 @@ $pin-bg-color: white;
 	}
 	.filter-title {
 		@include normalize-text;
+		padding-top: $container-fluid;
 		color: white;
+		text-align: right;
+		h4 {
+			font-size: $font-size-base;
+			color: $brand-primary;
+		}
 		h3 {
+			@include bold;
 			text-transform: uppercase;
 		}
 	}
-	.filters-submit {
-		@include position(absolute, null 0 ($header-height-control * 2) 0);
+	.filter-description {
+		color: white;
 		text-align: right;
-		width: 100%;
+		padding-top: 21px;
+	}
+	// .filters-submit {
+	// 	@include position(absolute, null 0 ($header-height-control * 2) 0);
+	// 	text-align: right;
+	// 	width: 100%;
+	// }
+	.filter-categories-list {
+		li {
+			&:before {
+				font-family: 'icomoon';
+				content: "\e93c";
+				color: $brand-primary;
+				margin-right: $container-fluid;
+			}
+			a {
+				color: white;
+				&:hover,
+				&.active {
+					text-decoration: underline !important;
+				}
+			}
+		}
 	}
 }
+
+// POSTS GALLERY
+$gallery-cell-height-control: 490px;
+.gallery-wrapper {
+	position: relative;
+	.gallery {
+		margin: 0 -($container-fluid / 2);
+		.gallery-cell {
+			@include bg-img-control-top; 
+			width: 100%;
+			height: $gallery-cell-height-control;
+			height: rem($gallery-cell-height-control);
+		}
+	}
+	.gallery-control-left,
+	.gallery-control-right {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		height: 100%;
+	}
+	.gallery-control-left {
+		left: 0;
+	}
+	.gallery-control-right {
+		right: 0;
+	}
+	.gallery-button-left,
+	.gallery-button-right {
+		@include flex-middle-center;
+		@include box-shadow-default;
+		position: absolute;
+		top: 50%;
+		background-color: $brand-primary;
+		width: 42px;
+		height: 63px;
+		i {
+			font-size: $font-size-h3;
+			color: white;
+		}
+	}
+	.gallery-button-left {
+		@include border-left-radius($border-radius-base);
+		left: -42px;
+		i {
+			padding-right: 3px;
+		}
+	}
+	.gallery-button-right {
+		@include border-right-radius($border-radius-base);
+		right: -42px;
+		i {
+			padding-left: 3px;
+		}
+	}	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

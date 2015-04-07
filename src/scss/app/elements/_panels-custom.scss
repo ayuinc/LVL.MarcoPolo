@@ -1,19 +1,27 @@
 .panel {
-	min-height: 140px;
 	border-radius: $border-radius-base;
+	background-color: white;
 	position: relative;
-	overflow: hidden;
+	min-height: 140px;
+	// overflow: hidden;
+	.panel-head,
+	.panel-footer {
+		padding: $container-fluid;
+	}
 	.panel-head {
 		border-top-left-radius: $border-radius-base;
 		border-top-right-radius: $border-radius-base;
+		background-color: $gray-darker;
 		@include clearfix;
 		padding: $container-fluid;
 		border-bottom: 1px solid $gray-lighter;
+		@include normalize-text;
 		.title {
 			float: left;
 			// @include light;
 			text-transform: uppercase;
-			color: $gray-dark;
+			color: white;
+			@include bold;
 		}
 		.actions {
 			float: right;

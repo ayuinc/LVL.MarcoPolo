@@ -370,7 +370,16 @@ $gallery-cell-height-control: 490px;
 	}	
 }
 
-
+// POST INFO BLOCK
+.info-block {
+	@include normalize-text;
+	margin-bottom: $container-fluid;
+	h4 {
+		@include bold;
+		text-transform: uppercase;
+		color: $gray-light;
+	}
+}
 
 
 

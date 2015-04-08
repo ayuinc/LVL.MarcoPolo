@@ -23684,18 +23684,23 @@ ul.grid-list {
   list-style: none;
   margin: 0;
 }
+ul.grid-list.row {
+  margin-left: -14px !important;
+  margin-right: -14px !important;
+}
 
 /*
 	EBM:Ref
 	Separators
 */
 .separator-primary {
-  border-top: 2px solid #EC008B !important;
-  margin: 14px 0;
+  border-top: 1px solid #EC008B !important;
+  margin-top: 7px;
+  margin-bottom: 14px;
   width: 28px;
   width: 2rem;
-  height: 4px;
-  height: 0.28571rem;
+  height: 1px;
+  height: 0.07143rem;
 }
 .separator-primary.separator-xs {
   width: 28px;
@@ -23715,12 +23720,13 @@ ul.grid-list {
 }
 
 .separator-success {
-  border-top: 2px solid #5cb85c !important;
-  margin: 14px 0;
+  border-top: 1px solid #5cb85c !important;
+  margin-top: 7px;
+  margin-bottom: 14px;
   width: 28px;
   width: 2rem;
-  height: 4px;
-  height: 0.28571rem;
+  height: 1px;
+  height: 0.07143rem;
 }
 .separator-success.separator-xs {
   width: 28px;
@@ -23740,12 +23746,13 @@ ul.grid-list {
 }
 
 .separator-info {
-  border-top: 2px solid #5bc0de !important;
-  margin: 14px 0;
+  border-top: 1px solid #5bc0de !important;
+  margin-top: 7px;
+  margin-bottom: 14px;
   width: 28px;
   width: 2rem;
-  height: 4px;
-  height: 0.28571rem;
+  height: 1px;
+  height: 0.07143rem;
 }
 .separator-info.separator-xs {
   width: 28px;
@@ -23765,12 +23772,13 @@ ul.grid-list {
 }
 
 .separator-warning {
-  border-top: 2px solid #f0ad4e !important;
-  margin: 14px 0;
+  border-top: 1px solid #f0ad4e !important;
+  margin-top: 7px;
+  margin-bottom: 14px;
   width: 28px;
   width: 2rem;
-  height: 4px;
-  height: 0.28571rem;
+  height: 1px;
+  height: 0.07143rem;
 }
 .separator-warning.separator-xs {
   width: 28px;
@@ -23790,12 +23798,13 @@ ul.grid-list {
 }
 
 .separator-danger {
-  border-top: 2px solid #d9534f !important;
-  margin: 14px 0;
+  border-top: 1px solid #d9534f !important;
+  margin-top: 7px;
+  margin-bottom: 14px;
   width: 28px;
   width: 2rem;
-  height: 4px;
-  height: 0.28571rem;
+  height: 1px;
+  height: 0.07143rem;
 }
 .separator-danger.separator-xs {
   width: 28px;
@@ -23815,12 +23824,13 @@ ul.grid-list {
 }
 
 .separator-blue-darker {
-  border-top: 2px solid #3a4959 !important;
-  margin: 14px 0;
+  border-top: 1px solid #3a4959 !important;
+  margin-top: 7px;
+  margin-bottom: 14px;
   width: 28px;
   width: 2rem;
-  height: 4px;
-  height: 0.28571rem;
+  height: 1px;
+  height: 0.07143rem;
 }
 .separator-blue-darker.separator-xs {
   width: 28px;
@@ -23840,12 +23850,13 @@ ul.grid-list {
 }
 
 .separator-blue-dark {
-  border-top: 2px solid #647e9a !important;
-  margin: 14px 0;
+  border-top: 1px solid #647e9a !important;
+  margin-top: 7px;
+  margin-bottom: 14px;
   width: 28px;
   width: 2rem;
-  height: 4px;
-  height: 0.28571rem;
+  height: 1px;
+  height: 0.07143rem;
 }
 .separator-blue-dark.separator-xs {
   width: 28px;
@@ -23865,12 +23876,13 @@ ul.grid-list {
 }
 
 .separator-blue {
-  border-top: 2px solid #8fa2b6 !important;
-  margin: 14px 0;
+  border-top: 1px solid #8fa2b6 !important;
+  margin-top: 7px;
+  margin-bottom: 14px;
   width: 28px;
   width: 2rem;
-  height: 4px;
-  height: 0.28571rem;
+  height: 1px;
+  height: 0.07143rem;
 }
 .separator-blue.separator-xs {
   width: 28px;
@@ -23890,12 +23902,13 @@ ul.grid-list {
 }
 
 .separator-blue-light {
-  border-top: 2px solid #e6eaef !important;
-  margin: 14px 0;
+  border-top: 1px solid #e6eaef !important;
+  margin-top: 7px;
+  margin-bottom: 14px;
   width: 28px;
   width: 2rem;
-  height: 4px;
-  height: 0.28571rem;
+  height: 1px;
+  height: 0.07143rem;
 }
 .separator-blue-light.separator-xs {
   width: 28px;
@@ -23915,12 +23928,13 @@ ul.grid-list {
 }
 
 .separator-blue-lighter {
-  border-top: 2px solid #fbfcfd !important;
-  margin: 14px 0;
+  border-top: 1px solid #fbfcfd !important;
+  margin-top: 7px;
+  margin-bottom: 14px;
   width: 28px;
   width: 2rem;
-  height: 4px;
-  height: 0.28571rem;
+  height: 1px;
+  height: 0.07143rem;
 }
 .separator-blue-lighter.separator-xs {
   width: 28px;
@@ -23940,12 +23954,13 @@ ul.grid-list {
 }
 
 .separator-gray-darker {
-  border-top: 2px solid #3E3F40 !important;
-  margin: 14px 0;
+  border-top: 1px solid #3E3F40 !important;
+  margin-top: 7px;
+  margin-bottom: 14px;
   width: 28px;
   width: 2rem;
-  height: 4px;
-  height: 0.28571rem;
+  height: 1px;
+  height: 0.07143rem;
 }
 .separator-gray-darker.separator-xs {
   width: 28px;
@@ -23965,12 +23980,13 @@ ul.grid-list {
 }
 
 .separator-gray-dark {
-  border-top: 2px solid #707274 !important;
-  margin: 14px 0;
+  border-top: 1px solid #707274 !important;
+  margin-top: 7px;
+  margin-bottom: 14px;
   width: 28px;
   width: 2rem;
-  height: 4px;
-  height: 0.28571rem;
+  height: 1px;
+  height: 0.07143rem;
 }
 .separator-gray-dark.separator-xs {
   width: 28px;
@@ -23990,12 +24006,13 @@ ul.grid-list {
 }
 
 .separator-gray {
-  border-top: 2px solid #7D7E7F !important;
-  margin: 14px 0;
+  border-top: 1px solid #7D7E7F !important;
+  margin-top: 7px;
+  margin-bottom: 14px;
   width: 28px;
   width: 2rem;
-  height: 4px;
-  height: 0.28571rem;
+  height: 1px;
+  height: 0.07143rem;
 }
 .separator-gray.separator-xs {
   width: 28px;
@@ -24015,12 +24032,13 @@ ul.grid-list {
 }
 
 .separator-gray-light {
-  border-top: 2px solid #b5b6b7 !important;
-  margin: 14px 0;
+  border-top: 1px solid #b5b6b7 !important;
+  margin-top: 7px;
+  margin-bottom: 14px;
   width: 28px;
   width: 2rem;
-  height: 4px;
-  height: 0.28571rem;
+  height: 1px;
+  height: 0.07143rem;
 }
 .separator-gray-light.separator-xs {
   width: 28px;
@@ -24040,12 +24058,13 @@ ul.grid-list {
 }
 
 .separator-gray-lighter {
-  border-top: 2px solid #F0F0F0 !important;
-  margin: 14px 0;
+  border-top: 1px solid #F0F0F0 !important;
+  margin-top: 7px;
+  margin-bottom: 14px;
   width: 28px;
   width: 2rem;
-  height: 4px;
-  height: 0.28571rem;
+  height: 1px;
+  height: 0.07143rem;
 }
 .separator-gray-lighter.separator-xs {
   width: 28px;
@@ -24065,12 +24084,13 @@ ul.grid-list {
 }
 
 .separator-white {
-  border-top: 2px solid #fff !important;
-  margin: 14px 0;
+  border-top: 1px solid #fff !important;
+  margin-top: 7px;
+  margin-bottom: 14px;
   width: 28px;
   width: 2rem;
-  height: 4px;
-  height: 0.28571rem;
+  height: 1px;
+  height: 0.07143rem;
 }
 .separator-white.separator-xs {
   width: 28px;
@@ -24091,6 +24111,9 @@ ul.grid-list {
 
 .separator.separator-centered {
   margin: 0 auto;
+}
+.separator.separator-full-width {
+  width: 100%;
 }
 
 @media only screen and (min-width: 768px) {

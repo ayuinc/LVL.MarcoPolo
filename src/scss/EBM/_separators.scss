@@ -4,13 +4,16 @@
 */
 
 $separator-width: 28px;
-$separator-height: 4px;
-$separator-margin: $container-fluid;
+$separator-height: 1px;
+$separator-style: solid;
+$separator-margin-top: $container-fluid / 2;
+$separator-margin-bottom: $container-fluid;
 
 @for $i from 1 through length($brand-colors-sufix-list) {
 	.separator-#{nth($brand-colors-sufix-list, $i)} {
-		border-top: $hr-width $hr-style #{nth($brand-colors-list, $i)} !important;
-		margin: $separator-margin 0;
+		border-top: $separator-height $separator-style #{nth($brand-colors-list, $i)} !important;
+		margin-top: $separator-margin-top;
+		margin-bottom: $separator-margin-bottom;
 		width: $separator-width;
 		width: rem($separator-width);
 		height: $separator-height;
@@ -25,8 +28,9 @@ $separator-margin: $container-fluid;
 }
 @for $i from 1 through length($grayscale-sufix-list) {
 	.separator-#{nth($grayscale-sufix-list, $i)} {
-		border-top: $hr-width $hr-style #{nth($grayscale-list, $i)} !important;
-		margin: $separator-margin 0;
+		border-top: $separator-height $separator-style #{nth($grayscale-list, $i)} !important;
+		margin-top: $separator-margin-top;
+		margin-bottom: $separator-margin-bottom;
 		width: $separator-width;
 		width: rem($separator-width);
 		height: $separator-height;
@@ -43,5 +47,8 @@ $separator-margin: $container-fluid;
 .separator {
 	&.separator-centered {
 		margin: 0 auto;
+	}
+	&.separator-full-width {
+		width: 100%;
 	}
 }

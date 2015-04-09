@@ -19,6 +19,19 @@
           min-height: rem(($i*$times)*10)!important;
         }
       }
+// Children elements min-heights
+      .minh-ch-#{($i*$times)*10}-#{nth($breakpoints-sufix-list, $k)} {
+        @include children-elements {
+          min-height: (($i*$times)*10) + px !important;
+          min-height: rem(($i*$times)*10)!important;
+        }
+      }
+    }
+  }
+  .minh-ch-#{($i*$times)*10} {
+    @include children-elements {
+      min-height: (($i*$times)*10) + px !important;
+      min-height: rem(($i*$times)*10)!important;
     }
   }
 }
@@ -35,7 +48,23 @@
         // For <IE8
         min-height: percentage($i*0.1) !important;
         min-height: #{$i*10}vh !important;
+        @include children-elements {
+          min-height: percentage($i*0.1) !important;
+          min-height: #{$i*10}vh !important;
+        }
       }
+      .minhp-ch-#{$i*10}-#{nth($breakpoints-sufix-list, $k)} {
+        @include children-elements {
+          min-height: percentage($i*0.1) !important;
+          min-height: #{$i*10}vh !important;
+        }
+      }
+    }
+  }
+  .minhp-ch-#{$i*10} {
+    @include children-elements {
+      min-height: percentage($i*0.1) !important;
+      min-height: #{$i*10}vh !important;
     }
   }
 }

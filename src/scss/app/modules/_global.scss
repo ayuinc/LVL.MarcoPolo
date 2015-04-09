@@ -95,7 +95,7 @@ $pin-bg-color: white;
 		.overlay {
 			@include position(absolute, 0 0 0 0);
 			@include border-bottom-radius($border-radius-base);
-			@include flex-middle-end;
+			@include flex-column-end;
 			.pin-bottom {
 				width: 100%;
 				padding: $container-fluid;
@@ -152,7 +152,7 @@ $pin-bg-color: white;
 		}
 	}
 	.pin-onload-pic {
-		@include flex-middle-center;
+		@include flex-column-center;
 		min-height: $pin-height-control;
 		color: $gray-light;
 		// @include animation-name(fadeIn);
@@ -241,7 +241,7 @@ $pin-bg-color: white;
 	@include position(absolute, 0 0 0 0);
 	@include transition(all 0.2s $ease-out-quint);
 	@include transform(translateY(-100%));
-	@include flex-middle-center;
+	@include flex-column-center;
 	padding: $header-height-control 0;
 	background-color: $gray-darker;
 	z-index: 500;
@@ -273,7 +273,7 @@ $pin-bg-color: white;
 	}
 	.filter-title {
 		@include normalize-text;
-		padding-top: $container-fluid;
+		// padding-top: $container-fluid;
 		color: white;
 		text-align: right;
 		h4 {
@@ -297,6 +297,8 @@ $pin-bg-color: white;
 	// }
 	.filter-categories-list {
 		li {
+			padding: 0px;
+			margin-bottom: $container-fluid;
 			&:before {
 				font-family: 'icomoon';
 				content: "\e93c";
@@ -342,7 +344,8 @@ $gallery-cell-height-control: 490px;
 	}
 	.gallery-button-left,
 	.gallery-button-right {
-		@include flex-middle-center;
+		@include flex-column-center;
+		@include flex-align-center;
 		@include box-shadow-default;
 		position: absolute;
 		top: 50%;

@@ -38,19 +38,21 @@ $input-type-list:
 /*
 	Search Form
 */
+$search-form-height-control: 40px;
 .search-form {
 	input,
 	button {
 		border-radius: 0px;
 	}
 	input {
-		height: $header-height-control - 14; 
+		height: $search-form-height-control;
 		font-size: $font-size-h3;
 	}
 	button {
-		font-size: $font-size-h3;
-		height: $header-height-control - 14;
-		width: $header-height-control - 14;
+		line-height: 0;
+		font-size: $font-size-h4;
+		height: $search-form-height-control;
+		width: $search-form-height-control;
 	}
 }
 

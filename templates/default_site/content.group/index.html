@@ -3,14 +3,9 @@
       <div class="container">
         <div class="row">
           <div class="left col-sm-3">
-            <form action="" class="search-form">
-              <div class="input-group">
-                <input type="search" class="form-control" autofocus>
-                <span class="input-group-btn">
-                  <button class="btn btn-gray-darker" type="button"><i class="icon-magnifier"></i></button>
-                </span>
-              </div>
-            </form>
+            <a href="#" class="logo">
+              <!-- <img src="assets/img/logo_LVL.black.png" alt="La Victoria Labs" class="ignore-srcset"> -->
+            </a>
           </div>
           <div class="center col-sm-6">
             <ul class="filter-triggers">
@@ -20,9 +15,14 @@
             </ul>
           </div>
           <div class="right col-sm-3">
-            <a href="#" class="logo">
-              <!-- <img src="assets/img/logo_LVL.black.png" alt="La Victoria Labs" class="ignore-srcset"> -->
-            </a>
+            <form action="" class="search-form">
+              <div class="input-group">
+                <input type="search" class="form-control" autofocus>
+                <span class="input-group-btn">
+                  <button class="btn btn-gray-darker" type="button"><i class="icon-magnifier"></i></button>
+                </span>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -126,110 +126,43 @@
         <header class="toolbar">
           <div class="left">
             <div class="toolbar-results">
-              <small><a href="index.html"><i class="icon-chevron-left"></i> Back to posts</a></small>
+              <small>Showing results for: 
+                <a href="#" class="label label-default">Building community <i class="icon-cross"></i></a> 
+                <a href="#" class="label label-default">Fast-food <i class="icon-cross"></i></a>
+                <a href="#" class="label label-default">New York <i class="icon-cross"></i></a>
+              </small>
             </div>
           </div>
           <div class="right">
             <nav class="toolbar-filters">
-              <a href="#"><i class="icon-chevron-left"></i> Prev</a>
-              <a href="#">Next <i class="icon-chevron-right"></i></a>
+              <a href="#">Top Rated</a>
+              <a href="#">Newest</a>
             </nav>
           </div>
         </header>
-        <div class="row pv-42">
-          <article class="col-sm-8 pr-70-sm">
-            <div class="panel">
-              <div class="panel-head">
-                <div class="title">
-                  <h1>Kate Spade</h1>
-                </div>
-                <div class="actions"></div>
+        <div class="row grid-list grid-list-4 grid-list-3-sm grid-list-1-xs pins-grid">
+          <div class="grid-list-item">
+            <div class="pin">
+              <div class="pin-top">
+                <small class="pin-category">Building community in fast-food</small>
+                <h2 class="pin-title"><a href="post-show.html">Mall Sport</a></h2>
+                <em class="pin-location">Santiago de Chile, CH</em>
               </div>
-              <div class="panel-body">
-                <div class="gallery-wrapper">
-                  <div class="gallery-control-left">
-                    <a href="#" class="gallery-button-left"><i class="icon-chevron-left"></i></a>
-                  </div>
-                  <div class="gallery-control-right">
-                    <a href="#" class="gallery-button-right"><i class="icon-chevron-right"></i></a>
-                  </div>
-                  <div class="gallery">
-                    <div class="gallery-cell" data-responsive-bg-img="{ 
-                          &quot;vw-phone&quot;: &quot;assets/img/img.png&quot;,
-                          &quot;vw-tablet&quot;: &quot;assets/img/img.png&quot;,
-                          &quot;vw-desktop&quot;: &quot;assets/img/img.png&quot;,
-                          &quot;vw-lg-desktop&quot;: &quot;assets/img/img.png&quot;
-                        }">
+              <div class="pin-center">
+                <div class="pin-pic">
+                  <img src="assets/img/img.png" alt="Grid 1" class="ignore-srcset">
+                  <a href="post-show.html" class="overlay">
+                    <div class="pin-bottom">
+                      <button class="btn btn-icon-custom btn-gray-darker btn-icon-left btn-sm">
+                        <i>45</i>
+                        <span>VOTE</span>
+                      </button>
                     </div>
-                    <div class="gallery-cell" data-responsive-bg-img="{ 
-                          &quot;vw-phone&quot;: &quot;assets/img/img.png&quot;,
-                          &quot;vw-tablet&quot;: &quot;assets/img/img.png&quot;,
-                          &quot;vw-desktop&quot;: &quot;assets/img/img.png&quot;,
-                          &quot;vw-lg-desktop&quot;: &quot;assets/img/img.png&quot;
-                        }">
-                    </div>
-                  </div>
-                </div>
-                <div class="p-14">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt inventore ad consectetur expedita repudiandae. Suscipit, iste officiis eaque voluptatibus harum odio consequuntur cupiditate reiciendis autem animi iusto voluptatum eius nemo.</p>
-                  <a href="#">Visit website <i class="icon-arrow-right"></i></a>
+                  </a>
                 </div>
               </div>
-              <div class="panel-footer"></div>
             </div>
-          </article>
-          <aside class="col-sm-4 pl-70-sm">
-            <div class="mb-42">
-              <div class="info-block">
-                <h4>Category</h4>
-                <strong>Building community</strong>
-              </div>
-              <div class="info-block">
-                <h4>Industry</h4>
-                <strong>Fast-food</strong>
-              </div>
-              <div class="info-block">
-                <h4>Location</h4>
-                <strong>London, UK</strong>
-              </div>
-              <div class="info-block">
-                <button class="btn btn-icon-custom btn-gray-darker btn-icon-left">
-                  <i>45</i>
-                  <span>VOTE</span>
-                </button>
-              </div>
-            </div>
-            <div class="normalize-text">
-              <h6 class="uppercase">Tags</h6>
-              <div class="separator separator-gray-light separator-full-width"></div>
-            </div>
-            <div class="mb-42">
-              <div class="info block">
-                <nav class="mb-ch-7">
-                  <a href="#" class="btn btn-outline btn-sm btn-gray-light">Tag</a>
-                  <a href="#" class="btn btn-outline btn-sm btn-gray-light">Tag large</a>
-                  <a href="#" class="btn btn-outline btn-sm btn-gray-light">Category</a>
-                  <a href="#" class="btn btn-outline btn-sm btn-gray-light">Industry</a>
-                  <a href="#" class="btn btn-outline btn-sm btn-gray-light">Fastf-ood Tag</a>
-                  <a href="#" class="btn btn-outline btn-sm btn-gray-light">Tag tag tag</a>
-                  <a href="#" class="btn btn-outline btn-sm btn-gray-light">Tagcloud</a>
-                  <a href="#" class="btn btn-outline btn-sm btn-gray-light">Tag</a>
-                </nav>
-              </div>
-            </div>
-            <div class="normalize-text">
-              <h6 class="uppercase">Share this</h6>
-              <div class="separator separator-gray-light separator-full-width"></div>
-              <div class="input-group">
-                <span class="input-group-addon">URL</span>
-                <input type="text" class="form-control" value="http://posturl.com" aria-describedby="posturl" onclick="this.select()">
-              </div>
-              <nav class="pv-14 lead-ch text-gray">
-                <a href="#" class="flaticon-social122"></a>
-                <a href="#" class="flaticon-social136"></a>
-              </nav>
-            </div>
-          </aside>
+          </div>
         </div>
       </section>
     </main>

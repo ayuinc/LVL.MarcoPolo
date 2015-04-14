@@ -3169,7 +3169,7 @@ a.label:hover, a.label:focus {
   -ms-flex-direction: row;
 }
 
-.flex-row-ch > div, .flex-row-ch > section, .flex-row-ch > header, .flex-row-ch > footer, .flex-row-ch > main, .flex-row-ch > aside,
+.flex-row-ch > div, .flex-row-ch > section, .flex-row-ch > header, .flex-row-ch > footer, .flex-row-ch > main, .flex-row-ch > aside, .flex-row-ch > article,
 .flex-row-ch > a, .flex-row-ch > span, .flex-row-ch > li, .flex-row-ch > p, .flex-row-ch > i, .flex-row-ch > em, .flex-row-ch > small, .flex-row-ch > blockquote, .flex-row-ch > pre, .flex-row-ch > code
 > h1, .flex-row-ch > h2, .flex-row-ch > h3, .flex-row-ch > h4, .flex-row-ch > h5, .flex-row-ch > h6,
 .flex-row-ch > .h1, .flex-row-ch > .h2, .flex-row-ch > .h3, .flex-row-ch > .h4, .flex-row-ch > .h5, .flex-row-ch > .h6, .flex-row-ch > .p,
@@ -3216,7 +3216,7 @@ a.label:hover, a.label:focus {
   -ms-flex-pack: center;
 }
 
-.flex-row-center-ch > div, .flex-row-center-ch > section, .flex-row-center-ch > header, .flex-row-center-ch > footer, .flex-row-center-ch > main, .flex-row-center-ch > aside,
+.flex-row-center-ch > div, .flex-row-center-ch > section, .flex-row-center-ch > header, .flex-row-center-ch > footer, .flex-row-center-ch > main, .flex-row-center-ch > aside, .flex-row-center-ch > article,
 .flex-row-center-ch > a, .flex-row-center-ch > span, .flex-row-center-ch > li, .flex-row-center-ch > p, .flex-row-center-ch > i, .flex-row-center-ch > em, .flex-row-center-ch > small, .flex-row-center-ch > blockquote, .flex-row-center-ch > pre, .flex-row-center-ch > code
 > h1, .flex-row-center-ch > h2, .flex-row-center-ch > h3, .flex-row-center-ch > h4, .flex-row-center-ch > h5, .flex-row-center-ch > h6,
 .flex-row-center-ch > .h1, .flex-row-center-ch > .h2, .flex-row-center-ch > .h3, .flex-row-center-ch > .h4, .flex-row-center-ch > .h5, .flex-row-center-ch > .h6, .flex-row-center-ch > .p,
@@ -3272,7 +3272,7 @@ a.label:hover, a.label:focus {
   -ms-flex-pack: end;
 }
 
-.flex-row-end-ch > div, .flex-row-end-ch > section, .flex-row-end-ch > header, .flex-row-end-ch > footer, .flex-row-end-ch > main, .flex-row-end-ch > aside,
+.flex-row-end-ch > div, .flex-row-end-ch > section, .flex-row-end-ch > header, .flex-row-end-ch > footer, .flex-row-end-ch > main, .flex-row-end-ch > aside, .flex-row-end-ch > article,
 .flex-row-end-ch > a, .flex-row-end-ch > span, .flex-row-end-ch > li, .flex-row-end-ch > p, .flex-row-end-ch > i, .flex-row-end-ch > em, .flex-row-end-ch > small, .flex-row-end-ch > blockquote, .flex-row-end-ch > pre, .flex-row-end-ch > code
 > h1, .flex-row-end-ch > h2, .flex-row-end-ch > h3, .flex-row-end-ch > h4, .flex-row-end-ch > h5, .flex-row-end-ch > h6,
 .flex-row-end-ch > .h1, .flex-row-end-ch > .h2, .flex-row-end-ch > .h3, .flex-row-end-ch > .h4, .flex-row-end-ch > .h5, .flex-row-end-ch > .h6, .flex-row-end-ch > .p,
@@ -3328,7 +3328,7 @@ a.label:hover, a.label:focus {
   -ms-flex-pack: justify;
 }
 
-.flex-row-space-between-ch > div, .flex-row-space-between-ch > section, .flex-row-space-between-ch > header, .flex-row-space-between-ch > footer, .flex-row-space-between-ch > main, .flex-row-space-between-ch > aside,
+.flex-row-space-between-ch > div, .flex-row-space-between-ch > section, .flex-row-space-between-ch > header, .flex-row-space-between-ch > footer, .flex-row-space-between-ch > main, .flex-row-space-between-ch > aside, .flex-row-space-between-ch > article,
 .flex-row-space-between-ch > a, .flex-row-space-between-ch > span, .flex-row-space-between-ch > li, .flex-row-space-between-ch > p, .flex-row-space-between-ch > i, .flex-row-space-between-ch > em, .flex-row-space-between-ch > small, .flex-row-space-between-ch > blockquote, .flex-row-space-between-ch > pre, .flex-row-space-between-ch > code
 > h1, .flex-row-space-between-ch > h2, .flex-row-space-between-ch > h3, .flex-row-space-between-ch > h4, .flex-row-space-between-ch > h5, .flex-row-space-between-ch > h6,
 .flex-row-space-between-ch > .h1, .flex-row-space-between-ch > .h2, .flex-row-space-between-ch > .h3, .flex-row-space-between-ch > .h4, .flex-row-space-between-ch > .h5, .flex-row-space-between-ch > .h6, .flex-row-space-between-ch > .p,
@@ -3384,7 +3384,7 @@ a.label:hover, a.label:focus {
   -ms-flex-pack: center;
 }
 
-.flex-row-space-around-ch > div, .flex-row-space-around-ch > section, .flex-row-space-around-ch > header, .flex-row-space-around-ch > footer, .flex-row-space-around-ch > main, .flex-row-space-around-ch > aside,
+.flex-row-space-around-ch > div, .flex-row-space-around-ch > section, .flex-row-space-around-ch > header, .flex-row-space-around-ch > footer, .flex-row-space-around-ch > main, .flex-row-space-around-ch > aside, .flex-row-space-around-ch > article,
 .flex-row-space-around-ch > a, .flex-row-space-around-ch > span, .flex-row-space-around-ch > li, .flex-row-space-around-ch > p, .flex-row-space-around-ch > i, .flex-row-space-around-ch > em, .flex-row-space-around-ch > small, .flex-row-space-around-ch > blockquote, .flex-row-space-around-ch > pre, .flex-row-space-around-ch > code
 > h1, .flex-row-space-around-ch > h2, .flex-row-space-around-ch > h3, .flex-row-space-around-ch > h4, .flex-row-space-around-ch > h5, .flex-row-space-around-ch > h6,
 .flex-row-space-around-ch > .h1, .flex-row-space-around-ch > .h2, .flex-row-space-around-ch > .h3, .flex-row-space-around-ch > .h4, .flex-row-space-around-ch > .h5, .flex-row-space-around-ch > .h6, .flex-row-space-around-ch > .p,
@@ -3431,7 +3431,7 @@ a.label:hover, a.label:focus {
   -ms-flex-direction: column;
 }
 
-.flex-column-ch > div, .flex-column-ch > section, .flex-column-ch > header, .flex-column-ch > footer, .flex-column-ch > main, .flex-column-ch > aside,
+.flex-column-ch > div, .flex-column-ch > section, .flex-column-ch > header, .flex-column-ch > footer, .flex-column-ch > main, .flex-column-ch > aside, .flex-column-ch > article,
 .flex-column-ch > a, .flex-column-ch > span, .flex-column-ch > li, .flex-column-ch > p, .flex-column-ch > i, .flex-column-ch > em, .flex-column-ch > small, .flex-column-ch > blockquote, .flex-column-ch > pre, .flex-column-ch > code
 > h1, .flex-column-ch > h2, .flex-column-ch > h3, .flex-column-ch > h4, .flex-column-ch > h5, .flex-column-ch > h6,
 .flex-column-ch > .h1, .flex-column-ch > .h2, .flex-column-ch > .h3, .flex-column-ch > .h4, .flex-column-ch > .h5, .flex-column-ch > .h6, .flex-column-ch > .p,
@@ -3478,7 +3478,7 @@ a.label:hover, a.label:focus {
   -ms-flex-pack: center;
 }
 
-.flex-column-center-ch > div, .flex-column-center-ch > section, .flex-column-center-ch > header, .flex-column-center-ch > footer, .flex-column-center-ch > main, .flex-column-center-ch > aside,
+.flex-column-center-ch > div, .flex-column-center-ch > section, .flex-column-center-ch > header, .flex-column-center-ch > footer, .flex-column-center-ch > main, .flex-column-center-ch > aside, .flex-column-center-ch > article,
 .flex-column-center-ch > a, .flex-column-center-ch > span, .flex-column-center-ch > li, .flex-column-center-ch > p, .flex-column-center-ch > i, .flex-column-center-ch > em, .flex-column-center-ch > small, .flex-column-center-ch > blockquote, .flex-column-center-ch > pre, .flex-column-center-ch > code
 > h1, .flex-column-center-ch > h2, .flex-column-center-ch > h3, .flex-column-center-ch > h4, .flex-column-center-ch > h5, .flex-column-center-ch > h6,
 .flex-column-center-ch > .h1, .flex-column-center-ch > .h2, .flex-column-center-ch > .h3, .flex-column-center-ch > .h4, .flex-column-center-ch > .h5, .flex-column-center-ch > .h6, .flex-column-center-ch > .p,
@@ -3534,7 +3534,7 @@ a.label:hover, a.label:focus {
   -ms-flex-pack: end;
 }
 
-.flex-column-end-ch > div, .flex-column-end-ch > section, .flex-column-end-ch > header, .flex-column-end-ch > footer, .flex-column-end-ch > main, .flex-column-end-ch > aside,
+.flex-column-end-ch > div, .flex-column-end-ch > section, .flex-column-end-ch > header, .flex-column-end-ch > footer, .flex-column-end-ch > main, .flex-column-end-ch > aside, .flex-column-end-ch > article,
 .flex-column-end-ch > a, .flex-column-end-ch > span, .flex-column-end-ch > li, .flex-column-end-ch > p, .flex-column-end-ch > i, .flex-column-end-ch > em, .flex-column-end-ch > small, .flex-column-end-ch > blockquote, .flex-column-end-ch > pre, .flex-column-end-ch > code
 > h1, .flex-column-end-ch > h2, .flex-column-end-ch > h3, .flex-column-end-ch > h4, .flex-column-end-ch > h5, .flex-column-end-ch > h6,
 .flex-column-end-ch > .h1, .flex-column-end-ch > .h2, .flex-column-end-ch > .h3, .flex-column-end-ch > .h4, .flex-column-end-ch > .h5, .flex-column-end-ch > .h6, .flex-column-end-ch > .p,
@@ -3590,7 +3590,7 @@ a.label:hover, a.label:focus {
   -ms-flex-pack: justify;
 }
 
-.flex-column-space-between-ch > div, .flex-column-space-between-ch > section, .flex-column-space-between-ch > header, .flex-column-space-between-ch > footer, .flex-column-space-between-ch > main, .flex-column-space-between-ch > aside,
+.flex-column-space-between-ch > div, .flex-column-space-between-ch > section, .flex-column-space-between-ch > header, .flex-column-space-between-ch > footer, .flex-column-space-between-ch > main, .flex-column-space-between-ch > aside, .flex-column-space-between-ch > article,
 .flex-column-space-between-ch > a, .flex-column-space-between-ch > span, .flex-column-space-between-ch > li, .flex-column-space-between-ch > p, .flex-column-space-between-ch > i, .flex-column-space-between-ch > em, .flex-column-space-between-ch > small, .flex-column-space-between-ch > blockquote, .flex-column-space-between-ch > pre, .flex-column-space-between-ch > code
 > h1, .flex-column-space-between-ch > h2, .flex-column-space-between-ch > h3, .flex-column-space-between-ch > h4, .flex-column-space-between-ch > h5, .flex-column-space-between-ch > h6,
 .flex-column-space-between-ch > .h1, .flex-column-space-between-ch > .h2, .flex-column-space-between-ch > .h3, .flex-column-space-between-ch > .h4, .flex-column-space-between-ch > .h5, .flex-column-space-between-ch > .h6, .flex-column-space-between-ch > .p,
@@ -3646,7 +3646,7 @@ a.label:hover, a.label:focus {
   -ms-flex-pack: center;
 }
 
-.flex-column-space-around-ch > div, .flex-column-space-around-ch > section, .flex-column-space-around-ch > header, .flex-column-space-around-ch > footer, .flex-column-space-around-ch > main, .flex-column-space-around-ch > aside,
+.flex-column-space-around-ch > div, .flex-column-space-around-ch > section, .flex-column-space-around-ch > header, .flex-column-space-around-ch > footer, .flex-column-space-around-ch > main, .flex-column-space-around-ch > aside, .flex-column-space-around-ch > article,
 .flex-column-space-around-ch > a, .flex-column-space-around-ch > span, .flex-column-space-around-ch > li, .flex-column-space-around-ch > p, .flex-column-space-around-ch > i, .flex-column-space-around-ch > em, .flex-column-space-around-ch > small, .flex-column-space-around-ch > blockquote, .flex-column-space-around-ch > pre, .flex-column-space-around-ch > code
 > h1, .flex-column-space-around-ch > h2, .flex-column-space-around-ch > h3, .flex-column-space-around-ch > h4, .flex-column-space-around-ch > h5, .flex-column-space-around-ch > h6,
 .flex-column-space-around-ch > .h1, .flex-column-space-around-ch > .h2, .flex-column-space-around-ch > .h3, .flex-column-space-around-ch > .h4, .flex-column-space-around-ch > .h5, .flex-column-space-around-ch > .h6, .flex-column-space-around-ch > .p,
@@ -3688,7 +3688,7 @@ a.label:hover, a.label:focus {
   -ms-flex-align: center;
 }
 
-.flex-align-center-ch > div, .flex-align-center-ch > section, .flex-align-center-ch > header, .flex-align-center-ch > footer, .flex-align-center-ch > main, .flex-align-center-ch > aside,
+.flex-align-center-ch > div, .flex-align-center-ch > section, .flex-align-center-ch > header, .flex-align-center-ch > footer, .flex-align-center-ch > main, .flex-align-center-ch > aside, .flex-align-center-ch > article,
 .flex-align-center-ch > a, .flex-align-center-ch > span, .flex-align-center-ch > li, .flex-align-center-ch > p, .flex-align-center-ch > i, .flex-align-center-ch > em, .flex-align-center-ch > small, .flex-align-center-ch > blockquote, .flex-align-center-ch > pre, .flex-align-center-ch > code
 > h1, .flex-align-center-ch > h2, .flex-align-center-ch > h3, .flex-align-center-ch > h4, .flex-align-center-ch > h5, .flex-align-center-ch > h6,
 .flex-align-center-ch > .h1, .flex-align-center-ch > .h2, .flex-align-center-ch > .h3, .flex-align-center-ch > .h4, .flex-align-center-ch > .h5, .flex-align-center-ch > .h6, .flex-align-center-ch > .p,
@@ -3716,7 +3716,7 @@ a.label:hover, a.label:focus {
   -ms-flex-align: end;
 }
 
-.flex-align-end-ch > div, .flex-align-end-ch > section, .flex-align-end-ch > header, .flex-align-end-ch > footer, .flex-align-end-ch > main, .flex-align-end-ch > aside,
+.flex-align-end-ch > div, .flex-align-end-ch > section, .flex-align-end-ch > header, .flex-align-end-ch > footer, .flex-align-end-ch > main, .flex-align-end-ch > aside, .flex-align-end-ch > article,
 .flex-align-end-ch > a, .flex-align-end-ch > span, .flex-align-end-ch > li, .flex-align-end-ch > p, .flex-align-end-ch > i, .flex-align-end-ch > em, .flex-align-end-ch > small, .flex-align-end-ch > blockquote, .flex-align-end-ch > pre, .flex-align-end-ch > code
 > h1, .flex-align-end-ch > h2, .flex-align-end-ch > h3, .flex-align-end-ch > h4, .flex-align-end-ch > h5, .flex-align-end-ch > h6,
 .flex-align-end-ch > .h1, .flex-align-end-ch > .h2, .flex-align-end-ch > .h3, .flex-align-end-ch > .h4, .flex-align-end-ch > .h5, .flex-align-end-ch > .h6, .flex-align-end-ch > .p,
@@ -3744,7 +3744,7 @@ a.label:hover, a.label:focus {
   -ms-flex-align: stretch;
 }
 
-.flex-align-stretch-ch > div, .flex-align-stretch-ch > section, .flex-align-stretch-ch > header, .flex-align-stretch-ch > footer, .flex-align-stretch-ch > main, .flex-align-stretch-ch > aside,
+.flex-align-stretch-ch > div, .flex-align-stretch-ch > section, .flex-align-stretch-ch > header, .flex-align-stretch-ch > footer, .flex-align-stretch-ch > main, .flex-align-stretch-ch > aside, .flex-align-stretch-ch > article,
 .flex-align-stretch-ch > a, .flex-align-stretch-ch > span, .flex-align-stretch-ch > li, .flex-align-stretch-ch > p, .flex-align-stretch-ch > i, .flex-align-stretch-ch > em, .flex-align-stretch-ch > small, .flex-align-stretch-ch > blockquote, .flex-align-stretch-ch > pre, .flex-align-stretch-ch > code
 > h1, .flex-align-stretch-ch > h2, .flex-align-stretch-ch > h3, .flex-align-stretch-ch > h4, .flex-align-stretch-ch > h5, .flex-align-stretch-ch > h6,
 .flex-align-stretch-ch > .h1, .flex-align-stretch-ch > .h2, .flex-align-stretch-ch > .h3, .flex-align-stretch-ch > .h4, .flex-align-stretch-ch > .h5, .flex-align-stretch-ch > .h6, .flex-align-stretch-ch > .p,
@@ -3778,7 +3778,7 @@ a.label:hover, a.label:focus {
     -ms-flex-direction: column;
   }
 
-  .flex-break-xs-ch > div, .flex-break-xs-ch > section, .flex-break-xs-ch > header, .flex-break-xs-ch > footer, .flex-break-xs-ch > main, .flex-break-xs-ch > aside,
+  .flex-break-xs-ch > div, .flex-break-xs-ch > section, .flex-break-xs-ch > header, .flex-break-xs-ch > footer, .flex-break-xs-ch > main, .flex-break-xs-ch > aside, .flex-break-xs-ch > article,
   .flex-break-xs-ch > a, .flex-break-xs-ch > span, .flex-break-xs-ch > li, .flex-break-xs-ch > p, .flex-break-xs-ch > i, .flex-break-xs-ch > em, .flex-break-xs-ch > small, .flex-break-xs-ch > blockquote, .flex-break-xs-ch > pre, .flex-break-xs-ch > code
   > h1, .flex-break-xs-ch > h2, .flex-break-xs-ch > h3, .flex-break-xs-ch > h4, .flex-break-xs-ch > h5, .flex-break-xs-ch > h6,
   .flex-break-xs-ch > .h1, .flex-break-xs-ch > .h2, .flex-break-xs-ch > .h3, .flex-break-xs-ch > .h4, .flex-break-xs-ch > .h5, .flex-break-xs-ch > .h6, .flex-break-xs-ch > .p,
@@ -3817,7 +3817,7 @@ a.label:hover, a.label:focus {
     -ms-flex-direction: column;
   }
 
-  .flex-break-sm-ch > div, .flex-break-sm-ch > section, .flex-break-sm-ch > header, .flex-break-sm-ch > footer, .flex-break-sm-ch > main, .flex-break-sm-ch > aside,
+  .flex-break-sm-ch > div, .flex-break-sm-ch > section, .flex-break-sm-ch > header, .flex-break-sm-ch > footer, .flex-break-sm-ch > main, .flex-break-sm-ch > aside, .flex-break-sm-ch > article,
   .flex-break-sm-ch > a, .flex-break-sm-ch > span, .flex-break-sm-ch > li, .flex-break-sm-ch > p, .flex-break-sm-ch > i, .flex-break-sm-ch > em, .flex-break-sm-ch > small, .flex-break-sm-ch > blockquote, .flex-break-sm-ch > pre, .flex-break-sm-ch > code
   > h1, .flex-break-sm-ch > h2, .flex-break-sm-ch > h3, .flex-break-sm-ch > h4, .flex-break-sm-ch > h5, .flex-break-sm-ch > h6,
   .flex-break-sm-ch > .h1, .flex-break-sm-ch > .h2, .flex-break-sm-ch > .h3, .flex-break-sm-ch > .h4, .flex-break-sm-ch > .h5, .flex-break-sm-ch > .h6, .flex-break-sm-ch > .p,
@@ -3856,7 +3856,7 @@ a.label:hover, a.label:focus {
     -ms-flex-direction: column;
   }
 
-  .flex-break-md-ch > div, .flex-break-md-ch > section, .flex-break-md-ch > header, .flex-break-md-ch > footer, .flex-break-md-ch > main, .flex-break-md-ch > aside,
+  .flex-break-md-ch > div, .flex-break-md-ch > section, .flex-break-md-ch > header, .flex-break-md-ch > footer, .flex-break-md-ch > main, .flex-break-md-ch > aside, .flex-break-md-ch > article,
   .flex-break-md-ch > a, .flex-break-md-ch > span, .flex-break-md-ch > li, .flex-break-md-ch > p, .flex-break-md-ch > i, .flex-break-md-ch > em, .flex-break-md-ch > small, .flex-break-md-ch > blockquote, .flex-break-md-ch > pre, .flex-break-md-ch > code
   > h1, .flex-break-md-ch > h2, .flex-break-md-ch > h3, .flex-break-md-ch > h4, .flex-break-md-ch > h5, .flex-break-md-ch > h6,
   .flex-break-md-ch > .h1, .flex-break-md-ch > .h2, .flex-break-md-ch > .h3, .flex-break-md-ch > .h4, .flex-break-md-ch > .h5, .flex-break-md-ch > .h6, .flex-break-md-ch > .p,
@@ -3895,7 +3895,7 @@ a.label:hover, a.label:focus {
     -ms-flex-direction: column;
   }
 
-  .flex-break-lg-ch > div, .flex-break-lg-ch > section, .flex-break-lg-ch > header, .flex-break-lg-ch > footer, .flex-break-lg-ch > main, .flex-break-lg-ch > aside,
+  .flex-break-lg-ch > div, .flex-break-lg-ch > section, .flex-break-lg-ch > header, .flex-break-lg-ch > footer, .flex-break-lg-ch > main, .flex-break-lg-ch > aside, .flex-break-lg-ch > article,
   .flex-break-lg-ch > a, .flex-break-lg-ch > span, .flex-break-lg-ch > li, .flex-break-lg-ch > p, .flex-break-lg-ch > i, .flex-break-lg-ch > em, .flex-break-lg-ch > small, .flex-break-lg-ch > blockquote, .flex-break-lg-ch > pre, .flex-break-lg-ch > code
   > h1, .flex-break-lg-ch > h2, .flex-break-lg-ch > h3, .flex-break-lg-ch > h4, .flex-break-lg-ch > h5, .flex-break-lg-ch > h6,
   .flex-break-lg-ch > .h1, .flex-break-lg-ch > .h2, .flex-break-lg-ch > .h3, .flex-break-lg-ch > .h4, .flex-break-lg-ch > .h5, .flex-break-lg-ch > .h6, .flex-break-lg-ch > .p,
@@ -5403,8 +5403,13 @@ body::-webkit-scrollbar {
 }
 
 .site-content {
-  padding: 105px 0;
+  padding-top: 105px;
   min-height: 100vh;
+}
+@media only screen and (max-width: 992px) {
+  .site-content {
+    padding-top: 180px;
+  }
 }
 
 .hero-unit {
@@ -5486,6 +5491,11 @@ body::-webkit-scrollbar {
   height: 180px;
   overflow: hidden;
   position: relative;
+}
+@media only screen and (max-width: 992px) {
+  .pin .pin-center .pin-pic {
+    height: 270px;
+  }
 }
 .pin .pin-center .pin-pic img {
   width: 100%;
@@ -5620,7 +5630,7 @@ body::-webkit-scrollbar {
   animation-duration: 2s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+1) {
-  width: 99.22091%;
+  width: 94.7547%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+1) span {
   -webkit-animation-delay: 1s;
@@ -5628,7 +5638,7 @@ body::-webkit-scrollbar {
   animation-delay: 1s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+2) {
-  width: 46.8371%;
+  width: 22.37822%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+2) span {
   -webkit-animation-delay: 2s;
@@ -5636,7 +5646,7 @@ body::-webkit-scrollbar {
   animation-delay: 2s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+3) {
-  width: 52.81316%;
+  width: 86.23116%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+3) span {
   -webkit-animation-delay: 3s;
@@ -5644,7 +5654,7 @@ body::-webkit-scrollbar {
   animation-delay: 3s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+4) {
-  width: 16.29524%;
+  width: 94.75661%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+4) span {
   -webkit-animation-delay: 4s;
@@ -5652,7 +5662,7 @@ body::-webkit-scrollbar {
   animation-delay: 4s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+5) {
-  width: 81.34704%;
+  width: 58.58594%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+5) span {
   -webkit-animation-delay: 5s;
@@ -5714,33 +5724,15 @@ body::-webkit-scrollbar {
   -ms-transform: translateY(-100%);
   -o-transform: translateY(-100%);
   transform: translateY(-100%);
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  box-orient: vertical;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-direction: column;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  box-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
   padding: 70px 0;
   background-color: #3E3F40;
   z-index: 500;
   overflow: hidden;
+}
+@media only screen and (max-width: 992px) {
+  .filters-wrapper {
+    padding-top: 180px;
+  }
 }
 .filters-wrapper .filters-close {
   position: absolute;
@@ -5749,6 +5741,12 @@ body::-webkit-scrollbar {
   left: 0;
   width: 100%;
   text-align: right;
+}
+@media only screen and (max-width: 992px) {
+  .filters-wrapper .filters-close {
+    position: absolute;
+    top: 180px;
+  }
 }
 .filters-wrapper .filters-close a {
   font-size: 36px;
@@ -5765,6 +5763,12 @@ body::-webkit-scrollbar {
   -moz-transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
   transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
   width: 100%;
+}
+@media only screen and (max-width: 992px) {
+  .filters-wrapper [class*="filter-module-"] {
+    position: absolute;
+    top: 250px;
+  }
 }
 .filters-wrapper [class*="filter-module-"].on-screen {
   -webkit-transform: translateX(0);
@@ -5799,6 +5803,13 @@ body::-webkit-scrollbar {
   color: white;
   text-align: right;
   padding-top: 21px;
+  margin-bottom: 35px;
+}
+@media only screen and (max-width: 992px) {
+  .filters-wrapper .filter-title,
+  .filters-wrapper .filter-description {
+    text-align: center;
+  }
 }
 .filters-wrapper .filter-categories-list li {
   padding: 0px;
@@ -5837,6 +5848,12 @@ body::-webkit-scrollbar {
   top: 0;
   bottom: 0;
   height: 100%;
+}
+@media only screen and (max-width: 992px) {
+  .gallery-wrapper .gallery-control-left,
+  .gallery-wrapper .gallery-control-right {
+    display: none;
+  }
 }
 .gallery-wrapper .gallery-control-left {
   left: 0;
@@ -13009,6 +13026,11 @@ input[type="submit"].btn.btn-white.btn-icon-custom.btn-lg i,
   height: 40px;
   font-size: 24px;
 }
+@media only screen and (max-width: 992px) {
+  .search-form input {
+    font-size: 14px;
+  }
+}
 .search-form button {
   line-height: 0;
   font-size: 18px;
@@ -18407,6 +18429,11 @@ header.header .h1, header.header .h2, header.header .h3, header.header .h4, head
 header.header p, header.header .p, header.header span, header.header em, header.header strong, header.header label, header.header a, header.header i, header.header ul, header.header ol, header.header li {
   margin: 0;
 }
+@media only screen and (max-width: 992px) {
+  header.header {
+    display: none;
+  }
+}
 header.header .container .row,
 header.header .container-sm .row,
 header.header .container-fluid .row {
@@ -18503,7 +18530,8 @@ header.header .right {
   align-items: flex-end;
   -ms-flex-align: end;
 }
-header.header .logo {
+
+.logo, header.header-mobile .logo {
   display: inline-block;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -18511,7 +18539,7 @@ header.header .logo {
   width: 160px;
   background-image: url(../img/logo_LVL.MarcoPolo.png);
 }
-header.header .logo img {
+.logo img, header.header-mobile .logo img {
   width: 88px;
   height: auto;
 }
@@ -18559,6 +18587,12 @@ header.header .logo img {
   width: 33.33%;
   float: left;
 }
+@media only screen and (max-width: 768px) {
+  .filter-triggers li {
+    height: 42px;
+    font-size: 12px;
+  }
+}
 .filter-triggers li:hover {
   cursor: pointer;
   background-color: #3E3F40;
@@ -18588,6 +18622,32 @@ header.header .logo img {
   font-size: 9px;
 }
 
+header.header-mobile {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  background-color: #F0F0F0;
+  z-index: 1000;
+  display: none;
+  width: 100%;
+}
+@media only screen and (max-width: 992px) {
+  header.header-mobile {
+    display: block;
+  }
+}
+header.header-mobile .top,
+header.header-mobile .center,
+header.header-mobile .bottom {
+  padding-top: 14px;
+}
+header.header-mobile .top {
+  text-align: center;
+}
+
 .toolbar {
   display: -webkit-box;
   display: -moz-box;
@@ -18614,6 +18674,11 @@ header.header .logo img {
   -ms-flex-pack: justify;
   border-bottom: 1px solid #b5b6b7;
   padding: 3px 0;
+}
+@media only screen and (max-width: 992px) {
+  .toolbar {
+    display: none;
+  }
 }
 .toolbar .toolbar-results small,
 .toolbar .toolbar-results a {

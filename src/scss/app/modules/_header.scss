@@ -9,6 +9,9 @@ header.header {
 	background-color: white;
 	z-index: 1000;
 	width: 100%;
+	@media #{$md-down} {
+		display: none;
+	}
 	.container,
 	.container-sm,
 	.container-fluid {
@@ -18,7 +21,6 @@ header.header {
 	}
 	.left,
 	.right {
-		// width: 50%;
 	}
 	.left,
 	.center {
@@ -37,21 +39,20 @@ header.header {
 	}
 	.right {
 		text-align: right;
-		// padding: 8px 0;
 		@include flex-column-center;
 		@include flex-align-end;
 	}
-	.logo {
-		display: inline-block;
-		background-repeat: no-repeat;
-  	background-size: 100%;
-		height: 40px;
-		width: 160px;
-		background-image: url(../img/logo_LVL.MarcoPolo.png); 
-		img {
-			width: 88px;
-			height: auto;
-		}
+}
+.logo {
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 40px;
+	width: 160px;
+	background-image: url(../img/logo_LVL.MarcoPolo.png); 
+	img {
+		width: 88px;
+		height: auto;
 	}
 }
 
@@ -66,6 +67,10 @@ header.header {
 		text-transform: uppercase;
 		width: 33.33%;
 		float: left;
+		@media #{$sm-down} {
+			height: $header-height-control - 28;
+			font-size: 12px;
+		}
 		&:hover {
 			cursor: pointer;
 			background-color: $gray-darker;
@@ -99,54 +104,39 @@ header.header {
 	}
 }
 
-
-// Uncomment for fixed-header on scroll funcionality
-// header.header-fixed {
-// 	@extend header.header;
-// 	@include box-shadow(0 1px 1px 0px rgba($gray-light, 0.3));
-// 	@include position(fixed, 0 0 null 0);
-// 	@include transform(translateY(-100%));
-// 	@include transition(all 0.2s ease-in-out);
-// 	z-index: 1000;
-// 	-webkit-backface-visibility: hidden; 
-// 	background-color: white;
-// 	min-height: $header-height-control;
-// 	.left,
-// 	.center,
-// 	.right {
-// 		min-height: $header-height-control;
-// 	}
-// 	.right {
-// 		nav {
-// 			a {
-// 				color: $gray-dark;
-// 				&:hover,
-// 				&.active {
-// 					color: $gray-darker;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
-
-// .site-wrapper {
-// 	&.header-fixed {
-// 		.header-fixed {
-// 			@include transform(translateY(0));
-// 			@include transition(all 0.2s ease-in-out);
-// 			-webkit-transform: translateZ(0);
-// 		}
-// 		.header {
-// 			@include transform(translateY(-100%));
-// 			@include transition(all 0.2s ease-in-out);
-// 		}
-// 	}
-// }
+header.header-mobile {
+	@include position(absolute, 0 0 null 0);
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateZ(0);
+	background-color: $body-bg;
+	z-index: 1000;
+	display: none;
+	width: 100%;
+	@media #{$md-down} {
+		display: block;
+	}
+	.top,
+	.center,
+	.bottom {
+		padding-top: $container-fluid;
+	}
+	.top {
+		text-align: center;
+	}
+	.center {}
+	.bottom {}
+	.logo {
+		@extend .logo;
+	}
+}
 
 .toolbar {
 	@include flex-row-space-between;
 	border-bottom: 1px solid $gray-light;
 	padding: 3px 0;
+	@media #{$md-down} {
+		display: none;
+	}
 	.left {}
 	.right {}
 	.toolbar-results {

@@ -47,6 +47,9 @@ $search-form-height-control: 40px;
 	input {
 		height: $search-form-height-control;
 		font-size: $font-size-h3;
+		@media #{$md-down} {
+			font-size: $font-size-base;
+		}
 	}
 	button {
 		line-height: 0;

@@ -93,15 +93,15 @@ $pin-bg-color: white;
 			position: relative;
 			&:hover {
 				img {
-					@include transform(scale(0.1) rotate(7deg));
-					@include transition(all 0.3s $ease-in-quint);
+					@include transform(scale(1.1) rotate(1deg));
+					@include transition(all 0.3s ease-in-out);
 				}
 			}
 			@media #{$md-down} {
 				height: $pin-height-control - 80;
 			}
 			img {
-				@include transition(all 0.3s $ease-in-quint);
+				@include transition(all 0.3s ease-in-out);
 				width: 100%;
 				height: auto;
 			}

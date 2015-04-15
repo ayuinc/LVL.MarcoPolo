@@ -9,6 +9,8 @@ $video-bg-height: 490px; // Hero Unit and Videocover
 $user-card-height: 42px; // User cards
 $user-card-width: 63px;
 
+$header-mobile-height-control: (($header-height-control * 2) + 40);
+
 html,
 body {
 	background-color: $body-bg;	
@@ -24,8 +26,11 @@ body {
 }
 
 .site-content {
-	padding: ($header-height-control + ($header-height-control / 2)) 0;
+	padding-top: ($header-height-control + ($header-height-control / 2));
 	min-height: 100vh;
+	@media #{$md-down} {
+		padding-top: $header-mobile-height-control;
+	}
 }
 
 // HERO UNIT
@@ -87,6 +92,9 @@ $pin-bg-color: white;
 			height: $pin-height-control - 170;
 			overflow: hidden;
 			position: relative;
+			@media #{$md-down} {
+				height: $pin-height-control - 80;
+			}
 			img {
 				width: 100%;
 				height: auto;
@@ -241,15 +249,22 @@ $pin-bg-color: white;
 	@include position(absolute, 0 0 0 0);
 	@include transition(all 0.2s $ease-out-quint);
 	@include transform(translateY(-100%));
-	@include flex-column-center;
+	// @include flex-column-center;
 	padding: $header-height-control 0;
 	background-color: $gray-darker;
 	z-index: 500;
 	overflow: hidden;
+	@media #{$md-down} {
+		// display: block;
+		padding-top: $header-mobile-height-control;
+	}
 	.filters-close {
 		@include position(absolute, ($header-height-control + $container-fluid) 0 null 0);
 		width: 100%;
 		text-align: right;
+		@media #{$md-down} {
+			@include position(absolute, ($header-mobile-height-control) null null null);
+		}
 		a {
 			font-size: $font-size-h1;
 		}
@@ -260,6 +275,9 @@ $pin-bg-color: white;
 		@include transition(all 0.2s $ease-out-quint);
 		// opacity: 0;
 		width: 100%;
+		@media #{$md-down} {
+			@include position(absolute, ($header-mobile-height-control + 70) null null null);
+		}
 		&.on-screen {
 			@include transform(translateX(0));
 			@include transition(all 0.2s $ease-out-quint);
@@ -289,6 +307,13 @@ $pin-bg-color: white;
 		color: white;
 		text-align: right;
 		padding-top: 21px;
+		margin-bottom: 35px;
+	}
+	@media #{$md-down} {
+		.filter-title,
+		.filter-description {
+			text-align: center;
+		}
 	}
 	// .filters-submit {
 	// 	@include position(absolute, null 0 ($header-height-control * 2) 0);
@@ -335,6 +360,9 @@ $gallery-cell-height-control: 490px;
 		top: 0;
 		bottom: 0;
 		height: 100%;
+		@media #{$md-down} {
+			display: none;
+		}
 	}
 	.gallery-control-left {
 		left: 0;

@@ -13,9 +13,9 @@
 
 <input type="hidden" id="infinite_scroll_xid" value="{XID_HASH}">
 
-
-{exp:channel:entries channel="project" limit="4" sort="asc" orderby="title" paginate="bottom" dynamic="no" parse="inward"}
 <div class="row grid-list grid-list-4 grid-list-3-sm grid-list-1-xs pins-grid">
+{exp:channel:entries channel="project" limit="4" sort="asc" orderby="title" paginate="bottom" dynamic="no" parse="inward"}
+
 <div class="grid-list-item">
   <div class="pin">
     <div class="pin-top">
@@ -52,8 +52,9 @@ Loading…
 		{if next_page}<a href="{auto_path}" class="next_chunk_link">More</a>{/if}
 	{/exp:infinite_scroll:next_chunk_link}
 {/paginate}
-</div>
+
 {/exp:channel:entries}
+</div>
 
 {infinite_scroll_container_bottom}
 </div><!-- End of #ajax_container -->

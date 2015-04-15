@@ -37,6 +37,7 @@ $(document).ready ->
 
 	$('.filter-triggers a').click((e)->
 		e.preventDefault()
+		lockBody()
 		$('.filters-wrapper [class*=filter-module-]').removeClass('on-screen')
 		idRef = $(this).attr('href')
 		console.log idRef

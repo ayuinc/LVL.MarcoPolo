@@ -48,6 +48,7 @@
     $('.filter-triggers a').click(function(e) {
       var idRef;
       e.preventDefault();
+      lockBody();
       $('.filters-wrapper [class*=filter-module-]').removeClass('on-screen');
       idRef = $(this).attr('href');
       console.log(idRef);

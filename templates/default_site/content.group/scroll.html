@@ -1,7 +1,7 @@
          
 {exp:infinite_scroll:wrapper 
 	ajax_container="ajax_container" 
-	embed_template_url="{homepage}/content/scroll" 
+	embed_template_url="{site_url}/content/scroll" 
 	xid_element_id="infinite_scroll_xid" 
 	process_indicator="process_indicator" 
 	next_chunk_link="next_chunk_link" 
@@ -14,9 +14,8 @@
 
 <input type="hidden" id="infinite_scroll_xid" value="4d7e4b418d4d0f5298f00a4a8f540fd4975e17a2">
 
-
 {exp:channel:entries channel="project" limit="4" sort="asc" orderby="title" paginate="bottom" dynamic="no" parse="inward"}
-<div class="row grid-list grid-list-4 grid-list-3-sm grid-list-1-xs pins-grid">
+
 <div class="grid-list-item">
   <div class="pin">
     <div class="pin-top">
@@ -54,9 +53,7 @@ Loading…
 	{/exp:infinite_scroll:next_chunk_link}
 {/paginate}
 
-</div>
 {/exp:channel:entries}
- 
 
 {infinite_scroll_container_bottom}
 </div><!-- End of #ajax_container -->

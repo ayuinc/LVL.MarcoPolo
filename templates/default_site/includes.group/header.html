@@ -12,14 +12,15 @@
         </ul>
       </div>
       <div class="right col-sm-3">
-        <form action="" class="search-form">
-          <div class="input-group">
-            <input type="search" class="form-control" autofocus>
-            <span class="input-group-btn">
-              <button class="btn btn-gray-darker" type="button"><i class="icon-magnifier"></i></button>
-            </span>
-          </div>
-        </form>
+				<form action="{path='content/resultados'}/" method="post">
+					<div class="input-group">
+				    <input type="hidden" name="csrf_token" value="{csrf_token}" /> <!-- Important! -->
+	          <input type="search" name="keywords" class="form-control" id="keywords" value="Buscar" autofocus>
+	          <span class="input-group-btn">
+	            <button class="btn btn-gray-darker" type="button"><i class="icon-magnifier"></i></button>
+	          </span>			    
+					</div>
+				</form>
       </div>
     </div>
   </div>
@@ -30,14 +31,15 @@
       <a href="{site_url}" class="logo"></a>
     </div>
     <div class="center">
-      <form action="" class="search-form">
-        <div class="input-group">
-          <input type="search" class="form-control" autofocus value="Category, Industry, Location">
+			<form action="{path='content/resultados'}/" method="post">
+				<div class="input-group">
+			    <input type="hidden" name="csrf_token" value="{csrf_token}" /> <!-- Important! -->
+          <input type="search" name="keywords" class="form-control" id="keywords" value="Buscar" autofocus>
           <span class="input-group-btn">
             <button class="btn btn-gray-darker" type="button"><i class="icon-magnifier"></i></button>
-          </span>
-        </div>
-      </form>
+          </span>			    
+				</div>
+			</form>
     </div>
     <div class="bottom">
       <ul class="filter-triggers">

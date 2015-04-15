@@ -70,6 +70,18 @@ $pin-bg-color: white;
 	border-radius: $border-radius-base;
 	background-color: $pin-bg-color;
 	position: relative;
+	&:hover {
+		.pin-title {
+			@include transition(color 0.3s ease-in-out);
+			color: $gray;
+		}
+		.pin-pic {
+			img {
+				@include transform(scale(1.1) rotate(1deg));
+				@include transition(all 0.3s ease-in-out);
+			}
+		}
+	}
 	.pin-top,
 	.pin-center {
 		background-color: $pin-bg-color;
@@ -91,12 +103,6 @@ $pin-bg-color: white;
 			height: $pin-height-control - 170;
 			overflow: hidden;
 			position: relative;
-			&:hover {
-				img {
-					@include transform(scale(1.1) rotate(1deg));
-					@include transition(all 0.3s ease-in-out);
-				}
-			}
 			@media #{$md-down} {
 				height: $pin-height-control - 80;
 			}
@@ -187,6 +193,7 @@ $pin-bg-color: white;
 	}
 	.pin-category {}
 	.pin-title {
+		@include transition(color 0.3s ease-in-out);
 		color: $gray-darker;
 		font-size: $font-size-h4;
 		margin: 3px 0;

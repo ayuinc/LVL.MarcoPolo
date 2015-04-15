@@ -19,7 +19,7 @@ $(document).ready ->
 	
 	# TRANSFORM ICONS INITIALIZE
 	# transformicons.add('.tcon')
-	bodyScrollController = new ScollMagic.Controller()
+	bodyScrollController = new ScrollMagic.Controller()
 
 	# SCROLL TO
 	bodyScrollController.scrollTo((newpos)->

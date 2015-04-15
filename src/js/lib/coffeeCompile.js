@@ -29,7 +29,7 @@
       window.history.pushState(pathObj, '', lastPath);
       document.location.replace($(this).data('href'));
     });
-    bodyScrollController = new ScollMagic.Controller();
+    bodyScrollController = new ScrollMagic.Controller();
     bodyScrollController.scrollTo(function(newpos) {
       TweenMax.to(window, 0.5, {
         scrollTo: {

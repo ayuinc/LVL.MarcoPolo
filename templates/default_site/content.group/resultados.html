@@ -5,7 +5,12 @@
       <section class="container">
 				{embed="includes/sort"}
         <div class="row grid-list grid-list-4 grid-list-3-sm grid-list-1-xs pins-grid">
-          {exp:super_search:results channel="project" orderby="title+desc"}
+          {exp:super_search:results 
+          	channel="project" 
+          	orderby="title+desc"
+          	category_indicator="category_id"
+						category="1+2+3+$+5+6+7+8+9+10+11+12+13+14+15"
+          }
           <div class="grid-list-item">
             <div class="pin">
               <div class="pin-top">

@@ -28,11 +28,11 @@ $(document).ready ->
 		)
 
 	lockBody = ()->
-		siteWrapper = '.site-wrapper'
-		$(siteWrapper).css({
+		body = 'body'
+		$(body).css({
 			overflow: 'hidden'
 			})
-		bodyScrollController.scrollTo(siteWrapper)
+		bodyScrollController.scrollTo(body)
 		return
 
 	$('.filter-triggers a').click((e)->

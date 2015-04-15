@@ -1,4 +1,3 @@
-<div class="grid-list-item">
 {exp:infinite_scroll:wrapper 
 	ajax_container="ajax_container" 
 	embed_template_url="{homepage}/content/scroll" 
@@ -16,7 +15,7 @@
 
 
 {exp:channel:entries channel="project" limit="4" sort="asc" orderby="title" paginate="bottom" dynamic="no" parse="inward"}
-
+<div class="grid-list-item">
   <div class="pin">
     <div class="pin-top">
       <small class="pin-category">{categories show_group="1"}{category_name}{/categories} in {categories show_group="3"}{category_name}{/categories}</small>
@@ -39,7 +38,7 @@
       </div>
     </div>
   </div>
-
+</div>
 
 {if count == total_results}
 <div class="process_indicator">
@@ -59,4 +58,3 @@ Loading…
 {/infinite_scroll_container_bottom}
 
 {/exp:infinite_scroll:wrapper}
-</div>

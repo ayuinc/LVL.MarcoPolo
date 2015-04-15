@@ -36,6 +36,8 @@
                   </div>
                   <div class="gallery">
 	                  {project_imagenes}
+	                  {image:url:medium}
+	                  {/project_imagenes}
                     <div class="gallery-cell" data-responsive-bg-img="{ 
                           &quot;vw-phone&quot;: &quot;{image:url:medium}&quot;,
                           &quot;vw-tablet&quot;: &quot;{image:url:medium}&quot;,
@@ -43,7 +45,7 @@
                           &quot;vw-lg-desktop&quot;: &quot;{image:url:large}&quot;
                         }">
                     </div>
-                    {/project_imagenes}
+                    
                   </div>
                 </div>
                 <div class="p-14">
@@ -98,7 +100,7 @@
               <div class="separator separator-gray-light separator-full-width"></div>
               <div class="input-group">
                 <span class="input-group-addon">URL</span>
-                <input type="text" class="form-control" value="http://posturl.com" aria-describedby="posturl" onclick="this.select()">
+                <input type="text" class="form-control" value="{site_url}project/{url_title}" aria-describedby="posturl" onclick="this.select()">
               </div>
               <nav class="pv-14 lead-ch text-gray">
                 <a href="#" class="flaticon-social122"></a>

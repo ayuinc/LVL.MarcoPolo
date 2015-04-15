@@ -13,8 +13,11 @@
                 <em class="pin-location">Santiago de Chile, CH</em>
               </div>
               <div class="pin-center">
+	              {exp:channel:entries channel="news" limit="10"}
                 <div class="pin-pic">
-                  <img src="assets/img/img.png" alt="Grid 1" class="ignore-srcset">
+	                {project_imagenes}
+                  <img src="{image:url:small}" alt="Grid 1" class="ignore-srcset">
+                  {/project_imagenes}
                   <a href="post-show.html" class="overlay">
                     <div class="pin-bottom">
                       <button class="btn btn-icon-custom btn-gray-darker btn-icon-left btn-sm">
@@ -24,6 +27,7 @@
                     </div>
                   </a>
                 </div>
+                {/exp:channel:entries}
               </div>
             </div>
           </div>

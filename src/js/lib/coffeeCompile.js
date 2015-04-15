@@ -38,12 +38,12 @@
       });
     });
     lockBody = function() {
-      var siteWrapper;
-      siteWrapper = '.site-wrapper';
-      $(siteWrapper).css({
+      var body;
+      body = 'body';
+      $(body).css({
         overflow: 'hidden'
       });
-      bodyScrollController.scrollTo(siteWrapper);
+      bodyScrollController.scrollTo(body);
     };
     $('.filter-triggers a').click(function(e) {
       var idRef;

@@ -22,6 +22,9 @@ $(document).ready ->
 
 	$('.filter-triggers a').click((e)->
 		e.preventDefault()
+		$('body').css({
+			overflow: 'hidden'
+			})
 		$('.filters-wrapper [class*=filter-module-]').removeClass('on-screen')
 		idRef = $(this).attr('href')
 		console.log idRef
@@ -36,6 +39,9 @@ $(document).ready ->
 		e.preventDefault()
 		$('.filter-triggers li').removeClass 'active'
 		$('.site-wrapper').removeClass 'filters-on'
+		$('body').css({
+			overflow: 'auto'
+			})
 		return
 		)
 

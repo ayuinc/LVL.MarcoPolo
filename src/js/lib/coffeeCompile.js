@@ -32,6 +32,9 @@
     $('.filter-triggers a').click(function(e) {
       var idRef;
       e.preventDefault();
+      $('body').css({
+        overflow: 'hidden'
+      });
       $('.filters-wrapper [class*=filter-module-]').removeClass('on-screen');
       idRef = $(this).attr('href');
       console.log(idRef);
@@ -44,6 +47,9 @@
       e.preventDefault();
       $('.filter-triggers li').removeClass('active');
       $('.site-wrapper').removeClass('filters-on');
+      $('body').css({
+        overflow: 'auto'
+      });
     });
     $gallery = $('.gallery');
     $gallery.flickity({

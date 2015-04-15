@@ -19,12 +19,24 @@ $(document).ready ->
 	
 	# TRANSFORM ICONS INITIALIZE
 	# transformicons.add('.tcon')
+	bodyScrollController = new ScollMagic.Controller()
+
+	# SCROLL TO
+	bodyScrollController.scrollTo((newpos)->
+		TweenMax.to(window, 0.5, {scrollTo: {y: newpos}})
+		return
+		)
+
+	lockBody = ()->
+		siteWrapper = '.site-wrapper'
+		$(siteWrapper).css({
+			overflow: 'hidden'
+			})
+		bodyScrollController.scrollTo(siteWrapper)
+		return
 
 	$('.filter-triggers a').click((e)->
 		e.preventDefault()
-		$('body').css({
-			overflow: 'hidden'
-			})
 		$('.filters-wrapper [class*=filter-module-]').removeClass('on-screen')
 		idRef = $(this).attr('href')
 		console.log idRef

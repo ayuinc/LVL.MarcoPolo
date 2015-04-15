@@ -15,7 +15,7 @@
 (function() {
   'use-strict';
   $(document).ready(function() {
-    var $gallery, $galleryControlLeft, $galleryControlRight;
+    var $gallery, $galleryControlLeft, $galleryControlRight, bodyScrollController, lockBody;
     $('.disable-anchors a').click(function(e) {
       e.preventDefault();
     });
@@ -29,12 +29,25 @@
       window.history.pushState(pathObj, '', lastPath);
       document.location.replace($(this).data('href'));
     });
+    bodyScrollController = new ScollMagic.Controller();
+    bodyScrollController.scrollTo(function(newpos) {
+      TweenMax.to(window, 0.5, {
+        scrollTo: {
+          y: newpos
+        }
+      });
+    });
+    lockBody = function() {
+      var siteWrapper;
+      siteWrapper = '.site-wrapper';
+      $(siteWrapper).css({
+        overflow: 'hidden'
+      });
+      bodyScrollController.scrollTo(siteWrapper);
+    };
     $('.filter-triggers a').click(function(e) {
       var idRef;
       e.preventDefault();
-      $('body').css({
-        overflow: 'hidden'
-      });
       $('.filters-wrapper [class*=filter-module-]').removeClass('on-screen');
       idRef = $(this).attr('href');
       console.log(idRef);

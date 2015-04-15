@@ -5,8 +5,8 @@
       <section class="container">
 				{embed="includes/sort"}
         <div class="row grid-list grid-list-4 grid-list-3-sm grid-list-1-xs pins-grid">
+          {exp:channel:entries channel="project" limit="10"}
           <div class="grid-list-item">
-            {exp:channel:entries channel="project" limit="10"}
             <div class="pin">
               <div class="pin-top">
                 <small class="pin-category">{categories show_group="1"}{category_name}{/categories} in {categories show_group="3"}{category_name}{/categories}</small>
@@ -29,8 +29,8 @@
                 </div>
               </div>
             </div>
-            {/exp:channel:entries}
           </div>
+          {/exp:channel:entries}
         </div>
       </section>
     </main>

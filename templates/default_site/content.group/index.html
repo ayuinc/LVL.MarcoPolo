@@ -5,7 +5,7 @@
       <section class="container">
 				{embed="includes/sort"}
         <div class="row grid-list grid-list-4 grid-list-3-sm grid-list-1-xs pins-grid">
-          {exp:channel:entries channel="project" limit="8"}
+          {exp:channel:entries channel="project" limit="12"}
           <div class="grid-list-item">
             <div class="pin">
               <div class="pin-top">
@@ -30,9 +30,9 @@
               </div>
             </div>
           </div>
-          {paginate}
+          <!--{paginate}
 					    Page {current_page} of {total_pages} pages &nbsp; {pagination_links}
-					{/paginate}               
+					{/paginate}-->               
           {/exp:channel:entries}
         </div>
       </section>

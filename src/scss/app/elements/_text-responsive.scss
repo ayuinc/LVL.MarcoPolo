@@ -129,6 +129,16 @@ $text-elements-list:
       line-height: $line-height-sm-only;
     }
   }
+  @for $k from 1 through length($breakpoints-sufix-list) {
+    @media #{nth($media-only-list, $k)} {
+      &.unlead-#{nth($breakpoints-sufix-list, $k)} {
+        #{$text-elements-list} {
+          font-size: $font-size-base;
+          // font-size: rem($font-size-base);
+        }
+      }
+    }
+  }
 }
 
 // LEAD HEADINGS
@@ -204,6 +214,16 @@ $text-elements-list:
         font-size: #{rem(nth($font-size-list, $i) + $text-in-rems-sm-only)} ;
         line-height: $line-height-sm-only;
       }
+      @for $k from 1 through length($breakpoints-sufix-list) {
+        @media #{nth($media-only-list, $k)} {
+          &.unlead-#{nth($breakpoints-sufix-list, $k)} {
+            #{nth($headings-list, $i)} {
+              font-size: #{nth($font-size-list, $i)};
+              // font-size: #{rem(nth($font-size-list, $i))};
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -229,32 +249,22 @@ $text-elements-list:
         font-size: #{rem(nth($font-size-list, $i) + $text-in-rems-sm-only)} ;
         line-height: $line-height-sm-only;
       }
+      @for $k from 1 through length($breakpoints-sufix-list) {
+        @media #{nth($media-only-list, $k)} {
+          &.unlead-#{nth($breakpoints-sufix-list, $k)} {
+            #{nth($headings-class-list, $i)} {
+              font-size: #{nth($font-size-list, $i)};
+              // font-size: #{rem(nth($font-size-list, $i))};
+            }
+          }
+        }
+      }
     }
   }
 }
 
-// HEADINGS IN REMS
-// @for $i from 1 through length($headings-list) {
-//   #{nth($headings-list, $i)} {
-//     font-size: #{nth($font-size-list, $i)};
-//     font-size: #{rem(nth($font-size-list, $i))};
-//   }
-// }
-
-// // TEXT IN REMS
-// @for $i from 1 through length($text-elements-list) {
-//   #{nth($text-elements-list, $i)} {
-//     font-size: $font-size-base;
-//     font-size: rem($font-size-base);
-//   }
-// }
-
 // RESPONSIVE HEADINGS CLASSES
 @for $i from 1 through length($headings-class-list) {
-  // #{nth($headings-class-list, $i)} {
-  //   font-size: #{nth($font-size-list, $i)};
-  //   font-size: #{rem(nth($font-size-list, $i))};
-  // }
   @for $k from 1 through length($breakpoints-sufix-list) {
     @media #{nth($media-control-list, $k)} {
       #{nth($headings-class-list, $i)}-#{nth($breakpoints-sufix-list, $k)} {

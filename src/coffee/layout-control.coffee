@@ -19,9 +19,25 @@ $(document).ready ->
 	
 	# TRANSFORM ICONS INITIALIZE
 	# transformicons.add('.tcon')
+	bodyScrollController = new ScrollMagic.Controller()
+
+	# SCROLL TO
+	bodyScrollController.scrollTo((newpos)->
+		TweenMax.to(window, 0.5, {scrollTo: {y: newpos}})
+		return
+		)
+
+	lockBody = ()->
+		siteWrapper = '.site-wrapper'
+		$(siteWrapper).css({
+			overflow: 'hidden'
+			})
+		bodyScrollController.scrollTo(siteWrapper)
+		return
 
 	$('.filter-triggers a').click((e)->
 		e.preventDefault()
+		lockBody() 
 		$('.filters-wrapper [class*=filter-module-]').removeClass('on-screen')
 		idRef = $(this).attr('href')
 		console.log idRef
@@ -36,6 +52,9 @@ $(document).ready ->
 		e.preventDefault()
 		$('.filter-triggers li').removeClass 'active'
 		$('.site-wrapper').removeClass 'filters-on'
+		$('body').css({
+			overflow: 'auto'
+			})
 		return
 		)
 

@@ -7,7 +7,7 @@
         <header class="toolbar">
           <div class="left">
             <div class="toolbar-results">
-              <small><a href="index.html"><i class="icon-chevron-left"></i> Back to posts</a></small>
+              <small><a href="{site_url}"><i class="icon-chevron-left"></i> Back to posts</a></small>
             </div>
           </div>
           <div class="right">
@@ -17,7 +17,7 @@
             </nav>
           </div>
         </header>
-        <div class="row pv-42">
+        <div class="row pv-42 mb-ch-21">
           <article class="col-sm-8 pr-70-sm">
             <div class="panel">
               <div class="panel-head">
@@ -35,15 +35,15 @@
                     <a href="#" class="gallery-button-right"><i class="icon-chevron-right"></i></a>
                   </div>
                   <div class="gallery">
-	                  {project_imagenes}
-                    <div class="gallery-cell" data-responsive-bg-img="{ 
-                          'vw-phone': '{image:url:medium}',
-                          'vw-tablet': '{image:url:medium}',
-                          'vw-desktop': '{image:url:large}g',
-                          'vw-lg-desktop': '{image:url:large}'
-                        }">
+                    <div class="gallery-cell" 
+                        {project_imagenes}
+                        data-responsive-bg-img='{ 
+                          "vw-phone": "{image:url:medium}",
+                          "vw-tablet": "{image:url:medium}",
+                          "vw-desktop": "{image:url:large}",
+                          "vw-lg-desktop": "{image:url:large}"
+                        }'{/project_imagenes}>
                     </div>
-                    {/project_imagenes}
                   </div>
                 </div>
                 <div class="p-14">
@@ -100,7 +100,7 @@
                 <span class="input-group-addon">URL</span>
                 <input type="text" class="form-control" value="{site_url}project/{url_title}" aria-describedby="posturl" onclick="this.select()">
               </div>
-              <nav class="pv-14 lead-ch text-gray">
+              <nav class="pv-14 lead-ch text-gray share-icons-bar">
                 <a href="#" class="flaticon-social122"></a>
                 <a href="#" class="flaticon-social136"></a>
               </nav>

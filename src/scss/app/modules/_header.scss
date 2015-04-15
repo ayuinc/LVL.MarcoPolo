@@ -141,7 +141,7 @@ header.header-mobile {
 	.right {}
 	.toolbar-results {
 		small,
-		a {
+		a:not(.label) {
 			color: $gray-dark;
 			text-transform: uppercase;
 		}

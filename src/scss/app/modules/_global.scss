@@ -209,7 +209,7 @@ $pin-bg-color: white;
 	.pin-category {}
 	.pin-title {
 		color: $gray-darker;
-		font-size: $font-size-h3;
+		font-size: $font-size-h4;
 		margin: 3px 0;
 		margin: rem(3px) 0;
 		a {
@@ -219,10 +219,11 @@ $pin-bg-color: white;
 			}
 		}
 	}
-	.pin-location,
-	.pin-category {
+	.pin-location {
 		font-size: 12px;
-		font-size: rem(12px);
+	}
+	.pin-category {
+		font-size: 10px;
 	}
 }
 
@@ -412,8 +413,16 @@ $gallery-cell-height-control: 490px;
 	}
 }
 
-
-
+/*
+	Share icons bar
+*/
+.share-icons-bar {
+	@media #{$md-down} {
+		a {
+			font-size: $font-size-h3;
+		}
+	}
+}
 
 
 

@@ -5703,12 +5703,12 @@ body::-webkit-scrollbar {
 
 /* Pins */
 .pin {
-  background-color: white;
-  border-radius: 2px;
-  position: relative;
   -webkit-box-shadow: 0px 1px 3px 0px rgba(181, 182, 183, 0.3);
   -moz-box-shadow: 0px 1px 3px 0px rgba(181, 182, 183, 0.3);
   box-shadow: 0px 1px 3px 0px rgba(181, 182, 183, 0.3);
+  border-radius: 2px;
+  background-color: white;
+  position: relative;
 }
 .pin h1, .pin h2, .pin h3, .pin h4, .pin h5, .pin h6,
 .pin .h1, .pin .h2, .pin .h3, .pin .h4, .pin .h5, .pin .h6,
@@ -5743,14 +5743,24 @@ body::-webkit-scrollbar {
   padding: 14px;
 }
 .pin .pin-center {
-  overflow: hidden;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  overflow: hidden;
 }
 .pin .pin-center .pin-pic {
   height: 180px;
   overflow: hidden;
   position: relative;
+}
+.pin .pin-center .pin-pic:hover img {
+  -webkit-transform: scale(0.1) rotate(7deg);
+  -moz-transform: scale(0.1) rotate(7deg);
+  -ms-transform: scale(0.1) rotate(7deg);
+  -o-transform: scale(0.1) rotate(7deg);
+  transform: scale(0.1) rotate(7deg);
+  -webkit-transition: all 0.3s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  -moz-transition: all 0.3s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  transition: all 0.3s cubic-bezier(0.755, 0.05, 0.855, 0.06);
 }
 @media only screen and (max-width: 992px) {
   .pin .pin-center .pin-pic {
@@ -5758,17 +5768,20 @@ body::-webkit-scrollbar {
   }
 }
 .pin .pin-center .pin-pic img {
+  -webkit-transition: all 0.3s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  -moz-transition: all 0.3s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  transition: all 0.3s cubic-bezier(0.755, 0.05, 0.855, 0.06);
   width: 100%;
   height: auto;
 }
 .pin .pin-center .overlay {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -5819,12 +5832,12 @@ body::-webkit-scrollbar {
   font-size: 36px;
 }
 .pin .pin-onload .pin-onload-bottom {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
   width: 100%;
 }
 .pin .pin-onload-pic {
@@ -5890,7 +5903,7 @@ body::-webkit-scrollbar {
   animation-duration: 2s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+1) {
-  width: 0.36062%;
+  width: 48.54345%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+1) span {
   -webkit-animation-delay: 1s;
@@ -5898,7 +5911,7 @@ body::-webkit-scrollbar {
   animation-delay: 1s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+2) {
-  width: 33.02649%;
+  width: 64.97911%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+2) span {
   -webkit-animation-delay: 2s;
@@ -5906,7 +5919,7 @@ body::-webkit-scrollbar {
   animation-delay: 2s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+3) {
-  width: 74.26548%;
+  width: 63.84755%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+3) span {
   -webkit-animation-delay: 3s;
@@ -5914,7 +5927,7 @@ body::-webkit-scrollbar {
   animation-delay: 3s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+4) {
-  width: 39.32981%;
+  width: 61.69097%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+4) span {
   -webkit-animation-delay: 4s;
@@ -5922,7 +5935,7 @@ body::-webkit-scrollbar {
   animation-delay: 4s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+5) {
-  width: 42.12575%;
+  width: 85.64045%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+5) span {
   -webkit-animation-delay: 5s;
@@ -6215,7 +6228,7 @@ body::-webkit-scrollbar {
 /*
 	Custom labels
 */
-.label .label-default {
+.label.label-default {
   background-color: transparent;
   color: #EC008B;
   border: 1px solid #b5b6b7;

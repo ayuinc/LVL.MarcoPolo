@@ -65,12 +65,11 @@ body {
 $pin-height-control: 350px;
 $pin-bg-color: white;
 .pin {
-	background-color: $pin-bg-color;
-	border-radius: $border-radius-base;
-	// min-height: $pin-height-control;
-	position: relative;
-	@include normalize-text;
 	@include box-shadow(0px 1px 3px 0px rgba($gray-light, 0.3));
+	@include normalize-text;
+	border-radius: $border-radius-base;
+	background-color: $pin-bg-color;
+	position: relative;
 	.pin-top,
 	.pin-center {
 		background-color: $pin-bg-color;
@@ -86,57 +85,37 @@ $pin-bg-color: white;
 		padding: $container-fluid;
 	}
 	.pin-center {
-		overflow: hidden;
 		@include border-bottom-radius($border-radius-base);
+		overflow: hidden;
 		.pin-pic {
 			height: $pin-height-control - 170;
 			overflow: hidden;
 			position: relative;
+			&:hover {
+				img {
+					@include transform(scale(0.1) rotate(7deg));
+					@include transition(all 0.3s $ease-in-quint);
+				}
+			}
 			@media #{$md-down} {
 				height: $pin-height-control - 80;
 			}
 			img {
+				@include transition(all 0.3s $ease-in-quint);
 				width: 100%;
 				height: auto;
 			}
 		}
 		.overlay {
-			@include position(absolute, 0 0 0 0);
 			@include border-bottom-radius($border-radius-base);
+			@include position(absolute, 0 0 0 0);
 			@include flex-column-end;
 			.pin-bottom {
 				width: 100%;
 				padding: $container-fluid;
 			}
 		}
-		// .pin-content {
-		// 	padding: $container-fluid;
-		// 	.score-nav {
-		// 		color: $gray-light;
-		// 		font-size: 9px;
-		// 		span {
-		// 			font-weight: 500;
-		// 			&:hover,
-		// 			&.active {
-		// 				color: $brand-success;
-		// 			}
-		// 			&:hover {
-		// 				cursor: pointer;
-		// 			}
-		// 		}
-		// 	}
-		// 	[class*="pin-content-"] {
-		// 		padding: ($container-fluid / 2) 0;
-		// 	}
-		// }
 	}
-	// .pin-bottom {
-	// 	// @include position(absolute, null 0 0 0);
-	// 	@include border-bottom-radius($border-radius-base);
-	// 	padding: $container-fluid;
-	// 	border-top: 1px solid $gray-lighter;
-	// 	width: 100%;
-	// }
 	.pin-onload {
 		@include position(absolute, 0 0 0 0);
 		border-radius: $border-radius-base;
@@ -154,8 +133,8 @@ $pin-bg-color: white;
 			font-size: $font-size-h1;
 		}
 		.pin-onload-bottom {
-			@include position(absolute, null 0 0 0);
 			@include border-bottom-radius($border-radius-base);
+			@include position(absolute, null 0 0 0);
 			width: 100%;
 		}
 	}
@@ -428,7 +407,7 @@ $gallery-cell-height-control: 490px;
 	Custom labels
 */
 .label {
-	.label-default {
+	&.label-default {
 		background-color: transparent;
 		color: $brand-primary;
 		border: 1px solid $gray-light;

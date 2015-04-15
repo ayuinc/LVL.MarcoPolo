@@ -69,16 +69,12 @@
                 <strong>{categories show_group="2"}{category_name}{/categories}</strong>
               </div>
               <div class="info-block">
-                <button class="btn btn-icon-custom btn-gray-darker btn-icon-left">
-                  <i>45</i>
-                  <span>VOTE</span>
-                </button>
                 {exp:likee:like entry_id="{entry_id}"}
-								   I {like} it.
-								   I {dislike} it.
-								   {like_count} likes
-								   {dislike_count} dislikes	
-								{/exp:likee:like}
+                <button class="btn btn-icon-custom btn-gray-darker btn-icon-left">
+                  <i>{like_count}</i>
+                  <span>{like like_text="Vote"}</span>
+                </button>
+                {/exp:likee:like}
               </div>
             </div>
             <div class="normalize-text">

@@ -1,10 +1,14 @@
 <header class="toolbar">
   <div class="left">
     <div class="toolbar-results">
-      <small>Showing results for: 
+      <small>Showing results for:
+      	{if home} 
+        <a href="#" class="label label-default">All <i class="icon-cross"></i></a>
+        {if:else}
         <a href="#" class="label label-default">Building community <i class="icon-cross"></i></a> 
         <a href="#" class="label label-default">Fast-food <i class="icon-cross"></i></a>
         <a href="#" class="label label-default">New York <i class="icon-cross"></i></a>
+        {/if}
       </small>
     </div>
   </div>

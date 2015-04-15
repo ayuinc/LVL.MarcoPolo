@@ -1,4 +1,18 @@
 (function() {
+  $(document).ready(function() {
+    var $container;
+    $container = $('.pins-grid');
+    $container.imagesLoaded(function() {
+      $container.isotope({
+        itemSelector: '.grid-list-item',
+        layoutMode: 'fitRows'
+      });
+    });
+  });
+
+}).call(this);
+
+(function() {
   'use-strict';
   $(document).ready(function() {
     var $gallery, $galleryControlLeft, $galleryControlRight;

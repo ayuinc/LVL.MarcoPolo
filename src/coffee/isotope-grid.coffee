@@ -1,11 +1,11 @@
 $(document).ready ->
 
 	# ISOTOPE GRIDS
-	$container = $('.isotope-grid')
-	$container.children('li').addClass('isotope-item')
+	$container = $('.pins-grid')
+	# $container.children('li').addClass('isotope-item')
 	$container.imagesLoaded ->
 		$container.isotope({
-			itemSelector: '.isotope-item'
+			itemSelector: '.grid-list-item'
 			layoutMode: 'fitRows'
 			})
 		return

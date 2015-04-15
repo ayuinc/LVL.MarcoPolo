@@ -38,6 +38,15 @@
           </span>
         </div>
       </form>
+			<form action="{path='search/results'}/" method="post">
+				<div class="input-group">
+			    <input type="hidden" name="csrf_token" value="{csrf_token}" /> <!-- Important! -->
+          <input type="search" name="keywords" class="form-control" id="keywords" value="{super_search_keywords}" autofocus>
+          <span class="input-group-btn">
+            <button class="btn btn-gray-darker" type="button"><i class="icon-magnifier"></i></button>
+          </span>			    
+				</div>
+			</form>
     </div>
     <div class="bottom">
       <ul class="filter-triggers">

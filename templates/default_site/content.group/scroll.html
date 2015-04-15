@@ -1,10 +1,17 @@
-{exp:infinite_scroll:wrapper ajax_container="ajax_container" embed_template_url="{homepage}/technical/embed_infinite_scroll_no_link_more" xid_element_id="infinite_scroll_xid" process_indicator="process_indicator" parse="inward"}
+{exp:infinite_scroll:wrapper 
+	ajax_container="ajax_container" 
+	embed_template_url="{homepage}/content/scroll" 
+	xid_element_id="infinite_scroll_xid" 
+	process_indicator="process_indicator" 
+	next_chunk_link="next_chunk_link" 
+	parse="inward"
+}
 
 {infinite_scroll_container_top}
 <div id="ajax_container">
 {/infinite_scroll_container_top}
 
-
+<input type="hidden" id="infinite_scroll_xid" value="{XID_HASH}">
 
 {exp:channel:entries channel="project" limit="4" sort="asc" orderby="title" paginate="bottom" dynamic="no" parse="inward"}
 
@@ -33,19 +40,22 @@
   </div>
 </div>
 
-{paginate}
-{if next_page}
+{if count == total_results}
 <div class="process_indicator">
 Loading…
 </div>
-{exp:infinite_scroll:next_chunk_data}{auto_path}{/exp:infinite_scroll:next_chunk_data}
 {/if}
+
+{paginate}
+	{exp:infinite_scroll:next_chunk_link}
+		{if next_page}<a href="{auto_path}" class="next_chunk_link">More</a>{/if}
+	{/exp:infinite_scroll:next_chunk_link}
 {/paginate}
 
 {/exp:channel:entries}
 
 {infinite_scroll_container_bottom}
-</div><!-- End of # ajax_container -->
+</div><!-- End of #ajax_container -->
 {/infinite_scroll_container_bottom}
 
-{/exp:infinite_scroll:wrapper}       
+{/exp:infinite_scroll:wrapper}

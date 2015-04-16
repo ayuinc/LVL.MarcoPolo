@@ -6,7 +6,9 @@
         	<span class="medium">All</span>
         {/if}
         {if segment_2=='resultados'}
+        	{exp:super_search:results}
         	<a href="#" class="label label-default">{super_search_total_results} result(s) for {super_search_keywords} <i class="icon-cross"></i></a>
+        	{/exp:super_search:results}
         {/if}
         
        <!-- <a href="#" class="label label-default">Building community <i class="icon-cross"></i></a> 

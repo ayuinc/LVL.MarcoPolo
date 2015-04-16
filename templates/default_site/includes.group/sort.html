@@ -6,7 +6,14 @@
         	<span class="medium">All</span>
         {/if}
         {if segment_2=='resultados'}
-        	<a href="#" class="label label-default">{super_search_total_results} <i class="icon-cross"></i></a>
+        	{exp:super_search:results 
+          	channel="project" 
+          	orderby="title+desc"
+						keyword_search_category_name="yes"
+						limit="4"
+          }
+        		<a href="#" class="label label-default">{super_search_total_results} <i class="icon-cross"></i></a>
+        	{/exp:super_search:results}
         {/if}
         
        <!-- <a href="#" class="label label-default">Building community <i class="icon-cross"></i></a> 

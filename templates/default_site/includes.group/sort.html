@@ -4,11 +4,15 @@
       <small>Showing results for:
       	{if segment_1==''} 
         	<span class="medium">All</span>
-        {if:else}
-        <a href="#" class="label label-default">Building community <i class="icon-cross"></i></a> 
-        <a href="#" class="label label-default">Fast-food <i class="icon-cross"></i></a>
-        <a href="#" class="label label-default">New York <i class="icon-cross"></i></a>
         {/if}
+        {if segment_2=='resultados'}
+        	<a href="#" class="label label-default">{super_search_total_results} result(s) for {super_search_keywords} <i class="icon-cross"></i></a>
+        {/if}
+        
+       <!-- <a href="#" class="label label-default">Building community <i class="icon-cross"></i></a> 
+        <a href="#" class="label label-default">Fast-food <i class="icon-cross"></i></a>
+        <a href="#" class="label label-default">New York <i class="icon-cross"></i></a>-->
+
       </small>
     </div>
   </div>

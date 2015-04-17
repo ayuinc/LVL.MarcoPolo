@@ -5,6 +5,9 @@
       	{if segment_1==''} 
         	<span class="medium">All</span>
         {/if}
+        {if segment_2=='resultados_tags'} 
+        	<span class="medium">{segment_3}</span>
+        {/if}
         {if segment_2=='resultados'}
         	{exp:super_search:results 
           	channel="project" 

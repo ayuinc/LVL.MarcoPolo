@@ -1,38 +1,33 @@
 <header class="toolbar">
   <div class="left">
     <div class="toolbar-results">
-      <small>Showing results for:
-      	{if segment_1==''} 
-        	<span class="medium">All</span>
-        {/if}
-        {if segment_2=='resultados_tags'} 
-        	<span class="medium">{segment_3}</span>
-        {/if}
-        {if segment_2=='resultados_newer'} 
-        	<span class="medium">NEWEST</span>
-        {/if}        
-        {if segment_2=='resultados'}
-        	{exp:super_search:results 
-          	channel="project" 
-          	orderby="title+desc"
-						keyword_search_category_name="yes"
-						limit="1"
-          }
-        		<a href="{site_url}" class="label label-default">{super_search_total_results} result(s) for {super_search_keywords}<i class="icon-cross"></i></a>
-        	{/exp:super_search:results}
-        {/if}
-        
-       <!-- <a href="#" class="label label-default">Building community <i class="icon-cross"></i></a> 
-        <a href="#" class="label label-default">Fast-food <i class="icon-cross"></i></a>
-        <a href="#" class="label label-default">New York <i class="icon-cross"></i></a>-->
-
+      {if segment_2!='resultados_newer' OR segment_2!='resultados_toprated'} 
+	      <small>Showing results for:
+	      	{if segment_1==''} 
+	        	<span class="medium">All</span>
+	        {/if}
+	        {if segment_2=='resultados_tags'} 
+	        	<span class="medium">{segment_3}</span>
+	        {/if}
+	
+	        {if segment_2=='resultados'}
+	        	{exp:super_search:results 
+	          	channel="project" 
+	          	orderby="title+desc"
+							keyword_search_category_name="yes"
+							limit="1"
+	          }
+	        		<a href="{site_url}" class="label label-default">{super_search_total_results} result(s) for {super_search_keywords}<i class="icon-cross"></i></a>
+	        	{/exp:super_search:results}
+	        {/if}
+       {/if}
       </small>
     </div>
   </div>
   <div class="right">
     <nav class="toolbar-filters">
-      <a href="{site_url}content/resultados_toprated">Top Rated</a>
-      <a href="{site_url}content/resultados_newer">Newest</a>
+      <a href="{site_url}content/resultados_toprated" {if segment_2=='resultados_toprated'}class="medium"{/if}>Top Rated</a>
+      <a href="{site_url}content/resultados_newer" {if segment_2=='resultados_newer'}class="medium"{/if} >Newest</a>
     </nav>
   </div>
 </header>

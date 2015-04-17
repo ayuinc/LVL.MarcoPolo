@@ -564,7 +564,7 @@ class EE_Functions {
 
 		if (is_array($data['hidden_fields']))
 		{
-			$form .= "<div class='hiddenFields'>\n";
+			$form .= '<div class="hiddenFields">\n';
 
 			foreach ($data['hidden_fields'] as $key => $val)
 			{

@@ -15,9 +15,12 @@
   <script>
     var itemTempl = '';
     var $container = $('.pins-grid');
+    $container.isotope({
+      itemSelector: '.grid-list-item',
+      layoutMode: 'fitRows'
+    });
     $container.imagesLoaded(function() {
       $container.isotope({
-        itemSelector: '.grid-list-item',
         layoutMode: 'fitRows'
       });
     });

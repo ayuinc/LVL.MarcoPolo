@@ -5,11 +5,11 @@
       <section class="container">
 				{embed="includes/sort"}
         <div class="row grid-list grid-list-4 grid-list-3-sm grid-list-1-xs pins-grid">
-	        {get:keywords}
+	        {get:search&keywords}
           {exp:super_search:results 
           	channel="project" 
           	orderby="title+desc"
-						keyword_search_category_name="yes"
+						inclusive_keywords="yes"
 						limit="12"
 						where="any"
 						relevance_proximity="yes"

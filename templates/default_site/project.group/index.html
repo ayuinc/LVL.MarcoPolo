@@ -76,35 +76,16 @@
                 </button>
 {exp:rating:form
     entry_id="{entry_id}"
-    collection="Hotel Reviews"
+    collection="Votos"
     return="rating/thanks"
     anonymous="yes" 
 }
-
-    <h4>Submit a Rating for this Entry:</h4>
-
-    <!-- only show this to guests -->
-    {if logged_out}
-        <p>Name: <input type="text" name="name" value="{name}" /></p>
-        <p>Email: <input type="text" name="email" value="{email}" /></p>
-        <p><input type="checkbox"
-            name="save_info" id="save_info" value="y" {save_info} />
-        <label for="save_info">
-            Remember my contact info for next time?
-        </label></p>
-    {/if}
-
-    <p>Your Rating:
+    <input type="text" name="name" value="{name}" />
+	  <input type="text" name="email" value="{email}" />
         <select name="rating" id="rating">
             <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-        </select></p>
-    <p>Your Review:<br />
-        <textarea name="review"></textarea></p>
-    <p><input type="submit" name="submit" value="Submit!" /></p>
+        </select>
+    <input type="submit" name="submit" value="Vota" />
 
 {/exp:rating:form}
                              

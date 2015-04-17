@@ -84,17 +84,8 @@
     <input type="submit" name="submit" value="Vota" />
 
 {/exp:rating:form}
-
-
-    <h4>Rating Stats for this Entry:</h4>
-    {exp:rating:stats
-        entry_id="{entry_id}"
-    }
-        <p>Rated: {stars_overall_avg} ({overall_avg}/5), based on 
-            {overall_count} review{if overall_count != "1"}s{/if}</p>
-        {if rating_no_results}
-            <p>No ratings have been submitted for this entry yet.</p>
-        {/if}
+    {exp:rating:stats entry_id="{entry_id}"}
+            {overall_count}
     {/exp:rating:stats}
                              
               </div>

@@ -80,11 +80,7 @@
     return="project/{url_title}"
     anonymous="yes" 
 }
-    <input type="text" name="name" value="{name}" />
-	  <input type="text" name="email" value="{email}" />
-        <select name="rating" id="rating">
-            <option value="1">1</option>
-        </select>
+    <input type="hidden" name="rating" id="rating">
     <input type="submit" name="submit" value="Vota" />
 
 {/exp:rating:form}

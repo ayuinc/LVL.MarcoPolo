@@ -5,14 +5,12 @@
       <section class="container">
 				{embed="includes/sort"}
         <div class="row grid-list grid-list-4 grid-list-3-sm grid-list-1-xs pins-grid">
-	        {super_search_keywords}
           {exp:super_search:results 
           	channel="project" 
           	orderby="title+desc"
-						inclusive_keywords="yes"
+          	keywords="{super_search_keywords}"
 						limit="12"
 						where="any"
-						relevance_proximity="yes"
           }
           <div class="grid-list-item">
             <div class="pin">

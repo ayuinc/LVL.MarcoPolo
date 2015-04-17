@@ -109,10 +109,11 @@
 The following code is what your Edit form might look like, allowing logged in users to edit their rating submissions, assuming the rating ID is in the third segment of the URI:
 
 {exp:rating:form
-    collection="Hotel Reviews"
+    collection="{title}"
     edit="yes"
     rating_id="{segment_2}"
     return="rating/edit/success"
+    anonymous="yes" 
 }
 
 <!-- checks to see if submission was from a guest -->

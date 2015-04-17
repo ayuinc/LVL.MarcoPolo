@@ -70,27 +70,27 @@
                 {categories show_group="2"}{category_name}{/categories}
               </div>
               <div class="info-block">
-                <button class="btn btn-icon-custom btn-gray-darker btn-icon-left">
+								{exp:rating:form
+							    entry_id="{entry_id}"
+							    collection="Votos"
+							    return="project/{url_title}"
+							    anonymous="yes" 
+								}
+								<input type="hidden" name="rating" id="rating" value="1">
+                <button type="submit" name="submit" value="Vota" class="btn btn-icon-custom btn-gray-darker btn-icon-left">
                   <i>
-                  	{exp:rating:stats entry_id="{entry_id}"}
-											{overall_count}
-											{if rating_no_results}
-							          0
-							        {/if}
-										{/exp:rating:stats}
+                    {exp:rating:stats entry_id="{entry_id}"}
+                      {overall_count}
+                      {if rating_no_results}
+                        0
+                      {/if}
+                    {/exp:rating:stats}
                   </i>
                   <span>
-									{exp:rating:form
-								    entry_id="{entry_id}"
-								    collection="Votos"
-								    return="project/{url_title}"
-								    anonymous="yes" 
-									}
-								    <input type="hidden" name="rating" id="rating" value="1">
-								    <input type="submit" name="submit" value="Vota" />
-									{/exp:rating:form}
-									</span>
+                    Vote
+                  </span>
                 </button>     
+								{/exp:rating:form}
               </div>
             </div>
             <div class="normalize-text">

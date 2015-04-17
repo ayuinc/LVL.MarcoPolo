@@ -86,11 +86,11 @@
 {/exp:rating:form}
 
 {exp:rating:entries}
-
+	{exp:rating:rating_vote_stats rating_id="{rating_id}"}
     total:{total_votes}<br>
     PRevious: {previous_vote}<br>
     Rating: {rating_comments} 
-
+	{/exp:rating:rating_vote_stats}
 {/exp:rating:entries}
                              
               </div>

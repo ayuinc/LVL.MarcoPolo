@@ -75,9 +75,10 @@
                   <span>Vota</span>
                 </button>
 {exp:rating:form
-    entry_id="{segment_3}"
+    entry_id="{segment_2}"
     collection="Hotel Reviews"
     return="rating/thanks"
+    anonymous="yes" 
 }
 
     <h4>Submit a Rating for this Entry:</h4>
@@ -106,44 +107,7 @@
     <p><input type="submit" name="submit" value="Submit!" /></p>
 
 {/exp:rating:form}
-The following code is what your Edit form might look like, allowing logged in users to edit their rating submissions, assuming the rating ID is in the third segment of the URI:
-
-{exp:rating:form
-    collection="{title}"
-    edit="yes"
-    rating_id="{segment_2}"
-    return="rating/edit/success"
-    anonymous="yes" 
-}
-
-<!-- checks to see if submission was from a guest -->
-{if rating_author_id == "0"}
-    <p>Name: <input type="text" name="name" value="{name}" /></p>
-    <p>Email: <input type="text" name="email" value="{email}" /></p>
-{/if}
-
-    <p>Your Rating:
-        <select name="rating" id="rating">
-            <option value="1" {if rating == "1"}selected{/if}>1</option>
-            <option value="2" {if rating == "2"}selected{/if}>2</option>
-            <option value="3" {if rating == "3"}selected{/if}>3</option>
-            <option value="4" {if rating == "4"}selected{/if}>4</option>
-            <option value="5" {if rating == "5"}selected{/if}>5</option>
-        </select></p>
-    <p>Your Review:<br />
-        <textarea name="review">{review}</textarea></p>
-
-    <!-- // checks Rating Captcha preferences and
-        EE Captcha preferences to see if captcha is required -->
-    {if captcha}
-        <p>Please enter in the word you see below:
-            <input type="text" name="captcha" /></p>
-        <p>{captcha}</p>
-    {/if}
-
-    <p><input type="submit" name="submit" value="Update" /></p>
-
-{/exp:rating:form}                              
+                             
               </div>
             </div>
             <div class="normalize-text">

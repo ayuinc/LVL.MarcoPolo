@@ -1,3 +1,81 @@
+
+{exp:infinite_scroll:wrapper 
+	ajax_container="ajax_container" 
+	embed_template_url="{homepage}/technical/embed_infinite_scroll_no_link_more" 
+	xid_element_id="infinite_scroll_xid" 
+	process_indicator="process_indicator" 
+	parse="inward"
+}
+
+{infinite_scroll_container_top}
+<div id="ajax_container">
+{/infinite_scroll_container_top}
+
+{exp:channel:entries 
+	channel="mychannel" 
+	sort="asc" 
+	orderby="title" 
+	limit="30" 
+	paginate="bottom" 
+	dynamic="no" 
+	parse="inward"
+}
+
+<div class="grid-list-item">
+  <div class="pin">
+    <div class="pin-top">
+      <small class="pin-category">{categories show_group="1"}{category_name}{/categories} in {categories show_group="3"}{category_name}{/categories}</small>
+      <h2 class="pin-title"><a href="{site_url}project/{url_title}">{title}</a></h2>
+      <em class="pin-location">{categories show_group="2"}{category_name}{/categories}</em>
+    </div>
+    <div class="pin-center">
+      <div class="pin-pic">
+        {project_imagenes limit="1"}
+        <img src="{image:url:small}" alt="Grid 1" class="ignore-srcset">
+        {/project_imagenes}
+        <a href="{site_url}project/{url_title}" class="overlay">
+          <div class="pin-bottom">
+            <button class="btn btn-icon-custom btn-gray-darker btn-icon-left btn-sm">
+              <i>45</i>
+              <span>VOTE</span>
+            </button>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{paginate}
+	{if next_page}
+		<div class="process_indicator">
+		Loading…
+		</div>
+		{exp:infinite_scroll:next_chunk_data}{auto_path}{/exp:infinite_scroll:next_chunk_data}
+	{/if}
+{/paginate}
+
+{/exp:channel:entries}
+
+{infinite_scroll_container_bottom}
+</div><!-- End of # ajax_container -->
+{/infinite_scroll_container_bottom}
+
+{/exp:infinite_scroll:wrapper}
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+
 {exp:infinite_scroll:wrapper 
 	ajax_container="ajax_container" 
 	embed_template_url="{homepage}/content/scroll" 
@@ -54,7 +132,8 @@ Loading…
 {/exp:channel:entries}
 
 {infinite_scroll_container_bottom}
-</div><!-- End of #ajax_container -->
+</div>
 {/infinite_scroll_container_bottom}
 
 {/exp:infinite_scroll:wrapper}
+-->

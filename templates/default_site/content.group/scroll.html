@@ -12,45 +12,22 @@
 
 <input type="hidden" id="infinite_scroll_xid" value="{XID_HASH}">
 
+<script>
+  var itemTempl = '';
+  var $container = $('.pins-grid');
+  {exp:channel:entries channel="project" limit="4" sort="asc" orderby="title" paginate="bottom" dynamic="no" parse="inward"}
+    itemTempl = '<div class="grid-list-item">' + '<div class="pin">' + '<div class="pin-top">' + '<small class="pin-category">{categories show_group="1"}{category_name}{/categories} in {categories show_group="3"}{category_name}{/categories}</small>' + '<h2 class="pin-title"><a href="{site_url}project/{url_title}">{title}</a></h2>' + '<em class="pin-location">{categories show_group="2"}{category_name}{/categories}</em>' + '</div>' + '<div class="pin-center">' + '<div class="pin-pic">' + '{project_imagenes limit="1"}' + '<img src="{image:url:small}" alt="Grid 1" class="ignore-srcset">' + '{/project_imagenes}' + '<a href="{site_url}project/{url_title}" class="overlay">' + '<div class="pin-bottom">' + '<button class="btn btn-icon-custom btn-gray-darker btn-icon-left btn-sm">' + '<i>45</i>' + '<span>VOTE</span>' + '</button>' + '</div>' + '</a>' + '</div>' + '</div>' + '</div>' + '</div>';
+    
+    {paginate}
+      {if next_page}
+        <div class="process_indicator">Loading…</div>
+        {exp:infinite_scroll:next_chunk_data}{auto_path}{/exp:infinite_scroll:next_chunk_data}
+      {/if}
+    {/paginate}
 
-{exp:channel:entries channel="project" limit="4" sort="asc" orderby="title" paginate="bottom" dynamic="no" parse="inward"}
-
-<div class="grid-list-item">
-  <div class="pin">
-    <div class="pin-top">
-      <small class="pin-category">{categories show_group="1"}{category_name}{/categories} in {categories show_group="3"}{category_name}{/categories}</small>
-      <h2 class="pin-title"><a href="{site_url}project/{url_title}">{title}</a></h2>
-      <em class="pin-location">{categories show_group="2"}{category_name}{/categories}</em>
-    </div>
-    <div class="pin-center">
-      <div class="pin-pic">
-        {project_imagenes limit="1"}
-        <img src="{image:url:small}" alt="Grid 1" class="ignore-srcset">
-        {/project_imagenes}
-        <a href="{site_url}project/{url_title}" class="overlay">
-          <div class="pin-bottom">
-            <button class="btn btn-icon-custom btn-gray-darker btn-icon-left btn-sm">
-              <i>45</i>
-              <span>VOTE</span>
-            </button>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-{paginate}
-{if next_page}
-<div class="process_indicator">
-Loading…
-</div>
-{exp:infinite_scroll:next_chunk_data}{auto_path}{/exp:infinite_scroll:next_chunk_data}
-{/if}
-{/paginate}
-
-{/exp:channel:entries}
-
+  $container.isotope('appended', itemTempl);
+  {/exp:channel:entries}
+</script>
 {infinite_scroll_container_bottom}
 </div><!-- End of # ajax_container -->
 {/infinite_scroll_container_bottom}
@@ -58,67 +35,18 @@ Loading…
 {/exp:infinite_scroll:wrapper}
 
 
-<!--
 
 
-{exp:infinite_scroll:wrapper 
-	ajax_container="ajax_container" 
-	embed_template_url="{homepage}/content/scroll" 
-	xid_element_id="infinite_scroll_xid" 
-	process_indicator="process_indicator" 
-	next_chunk_link="next_chunk_link" 
-	parse="inward"
-}
-
-{infinite_scroll_container_top}
-<div id="ajax_container">
-{/infinite_scroll_container_top}
-
-<input type="hidden" id="infinite_scroll_xid" value="{XID_HASH}">
 
 
-{exp:channel:entries channel="project" limit="4" sort="asc" orderby="title" paginate="bottom" dynamic="no" parse="inward"}
-<div class="grid-list-item">
-  <div class="pin">
-    <div class="pin-top">
-      <small class="pin-category">{categories show_group="1"}{category_name}{/categories} in {categories show_group="3"}{category_name}{/categories}</small>
-      <h2 class="pin-title"><a href="{site_url}project/{url_title}">{title}</a></h2>
-      <em class="pin-location">{categories show_group="2"}{category_name}{/categories}</em>
-    </div>
-    <div class="pin-center">
-      <div class="pin-pic">
-        {project_imagenes limit="1"}
-        <img src="{image:url:small}" alt="Grid 1" class="ignore-srcset">
-        {/project_imagenes}
-        <a href="{site_url}project/{url_title}" class="overlay">
-          <div class="pin-bottom">
-            <button class="btn btn-icon-custom btn-gray-darker btn-icon-left btn-sm">
-              <i>45</i>
-              <span>VOTE</span>
-            </button>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
 
-{if count == total_results}
-<div class="process_indicator">
-Loading…
-</div>
-{/if}
 
-{paginate}
-	{exp:infinite_scroll:next_chunk_link}
-		{if next_page}<a href="{auto_path}" class="next_chunk_link">More</a>{/if}
-	{/exp:infinite_scroll:next_chunk_link}
-{/paginate}
-{/exp:channel:entries}
 
-{infinite_scroll_container_bottom}
-</div>
-{/infinite_scroll_container_bottom}
 
-{/exp:infinite_scroll:wrapper}
--->
+
+
+
+
+
+
+

@@ -20,27 +20,27 @@
                   {/project_imagenes}
                   <a href="{site_url}project/{url_title}" class="overlay">
                     <div class="pin-bottom">
-			                <button class="btn btn-icon-custom btn-gray-darker btn-icon-left">
-			                  <i>
-			                  	{exp:rating:stats entry_id="{entry_id}"}
-														{overall_count}
-														{if rating_no_results}
-										          0
-										        {/if}
-													{/exp:rating:stats}
-			                  </i>
-			                  <span>
-												{exp:rating:form
-											    entry_id="{entry_id}"
-											    collection="Votos"
-											    return="{site_url}"
-											    anonymous="yes" 
-												}
-											    <input type="hidden" name="rating" id="rating" value="1">
-											    <input type="submit" name="submit" value="Vota" />
-												{/exp:rating:form}
-												</span>
-			                </button> 
+											{exp:rating:form
+										    entry_id="{entry_id}"
+										    collection="Votos"
+										    return="{site_url}"
+										    anonymous="yes" 
+											}
+                      <input type="hidden" name="rating" id="rating" value="1">
+                      <button type="submit" name="submit" value="Vota" class="btn btn-icon-custom btn-gray-darker btn-icon-left">
+                        <i>
+                          {exp:rating:stats entry_id="{entry_id}"}
+                            {overall_count}
+                            {if rating_no_results}
+                              0
+                            {/if}
+                          {/exp:rating:stats}
+                        </i>
+                        <span>
+											    Vote
+                        </span>
+                      </button> 
+											{/exp:rating:form}
                     </div>
                   </a>
                 </div>

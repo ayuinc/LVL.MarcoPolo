@@ -100,14 +100,15 @@
             <div class="mb-42">
               <div class="info block">
                 <nav class="mb-ch-7">
-                  <a href="#" class="btn btn-outline btn-sm btn-gray-light">Tag</a>
-                  <a href="#" class="btn btn-outline btn-sm btn-gray-light">Tag large</a>
-                  <a href="#" class="btn btn-outline btn-sm btn-gray-light">Category</a>
-                  <a href="#" class="btn btn-outline btn-sm btn-gray-light">Industry</a>
-                  <a href="#" class="btn btn-outline btn-sm btn-gray-light">Fastf-ood Tag</a>
-                  <a href="#" class="btn btn-outline btn-sm btn-gray-light">Tag tag tag</a>
-                  <a href="#" class="btn btn-outline btn-sm btn-gray-light">Tagcloud</a>
-                  <a href="#" class="btn btn-outline btn-sm btn-gray-light">Tag</a>
+	                {exp:tag:tags
+									    entry_id="{entry_id}"
+									    backspace="2"
+									    orderby="tag_name"
+									    sort="desc"
+									    limit="10"
+									}
+                  <a href="#" class="btn btn-outline btn-sm btn-gray-light">{tag}</a>
+                  {/exp:tag:tags}
                 </nav>
               </div>
             </div>

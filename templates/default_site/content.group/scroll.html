@@ -11,6 +11,8 @@
 <div id="ajax_container">
 {/infinite_scroll_container_top}
 
+<input type="hidden" id="infinite_scroll_xid" value="{XID_HASH}">
+
 {exp:channel:entries 
 	channel="project" 
 	sort="asc" 

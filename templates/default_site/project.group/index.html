@@ -85,13 +85,17 @@
 
 {/exp:rating:form}
 
-{exp:rating:entries}
-	{exp:rating:rating_vote_stats rating_id="{rating_id}"}
-    total:{total_votes}<br>
-    PRevious: {previous_vote}<br>
-    Rating: {rating_comments} 
-	{/exp:rating:rating_vote_stats}
-{/exp:rating:entries}
+
+    <h4>Rating Stats for this Entry:</h4>
+    {exp:rating:stats
+        entry_id="{entry_id}"
+    }
+        <p>Rated: {stars_overall_avg} ({overall_avg}/5), based on 
+            {overall_count} review{if overall_count != "1"}s{/if}</p>
+        {if rating_no_results}
+            <p>No ratings have been submitted for this entry yet.</p>
+        {/if}
+    {/exp:rating:stats}
                              
               </div>
             </div>

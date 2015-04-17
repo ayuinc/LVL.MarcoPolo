@@ -74,9 +74,38 @@
                   <i>45</i>
                   <span>Vota</span>
                 </button>
-                {exp:rating:insert_rating_vote allow_duplicates="no" duplicate_check_guest_ip="no" rating_id="{segment_2}" }
-                {message} 
-                {/exp:rating:insert_rating_vote} 
+{exp:rating:form
+    entry_id="{segment_2}"
+    collection="Hotel Reviews"
+    return="rating/thanks"
+}
+
+    <h4>Submit a Rating for this Entry:</h4>
+
+    <!-- only show this to guests -->
+    {if logged_out}
+        <p>Name: <input type="text" name="name" value="{name}" /></p>
+        <p>Email: <input type="text" name="email" value="{email}" /></p>
+        <p><input type="checkbox"
+            name="save_info" id="save_info" value="y" {save_info} />
+        <label for="save_info">
+            Remember my contact info for next time?
+        </label></p>
+    {/if}
+
+    <p>Your Rating:
+        <select name="rating" id="rating">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select></p>
+    <p>Your Review:<br />
+        <textarea name="review"></textarea></p>
+    <p><input type="submit" name="submit" value="Submit!" /></p>
+
+{/exp:rating:form}
               </div>
             </div>
             <div class="normalize-text">

@@ -80,10 +80,33 @@
     return="project/{url_title}"
     anonymous="yes" 
 }
-    <input type="hidden" name="rating" id="rating">
+    <input type="hidden" name="rating" id="rating" value="1">
     <input type="submit" name="submit" value="Vota" />
 
 {/exp:rating:form}
+
+{exp:rating:entries}
+
+    <p><a href="{path=user/profile}/{member_id}/">{screen_name}</a></p>
+    <p>{stars}{rating}{/stars}</p>
+    <p>Submitted on {rating_date format="%F %j, %Y at %g:%i %a"}</p>
+    <p>{review}</p>
+
+    {exp:rating:rating_vote_stats rating_id="{rating_id}"}
+        {if not_already_voted}
+            <p>Vote for this Rating:
+            <a href="{path='ratings/vote'}/{rating_id}/up/">Up</a> |
+            <a href="{path='ratings/vote'}/{rating_id}/down/">Down</a></p>
+        {/if}
+        {if already_voted}
+            <p>You've already voted for this rating.</p>
+        {/if}
+        <p>This review has received {up_votes} ({up_percent}%) Up votes
+            and {down_votes} ({down_percent}%) Down votes
+            out of a total of {total} votes.</p>
+    {/exp:rating:rating_vote_stats}
+
+{/exp:rating:entries}
                              
               </div>
             </div>

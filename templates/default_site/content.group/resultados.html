@@ -10,7 +10,7 @@
           	orderby="title+desc"
 						keyword_search_category_name="yes"
 						limit="12"
-						paginate="bottom"
+						where="all"
           }
           <div class="grid-list-item">
             <div class="pin">
@@ -35,10 +35,7 @@
                 </div>
               </div>
             </div>
-          </div>
-          {paginate}
-					    Page {current_page} of {total_pages} pages &nbsp; {pagination_links}
-					{/paginate}             
+          </div>            
           {/exp:super_search:results}
         </div>
       </section>

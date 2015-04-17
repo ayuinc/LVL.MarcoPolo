@@ -74,6 +74,9 @@
                   <i>45</i>
                   <span>Vota</span>
                 </button>
+                {exp:rating:insert_rating_vote allow_duplicates="no" duplicate_check_guest_ip="no" rating_id="{rating_id}" }
+                {message} 
+                {/exp:rating:insert_rating_vote} 
               </div>
             </div>
             <div class="normalize-text">

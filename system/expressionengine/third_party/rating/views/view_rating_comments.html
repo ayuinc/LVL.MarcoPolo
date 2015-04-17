@@ -1,0 +1,96 @@
+
+<h3><?=lang('rating_comments_for_id')?> <?=$rating_id?></h3>
+<form action='<?php echo $caller->output($base_uri.'&method=ratings_actions&id=rating_comment_id');?>' method='post' id="module_view_ratings_form">
+	<input type="hidden" name="<?=$csrf_hidden_name?>"	value="<?=$CSRF_TOKEN?>" />
+
+	<table class="mainTable padTable magic_checkbox_table"  style="width:100%;"  cellspacing="0"  cellpadding="0"  border="0">
+		<thead>
+  			<tr>
+  				<th width="5%"><?=lang('edit')?></th>
+  				<th><?=lang('rating_comment_name')?></th>
+  				<th><?=lang('rating_comment')?></th>
+  				<th><?=lang('rating_comment_date')?></th>
+  				<th style='width:4%;'>
+					<input type="checkbox"  style="float:right; margin-right:6px;"
+							type="checkbox" name="toggle_all_checkboxes" />
+				</th>
+  			</tr>
+  		</thead>
+
+  		<tbody>
+<?php if (empty($rating_comments)):?>
+  			<tr class="<?=$this->cycle('odd', 'even');?>">
+  				<td colspan="4"><span class="notice"><?=lang('no_rating_comments'); ?></span></td>
+  			</tr>
+<?php else:?>
+	<?php foreach ($rating_comments as $comment_id => $data) : ?>
+  			<tr class="<?=$this->cycle('odd', 'even');?>">
+				<td><a href="<?=$caller->output($this->base.'&method=edit_rating_comment_form&rating_id='.$rating_id.'&rating_comment_id='.$data['rating_comment_id'])?>"><?=lang('edit')?></a></td>
+				<td><?=$data['name'];?></td>
+				<td><?=$data['comment'];?></td>
+				<td><?=$this->human_time($data['comment_date']);?></td>
+				<td>
+					<input 	type="checkbox"
+							style="float:right; margin-right:4px;"
+							id="ratings_selected_id"
+							name="selected[]"
+							value="<?=$this->output($data['rating_comment_id']);?>" />
+				</td>
+  			</tr>
+	<?php endforeach;?>
+<?php endif;?>
+
+
+		</tbody>
+	</table>
+
+<?php if( in_array(ee()->session->userdata['group_id'], $caller->preference('can_post_ratings')) OR
+		  in_array(ee()->session->userdata['group_id'], $caller->preference('can_delete_ratings')) OR
+		  in_array(ee()->session->userdata['group_id'], $caller->preference('can_report_ratings'))) : ?>
+
+	<div style="float:right;">
+		<div class="itemWrapper">
+			<input type='submit' class='submit' value='<?=lang('submit')?>'  />
+			&nbsp;
+			<select name='action' class='select' >
+
+			<?php if( in_array(ee()->session->userdata['group_id'], $caller->preference('can_delete_ratings'))) : ?>
+				<option value='delete'>Delete Selected</option>
+			<?php endif; ?>
+
+			<!-- <?php if( in_array(ee()->session->userdata['group_id'], $caller->preference('can_post_ratings'))) : ?>
+				<option value='edit'>Edit Selected</option>
+			<?php endif;?> -->
+
+			</select>
+		</div>
+	</div>
+<div class="clear_left shun">&nbsp;</div>
+<?php endif; ?>
+
+
+</form>
+
+<script type="text/javascript">
+	jQuery(function($){
+		$('#start_date').datepicker({dateFormat : "yy-mm-dd"});
+		$('#end_date').datepicker({dateFormat : "yy-mm-dd"});
+
+		$("#start_date").datepicker("setDate", "<?=date('Y-m-d', $selected['start_date'])?>");
+		$("#end_date").datepicker("setDate", "<?=date('Y-m-d', $selected['end_date'])?>");
+
+		$('select[name="date_range"]').change(function(e)
+		{
+			if ($(this).val() == "date_range")
+			{
+				$("#date_range_calendars").slideDown();
+			}
+			else
+			{
+				$("#date_range_calendars").slideUp();
+			}
+		});
+
+		$('select[name="date_range"]').trigger('change');
+	});
+</script>

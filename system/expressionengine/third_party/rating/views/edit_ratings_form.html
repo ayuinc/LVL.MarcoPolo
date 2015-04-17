@@ -1,0 +1,95 @@
+<form id="filter" method="post" name="filter" action="<?=$base_uri.'&method=edit_ratings'; ?>">
+	<input type="hidden" name="<?=$csrf_hidden_name?>"	value="<?=$CSRF_TOKEN?>" />
+	<fieldset>
+
+		<legend>
+			<strong><?=lang('visible_fields');?></strong>
+		</legend>
+
+		<table border='0' cellspacing='0' cellpadding='0' style='width:100%;' >
+			<tr>
+				<td style="vertical-align:top;">
+					<select name='visible_fields' multiple="multiple" class='select' size="3" style="width:200px;">
+						<?php foreach($rating_fields as $field) : ?>
+							<option <?=((in_array($field['field_name'], $selected['rating_fields'])) ? 'selected="selected"' : '')?> value='<?=$field['field_name']?>'><?=$field['field_label']?></option>
+						<?php endforeach;?>
+					</select>
+
+				</td>
+			</tr>
+		</table>
+
+	</fieldset>
+
+	<div class="clearfix">&nbsp;</div>
+
+	<?php foreach ($ratings as $count => $rating) : ?>
+
+	<table class="mainTable padTable" style="width:100%;" cellspacing="0" cellpadding="0" border="0">
+		<thead>
+			<tr>
+				<th><?=lang('field_label'); ?></th>
+				<th><?=lang('field_value'); ?></th>
+			</tr>
+		</thead>
+
+		<tbody>
+
+			<tr class="even">
+				<td style='width:15%;'><strong><?=lang('raters_name')?></strong></td>
+				<td style='width:85%;'><?=$rating['name']?></td>
+			</tr>
+
+			<tr class="odd">
+				<td style='width:15%;'><label for="rating_status[<?=$rating['rating_id']?>]"><?=lang('rating_status')?></label></td>
+				<td style='width:85%;'>
+					<select name="rating_status[<?=$rating['rating_id']?>]" class='select'>
+<?php foreach ( $statuses as $key => $val ) : $sel = ( $rating['status'] == $key ) ? 'selected="selected"': ''; ?>
+						<option value="<?=$key?>" <?=$sel?>><?=$val?></option>
+<?php endforeach; ?>
+					</select>
+				</td>
+			</tr>
+
+			<tr class="even">
+				<td style='width:15%;'><label for="rating_sticky[<?=$rating['rating_id']?>]"><?=lang('rating_sticky')?></label></td>
+				<td style='width:85%;'>
+					<?php $sticky = ( ! empty( $rating['sticky'] ) AND $rating['sticky'] == 'y' ) ? 'checked="checked"': ''; ?>
+					<input type="checkbox" id="rating_sticky[<?=$rating['rating_id']?>]" name="rating_sticky[<?=$rating['rating_id']?>]" value="y" <?=$sticky?> />
+					<label for="rating_sticky[<?=$rating['rating_id']?>]"><?=lang('rating_sticky')?></label>
+				</td>
+			</tr>
+
+			<?php foreach ($rating_fields as $field) : ?>
+				<?php $class = $this->cycle('odd', 'even');?>
+				<tr class="<?=$class?>" id="rating_id_<?=$rating['rating_id']?>-rating_field_<?=$field['field_name']?>" <?=((in_array($field['field_name'], $selected['rating_fields'])) ? '' : 'style="display:none;"')?>>
+					<td style='width:15%;'><label for="<?=$caller->output($field['field_name'])?>[<?=$rating['rating_id']?>]"><?=$field['field_label']?></label></td>
+					<td style='width:85%;'>
+						<?php if ($field['field_type'] == 'textarea') : ?>
+							<textarea
+								dir='ltr'
+								style='width:75%;'
+								name='<?=$caller->output($field['field_name'])?>[<?=$rating['rating_id']?>]'
+								id='<?=$caller->output($field['field_name'])?>_<?=$rating['rating_id']?>'
+								cols='90'
+								rows='6'
+								class='textarea'><?=$caller->output($rating[$field['field_name']])?></textarea>
+						<?php else : ?>
+							<input	dir='ltr' style='width:75%'
+									type='text'
+									name='<?=$caller->output($field['field_name'])?>[<?=$rating['rating_id']?>]'
+									id='<?=$caller->output($field['field_name'])?>_<?=$rating['rating_id']?>'
+									value='<?=$caller->output($rating[$field['field_name']])?>'
+									size='35' maxlength="<?=$field['field_maxl']?>" class='input' />
+						<?php endif;?>
+					</td>
+				</tr>
+			<?php endforeach;?>
+		</tbody>
+	</table>
+
+	<?php endforeach;?>
+
+	<p><input type='submit' class='submit' value='<?=lang('submit')?>'  /></p>
+
+</form>

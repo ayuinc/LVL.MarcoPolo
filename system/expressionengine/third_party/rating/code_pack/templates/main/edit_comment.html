@@ -1,0 +1,96 @@
+{embed="%prefix%inc/index" page_title="Edit Rating Comment"}
+	</head>
+
+	<body role="document">
+
+{embed="%prefix%inc/header"}
+
+		<div class="container" style="margin-top:30px;">
+
+			<div class="page-header">
+				<h1>Edit Rating Comment</h1>
+				<p class="lead">This page page allows Super Admins or the author of the rating comment to edit their rating comment.</p>
+			</div>
+
+			<div class="row">
+				<div class="col-md-8">
+				{if segment_4 == "success"}
+					<div class="alert alert-success" role="alert">
+						<p class="lead">Your rating/review has been successfully submitted!</p>
+					</div>
+				{/if}
+				{if segment_3}
+					<h3>Edit Rating Comment</h3>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Edit Rating Comment</h3>
+						</div>
+						<div class="panel-body">
+							{exp:rating:comment_form
+								edit="yes"
+								rating_comment_id="{segment_3}"
+								return="%prefix%main/entry/{segment_4}/comment_updated"
+								form:class="form-horizontal"
+							}
+								{if rating_author_id == "0"}
+									<div class="form-group required">
+										<label for="name" class="col-sm-3 col-md-2 control-label">Name</label>
+										<div class="col-sm-9 col-md-10">
+											<input type="text" name="name" id="name" value="{name}" placeholder="Enter your name here" class="form-control">
+										</div>
+									</div>
+									<div class="form-group required">
+										<label for="email" class="col-sm-3 col-md-2 control-label">Email</label>
+										<div class="col-sm-9 col-md-10">
+											<input type="text" name="email" id="email" value="{email}" placeholder="Enter your email address" class="form-control">
+										</div>
+									</div>
+								{/if}
+								<div class="form-group required">
+									<label for="comment" class="col-sm-3 col-md-2 control-label">Review</label>
+									<div class="col-sm-9 col-md-10">
+										<textarea name="comment" id="comment" placeholder="Enter your comment here" class="form-control" rows="5">{rating_comment}</textarea>
+									</div>
+								</div>
+								{if captcha}
+									<div class="form-group required">
+										<label for="captcha" class="col-sm-3 col-md-2 control-label">{captcha}</label>
+										<div class="col-sm-9 col-md-10">
+											<input type="text" name="captcha" id="captcha" placeholder="Please enter in the word you see on the left" class="form-control">
+										</div>
+									</div>
+								{/if}
+								<div class="form-group">
+									<div class="col-sm-offset-3 col-sm-offset-2 col-sm-9 col-md-10">
+										<button type="submit" class="btn btn-lg btn-success">Update Comment</button>
+									</div>
+								</div>
+							{/exp:rating:comment_form}
+						</div>
+					</div>
+				{if:else}
+					<div class="alert alert-warning" role="alert">
+ 						<p><strong>Error!</strong> No rating comment ID was found.</p>
+					</div>
+				{/if}
+				</div>
+
+				<div class="col-md-4">				
+{embed="%prefix%inc/sidebar"}
+				</div>
+      		</div>
+
+			<div class="well" style="margin-top:30px;">
+				<h2 style="margin-top:5px;">About This Page</h2>
+				<p>The "Edit Rating Comment" page allows Super Admins or the author of the rating comment to edit their rating comment.</p>
+				<p>It makes use of the following tags:</p>
+				<ul>
+					<li><a href="http://www.solspace.com/docs/rating/comment_form/">Rating:Comment_Form</a> in Edit mode to allow users to edit their rating comment.</li>
+				</ul>
+				<p>The global sidebar on the right makes use of the following tags:</p>
+				<ul>
+					<li><a href="http://www.solspace.com/docs/rating/rank/">Rating:Rank</a> to display a list of top rated entries.</li>
+				</ul>
+			</div>
+
+{embed="%prefix%inc/footer"}

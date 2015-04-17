@@ -1,0 +1,17 @@
+<form action="<?=$form_uri?>" method="post">
+	<div class='hidden'>
+		<input type="hidden" name="<?=$csrf_hidden_name?>"	value="<?=$CSRF_TOKEN?>" />
+		<?php foreach($delete as $delete_id) : ?>
+			<input type="hidden" name="delete[]" value="<?php echo $delete_id;?>" />
+		<?php endforeach;?>
+	</div>
+
+	<p class="defaultBold"><?php echo $delete_question;?></p>
+
+	<p class='alert'><?php echo lang('action_can_not_be_undone');?></p>
+
+	<p>
+		<input type="submit" name="submit" value="<?php echo lang('delete');?>" class="submit"  />
+	</p>
+
+</form>

@@ -1,0 +1,14 @@
+<form id="filter" method="post" name="filter" action="<?=$base_uri.'&method=edit_rating_comment'; ?>">
+	<input type="hidden" name="<?=$csrf_hidden_name?>"	value="<?=$CSRF_TOKEN?>" />
+
+	<?php foreach ($rating_comments as $count => $rating) : ?>
+		<input type="hidden" name="rating_id" value="<?=$rating_id?>" />
+		<input type="hidden" name="rating_comment_id" value="<?=$rating['review_id']?>" />
+		<textarea name="rating_comment" id="" cols="30" rows="10"><?=$rating['rating_review']?></textarea>
+
+	<?php endforeach ?>
+
+	<div class="clearfix">&nbsp;</div>
+
+	<p><input type='submit' class='submit' value='<?=lang('submit')?>'  /></p>
+</form>

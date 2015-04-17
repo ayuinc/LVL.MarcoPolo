@@ -1,0 +1,35 @@
+<form action="<?=$this->output($base_uri.'&method=save_field_order');?>" method="post" id="module_edit_field_order_form">
+	<input type="hidden" name="<?=$csrf_hidden_name?>"	value="<?=$CSRF_TOKEN?>" />
+
+	<table class="mainTable padTable"  style="width:100%;"  cellspacing="0"  cellpadding="0"  border="0">
+	    <thead>
+  				<tr>
+  					<th style="width:25%;"><?=lang('field_label')?></th>
+  					<th style="width:40%;"><?=lang('field_order')?></th>
+  				</tr>
+  			</thead>
+
+		<tbody>
+
+			<?php if (sizeof($fields) == 0) : ?>
+				<tr class="odd">
+					<td colspan="2"><?=lang('no_rating_fields'); ?></td>
+				</tr>
+			<?php endif; ?>
+
+		<?php foreach($fields as $field) : ?>
+			<tr class="<?=$caller->cycle('odd', 'even')?>">
+				<td style='width:20%;'>
+					<label for="field_order[<?=$field['field_id']?>]"><?=$field['field_label']?></label>
+				<td>
+					<input dir='ltr' style='width:5%' type='text' name='field_order[<?=$field['field_id']?>]' id='field_order[<?=$field['field_id']?>]' value='<?=$caller->output($field['field_order'])?>' size='5' maxlength='4' class='input' />
+				</td>
+			</tr>
+		<?php endforeach;?>
+
+
+		</tbody>
+
+	</table>
+	<p><input type="submit" class="submit" value="<?=lang('save_field_order'); ?>" /> </p>
+</form>

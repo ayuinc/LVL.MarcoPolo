@@ -5,12 +5,10 @@
       <section class="container">
 				{embed="includes/sort"}
         <div class="row grid-list grid-list-4 grid-list-3-sm grid-list-1-xs pins-grid">
-					{exp:tag:related_entries
-					    channel="project"
-					    orderby="title"
-					    sort="asc"
-					    limit="12"
-					}          
+					{exp:tag:search_results
+					    tag_rank="clicks"
+					    where="all"
+					}         
           <div class="grid-list-item">
             <div class="pin">
               <div class="pin-top">
@@ -52,7 +50,7 @@
               </div>
             </div>
           </div>             
-          {/exp:tag:related_entries}
+          {/exp:tag:search_results}
         </div>
       </section>
     </main>

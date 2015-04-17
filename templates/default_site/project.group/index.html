@@ -74,6 +74,9 @@
                   <i>
                   	{exp:rating:stats entry_id="{entry_id}"}
 											{overall_count}
+											{if rating_no_results}
+							          0
+							        {/if}
 										{/exp:rating:stats}
                   </i>
                   <span>

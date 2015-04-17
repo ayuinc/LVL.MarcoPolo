@@ -20,10 +20,27 @@
                   {/project_imagenes}
                   <a href="{site_url}project/{url_title}" class="overlay">
                     <div class="pin-bottom">
-                      <button class="btn btn-icon-custom btn-gray-darker btn-icon-left btn-sm">
-                        <i>45</i>
-                        <span>VOTE</span>
-                      </button>
+			                <button class="btn btn-icon-custom btn-gray-darker btn-icon-left">
+			                  <i>
+			                  	{exp:rating:stats entry_id="{entry_id}"}
+														{overall_count}
+														{if rating_no_results}
+										          0
+										        {/if}
+													{/exp:rating:stats}
+			                  </i>
+			                  <span>
+												{exp:rating:form
+											    entry_id="{entry_id}"
+											    collection="Votos"
+											    return="project/{url_title}"
+											    anonymous="yes" 
+												}
+											    <input type="hidden" name="rating" id="rating" value="1">
+											    <input type="submit" name="submit" value="Vota" />
+												{/exp:rating:form}
+												</span>
+			                </button> 
                     </div>
                   </a>
                 </div>

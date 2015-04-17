@@ -74,12 +74,75 @@
                   <i>45</i>
                   <span>Vota</span>
                 </button>
-{exp:likee:like entry_id="{entry_id}"}
-   I {like} it.
-   I {dislike} it.
-   {like_count} likes
-   {dislike_count} dislikes
-{/exp:likee:like}                
+{exp:rating:form
+    entry_id="{segment_3}"
+    collection="Hotel Reviews"
+    return="rating/thanks"
+}
+
+    <h4>Submit a Rating for this Entry:</h4>
+
+    <!-- only show this to guests -->
+    {if logged_out}
+        <p>Name: <input type="text" name="name" value="{name}" /></p>
+        <p>Email: <input type="text" name="email" value="{email}" /></p>
+        <p><input type="checkbox"
+            name="save_info" id="save_info" value="y" {save_info} />
+        <label for="save_info">
+            Remember my contact info for next time?
+        </label></p>
+    {/if}
+
+    <p>Your Rating:
+        <select name="rating" id="rating">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select></p>
+    <p>Your Review:<br />
+        <textarea name="review"></textarea></p>
+    <p><input type="submit" name="submit" value="Submit!" /></p>
+
+{/exp:rating:form}
+The following code is what your Edit form might look like, allowing logged in users to edit their rating submissions, assuming the rating ID is in the third segment of the URI:
+
+{exp:rating:form
+    collection="Hotel Reviews"
+    edit="yes"
+    rating_id="{segment_2}"
+    return="rating/edit/success"
+}
+
+<!-- checks to see if submission was from a guest -->
+{if rating_author_id == "0"}
+    <p>Name: <input type="text" name="name" value="{name}" /></p>
+    <p>Email: <input type="text" name="email" value="{email}" /></p>
+{/if}
+
+    <p>Your Rating:
+        <select name="rating" id="rating">
+            <option value="1" {if rating == "1"}selected{/if}>1</option>
+            <option value="2" {if rating == "2"}selected{/if}>2</option>
+            <option value="3" {if rating == "3"}selected{/if}>3</option>
+            <option value="4" {if rating == "4"}selected{/if}>4</option>
+            <option value="5" {if rating == "5"}selected{/if}>5</option>
+        </select></p>
+    <p>Your Review:<br />
+        <textarea name="review">{review}</textarea></p>
+
+    <!-- // checks Rating Captcha preferences and
+        EE Captcha preferences to see if captcha is required -->
+    {if captcha}
+        <p>Please enter in the word you see below:
+            <input type="text" name="captcha" /></p>
+        <p>{captcha}</p>
+    {/if}
+
+    <p><input type="submit" name="submit" value="Update" /></p>
+
+{/exp:rating:form}                              
               </div>
             </div>
             <div class="normalize-text">

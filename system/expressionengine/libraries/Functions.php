@@ -554,7 +554,7 @@ class EE_Functions {
 			$data['enctype'] = 'enctype="multipart/form-data" ';
 		}
 
-		$form  = '<form '.$data['id'].$data['class'].$data['name'].'method="post" action="'.$data['action'].'" '.$data['onsubmit'].' '.$data['enctype'].">\n";
+		$form  = '<form '.$data['id'].$data['class'].$data['name'].'method="post" action="'.$data['action'].'" '.$data['onsubmit'].' '.$data['enctype'].">";
 
 		if ($data['secure'] == TRUE)
 		{
@@ -564,14 +564,14 @@ class EE_Functions {
 
 		if (is_array($data['hidden_fields']))
 		{
-			$form .= '<div class="hiddenFields">\n';
+			$form .= '<div class="hiddenFields">';
 
 			foreach ($data['hidden_fields'] as $key => $val)
 			{
-				$form .= '<input type="hidden" name="'.$key.'" value="'.form_prep($val).'" />'."\n";
+				$form .= '<input type="hidden" name="'.$key.'" value="'.form_prep($val).'" />';
 			}
 
-			$form .= "</div>\n\n";
+			$form .= "</div>";
 		}
 
 		return $form;

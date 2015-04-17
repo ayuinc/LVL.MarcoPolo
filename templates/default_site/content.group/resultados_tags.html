@@ -5,10 +5,13 @@
       <section class="container">
 				{embed="includes/sort"}
         <div class="row grid-list grid-list-4 grid-list-3-sm grid-list-1-xs pins-grid">
-					{exp:tag:search_results
-					    tag_rank="total_entries"
-					    where="any"
-					}         
+					{exp:tag:entries
+					    inclusive="yes"
+					    orderby="entry_date"
+					    sort="asc"
+					    limit="20"
+					    paginate="bottom"
+					}
           <div class="grid-list-item">
             <div class="pin">
               <div class="pin-top">
@@ -50,7 +53,7 @@
               </div>
             </div>
           </div>             
-          {/exp:tag:search_results}
+          {/exp:tag:entries}
         </div>
       </section>
     </main>

@@ -1,21 +1,21 @@
 'use-strict'
 $(document).ready ->
 	# DISABLE ANCHORS
-	$('.disable-anchors a').click (e)->
-		e.preventDefault()
-		return
+	# $('.disable-anchors a').click (e)->
+	# 	e.preventDefault()
+	# 	return
 
 	# HREFerence for anchor blocks 
-	$('[data-href]').click((e)->
-		locationArr = window.location.pathname.split('/')
-		lastPath = locationArr[locationArr.length - 1]
-		mainPath = locationArr[locationArr.length - 2]
-		pathObj = {}
-		pathObj[mainPath] = lastPath
-		window.history.pushState(pathObj, '', lastPath)
-		document.location.replace($(this).data('href'))
-		return
-		)
+	# $('[data-href]').click((e)->
+	# 	locationArr = window.location.pathname.split('/')
+	# 	lastPath = locationArr[locationArr.length - 1]
+	# 	mainPath = locationArr[locationArr.length - 2]
+	# 	pathObj = {}
+	# 	pathObj[mainPath] = lastPath
+	# 	window.history.pushState(pathObj, '', lastPath)
+	# 	document.location.replace($(this).data('href'))
+	# 	return
+	# 	)
 	
 	# TRANSFORM ICONS INITIALIZE
 	# transformicons.add('.tcon')
@@ -35,15 +35,15 @@ $(document).ready ->
 		bodyScrollController.scrollTo(body)
 		return
 
-	$('.filter-triggers a').click((e)->
+	$('.filter-triggers li').click((e)->
 		e.preventDefault()
 		lockBody() 
 		$('.filters-wrapper [class*=filter-module-]').removeClass('on-screen')
-		idRef = $(this).attr('href')
+		idRef = $('a', this).attr('href')
 		console.log idRef
 		$('.filter-triggers li').removeClass 'active'
 		$('.site-wrapper').addClass 'filters-on'
-		$(this).parent().addClass 'active'
+		$(this).addClass 'active'
 		$('.filters-wrapper').find(idRef).addClass('on-screen')
 		return
 		)

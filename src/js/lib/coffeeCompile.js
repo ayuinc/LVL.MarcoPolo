@@ -9,19 +9,6 @@
   'use-strict';
   $(document).ready(function() {
     var $gallery, $galleryControlLeft, $galleryControlRight, bodyScrollController, lockBody;
-    $('.disable-anchors a').click(function(e) {
-      e.preventDefault();
-    });
-    $('[data-href]').click(function(e) {
-      var lastPath, locationArr, mainPath, pathObj;
-      locationArr = window.location.pathname.split('/');
-      lastPath = locationArr[locationArr.length - 1];
-      mainPath = locationArr[locationArr.length - 2];
-      pathObj = {};
-      pathObj[mainPath] = lastPath;
-      window.history.pushState(pathObj, '', lastPath);
-      document.location.replace($(this).data('href'));
-    });
     bodyScrollController = new ScrollMagic.Controller();
     bodyScrollController.scrollTo(function(newpos) {
       TweenMax.to(window, 0.5, {
@@ -38,16 +25,16 @@
       });
       bodyScrollController.scrollTo(body);
     };
-    $('.filter-triggers a').click(function(e) {
+    $('.filter-triggers li').click(function(e) {
       var idRef;
       e.preventDefault();
       lockBody();
       $('.filters-wrapper [class*=filter-module-]').removeClass('on-screen');
-      idRef = $(this).attr('href');
+      idRef = $('a', this).attr('href');
       console.log(idRef);
       $('.filter-triggers li').removeClass('active');
       $('.site-wrapper').addClass('filters-on');
-      $(this).parent().addClass('active');
+      $(this).addClass('active');
       $('.filters-wrapper').find(idRef).addClass('on-screen');
     });
     $('.filters-close a').click(function(e) {

@@ -5721,16 +5721,6 @@ body::-webkit-scrollbar {
   transition: color 0.3s ease-in-out;
   color: #7D7E7F;
 }
-.pin:hover .pin-pic img {
-  -webkit-transform: scale(1.1) rotate(1deg);
-  -moz-transform: scale(1.1) rotate(1deg);
-  -ms-transform: scale(1.1) rotate(1deg);
-  -o-transform: scale(1.1) rotate(1deg);
-  transform: scale(1.1) rotate(1deg);
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
 .pin .pin-top,
 .pin .pin-center {
   background-color: white;
@@ -5774,9 +5764,6 @@ body::-webkit-scrollbar {
   }
 }
 .pin .pin-center .pin-pic img {
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
   width: 100%;
   height: auto;
 }
@@ -5909,7 +5896,7 @@ body::-webkit-scrollbar {
   animation-duration: 2s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+1) {
-  width: 11.83578%;
+  width: 46.83389%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+1) span {
   -webkit-animation-delay: 1s;
@@ -5917,7 +5904,7 @@ body::-webkit-scrollbar {
   animation-delay: 1s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+2) {
-  width: 74.50855%;
+  width: 89.91152%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+2) span {
   -webkit-animation-delay: 2s;
@@ -5925,7 +5912,7 @@ body::-webkit-scrollbar {
   animation-delay: 2s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+3) {
-  width: 83.56004%;
+  width: 3.8852%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+3) span {
   -webkit-animation-delay: 3s;
@@ -5933,7 +5920,7 @@ body::-webkit-scrollbar {
   animation-delay: 3s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+4) {
-  width: 69.14015%;
+  width: 39.65427%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+4) span {
   -webkit-animation-delay: 4s;
@@ -5941,7 +5928,7 @@ body::-webkit-scrollbar {
   animation-delay: 4s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+5) {
-  width: 45.20438%;
+  width: 2.0151%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+5) span {
   -webkit-animation-delay: 5s;
@@ -5972,6 +5959,13 @@ body::-webkit-scrollbar {
 }
 .pin .pin-category {
   font-size: 10px;
+}
+
+/*
+	Pin button icons
+*/
+.btn-icon-custom.active {
+  background-color: #EC008B;
 }
 
 /*
@@ -6008,7 +6002,7 @@ body::-webkit-scrollbar {
   -o-transform: translateY(-100%);
   transform: translateY(-100%);
   padding: 70px 0;
-  background-color: #3E3F40;
+  background-color: rgba(62, 63, 64, 0.8);
   z-index: 500;
   overflow: hidden;
 }
@@ -6113,9 +6107,6 @@ body::-webkit-scrollbar {
 
 .gallery-wrapper {
   position: relative;
-}
-.gallery-wrapper .gallery {
-  margin: -7px;
 }
 .gallery-wrapper .gallery .gallery-cell {
   background-repeat: no-repeat;

@@ -75,12 +75,12 @@ $pin-bg-color: white;
 			@include transition(color 0.3s ease-in-out);
 			color: $gray;
 		}
-		.pin-pic {
-			img {
-				@include transform(scale(1.1) rotate(1deg));
-				@include transition(all 0.3s ease-in-out);
-			}
-		}
+		// .pin-pic {
+		// 	img {
+		// 		@include transform(scale(1.1) rotate(1deg));
+		// 		@include transition(all 0.3s ease-in-out);
+		// 	}
+		// }
 	}
 	.pin-top,
 	.pin-center {
@@ -107,7 +107,7 @@ $pin-bg-color: white;
 				height: $pin-height-control - 80;
 			}
 			img {
-				@include transition(all 0.3s ease-in-out);
+				// @include transition(all 0.3s ease-in-out);
 				width: 100%;
 				height: auto;
 			}
@@ -212,7 +212,14 @@ $pin-bg-color: white;
 		font-size: 10px;
 	}
 }
-
+/*
+	Pin button icons
+*/
+.btn-icon-custom {
+	&.active {
+		background-color: $brand-primary;
+	}
+}
 
 /*
 	Filters control
@@ -238,7 +245,7 @@ $pin-bg-color: white;
 	@include transform(translateY(-100%));
 	// @include flex-column-center;
 	padding: $header-height-control 0;
-	background-color: $gray-darker;
+	background-color: rgba($gray-darker, 0.8);
 	z-index: 500;
 	overflow: hidden;
 	@media #{$md-down} {
@@ -333,7 +340,7 @@ $gallery-cell-height-control: 490px;
 .gallery-wrapper {
 	position: relative;
 	.gallery {
-		margin: 0 -($container-fluid / 2);
+		// margin: 0 -($container-fluid / 2);
 		.gallery-cell {
 			@include bg-img-control-top; 
 			width: 100%;

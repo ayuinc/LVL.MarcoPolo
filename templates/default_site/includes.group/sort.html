@@ -1,11 +1,12 @@
 <header class="toolbar">
   <div class="left">
     <div class="toolbar-results">
-      {if segment_2!='resultados_newer' AND segment_2!='resultados_toprated'} 
+      {if segment_2!='resultados_newer' AND segment_2!='resultados_toprated' AND segment_2!='resultados_categorias'} 
 	      <small>Showing results for:
 	      	{if segment_1==''} 
 	        	<span class="bold">All</span>
 	        {/if}
+	        
 	        {if segment_2=='resultados_tags'} 
 	        	<span class="bold">{segment_3}</span>
 	        {/if}
@@ -19,6 +20,10 @@
 	          }
 	        		<a href="{site_url}" class="label label-default">{super_search_total_results} result(s) for {super_search_keywords}<i class="icon-cross"></i></a>
 	        	{/exp:super_search:results}
+	        {/if}
+	        
+	        {if segment_3_category_group_id=='2'}
+	        	<span class="bold">{segment_3_category_name}</span>
 	        {/if}
        {/if}
       </small>

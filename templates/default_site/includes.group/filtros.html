@@ -20,13 +20,13 @@
           <ul class="grid-list grid-list-2 filter-categories-list">
 						{exp:channel:categories category_group="1" style="linear"}
 							{if segment_3==''}
-								<li><a href="{site_url}content/resultados_categorias/{category_url_title}">{category_name}</a></li>
+								<li>a<a href="{site_url}content/resultados_categorias/{category_url_title}">{category_name}</a></li>
 							{/if}	
 							{if segment_4!=''}
-								<li><a href="{site_url}content/resultados_categorias/{segment_3}/{category_url_title}">{category_name}</a></li>
+								<li>b<a href="{site_url}content/resultados_categorias/{segment_3}/{category_url_title}">{category_name}</a></li>
 							{/if}	
 							{if segment_5==''}
-								<li><a href="{site_url}content/resultados_categorias/{segment_3}/{segment_4}/{category_url_title}">{category_name}</a></li>
+								<li>c<a href="{site_url}content/resultados_categorias/{segment_3}/{segment_4}/{category_url_title}">{category_name}</a></li>
 							{/if}		
 						{/exp:channel:categories}
           </ul>

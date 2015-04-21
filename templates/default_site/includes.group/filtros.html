@@ -22,12 +22,12 @@
 							{if segment_3==''}
 								<li>a<a href="{site_url}content/resultados_categorias/{category_url_title}">{category_name}</a></li>
 							{/if}	
-							{if segment_4!=''}
+							{if segment_3!='' AND segment_4!=''}
 								<li>b<a href="{site_url}content/resultados_categorias/{segment_3}/{category_url_title}">{category_name}</a></li>
 							{/if}	
-							{if segment_5==''}
+							<!--{if segment_5==''}
 								<li>c<a href="{site_url}content/resultados_categorias/{segment_3}/{segment_4}/{category_url_title}">{category_name}</a></li>
-							{/if}		
+							{/if}-->		
 						{/exp:channel:categories}
           </ul>
         </div>

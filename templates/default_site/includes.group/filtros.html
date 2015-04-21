@@ -20,10 +20,10 @@
           <ul class="grid-list grid-list-2 filter-categories-list">
 						{exp:channel:categories category_group="1" style="linear"}
 							{if segment_3==''}
-								<li>a<a href="{site_url}content/resultados_categorias/{category_url_title}">{category_name}</a></li>
+								<li><a href="{site_url}content/resultados_categorias/{category_url_title}">{category_name}</a></li>
 							{/if}	
 							{if segment_3!='' AND segment_4!='' AND segment_5==''}
-								<li>b<a href="{site_url}content/resultados_categorias/{segment_3}/{segment_4}/{category_url_title}">{category_name}</a></li>
+								<li><a href="{site_url}content/resultados_categorias/{segment_3}/{segment_4}/{category_url_title}">{category_name}</a></li>
 							{/if}		
 						{/exp:channel:categories}
           </ul>
@@ -49,12 +49,9 @@
 							{if segment_3==''}
 								<li><a href="{site_url}content/resultados_categorias/{category_url_title}">{category_name}</a></li>
 							{/if}	
-							{if segment_3!='' AND segment_4==''}
-								<li><a href="{site_url}content/resultados_categorias/{segment_3}/{category_url_title}">{category_name}</a></li>
-							{/if}	
-							{if segment_4!=''}
+							{if segment_3!='' AND segment_4!='' AND segment_5==''}
 								<li><a href="{site_url}content/resultados_categorias/{segment_3}/{segment_4}/{category_url_title}">{category_name}</a></li>
-							{/if}										
+							{/if}									
 						{/exp:channel:categories}
           </ul>
         </div>
@@ -79,12 +76,9 @@
 							{if segment_3==''}
 								<li><a href="{site_url}content/resultados_categorias/{category_url_title}">{category_name}</a></li>
 							{/if}	
-							{if segment_3!='' AND segment_4==''}
-								<li><a href="{site_url}content/resultados_categorias/{segment_3}/{category_url_title}">{category_name}</a></li>
-							{/if}	
-							{if segment_4!=''}
+							{if segment_3!='' AND segment_4!='' AND segment_5==''}
 								<li><a href="{site_url}content/resultados_categorias/{segment_3}/{segment_4}/{category_url_title}">{category_name}</a></li>
-							{/if}
+							{/if}	
 						{/exp:channel:categories}
           </ul>
         </div>

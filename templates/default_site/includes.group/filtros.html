@@ -19,7 +19,9 @@
         <div class="col-sm-8">
           <ul class="grid-list grid-list-2 filter-categories-list">
 						{exp:channel:categories category_group="1" style="linear"}
-							<li><a href="{site_url}content/resultados_categorias/{category_url_title}">{category_name}</a></li>
+							{if segment_3==''}
+								<li><a href="{site_url}content/resultados_categorias/{category_url_title}">{category_name}</a></li>
+							{/if}
 						{/exp:channel:categories}
           </ul>
         </div>
@@ -41,7 +43,9 @@
         <div class="col-sm-8">
           <ul class="grid-list grid-list-2 filter-categories-list">
 						{exp:channel:categories category_group="3" style="linear"}
-							<li><a href="{site_url}content/resultados_categorias/{category_url_title}">{category_name}</a></li>
+							{if segment_3==''}
+								<li><a href="{site_url}content/resultados_categorias/{category_url_title}">{category_name}</a></li>
+							{/if}
 						{/exp:channel:categories}
           </ul>
         </div>
@@ -63,7 +67,9 @@
         <div class="col-sm-8">
           <ul class="grid-list grid-list-2 filter-categories-list">
 						{exp:channel:categories category_group="2" style="linear"}
-							<li><a href="{site_url}content/resultados_categorias/{category_url_title}">{category_name}</a></li>
+							{if segment_3==''}
+								<li><a href="{site_url}content/resultados_categorias/{category_url_title}">{category_name}</a></li>
+							{/if}
 						{/exp:channel:categories}
           </ul>
         </div>

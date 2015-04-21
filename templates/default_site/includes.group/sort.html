@@ -1,31 +1,31 @@
 <header class="toolbar">
   <div class="left">
     <div class="toolbar-results">
-      {if segment_2!='resultados_newer' AND segment_2!='resultados_toprated' AND segment_2!='resultados_categorias'} 
+      {if segment_2!='resultados_newer' AND segment_2!='resultados_toprated'} 
 	      <small>Showing results for:
-	      	{if segment_1==''} 
-	        	<span class="bold">All</span>
-	        {/if}
-	        
-	        {if segment_2=='resultados_tags'} 
-	        	<span class="bold">{segment_3}</span>
-	        {/if}
-	
-	        {if segment_2=='resultados'}
-	        	{exp:super_search:results 
-	          	channel="project" 
-	          	orderby="title+desc"
-							keyword_search_category_name="yes"
-							limit="1"
-	          }
-	        		<a href="{site_url}" class="label label-default">{super_search_total_results} result(s) for {super_search_keywords}<i class="icon-cross"></i></a>
-	        	{/exp:super_search:results}
-	        {/if}
-	        {last_segment_category_group_id}
-	        {if segment_3_category_group_id=='2'}
-	        	<span class="bold">{segment_3_category_name}</span>
-	        {/if}
-       {/if}
+      	{if segment_1==''} 
+        	<span class="bold">All</span>
+        {/if}
+        
+        {if segment_2=='resultados_tags'} 
+        	<span class="bold">{segment_3}</span>
+        {/if}
+
+        {if segment_2=='resultados'}
+        	{exp:super_search:results 
+          	channel="project" 
+          	orderby="title+desc"
+						keyword_search_category_name="yes"
+						limit="1"
+          }
+        		<a href="{site_url}" class="label label-default">{super_search_total_results} result(s) for {super_search_keywords}<i class="icon-cross"></i></a>
+        	{/exp:super_search:results}
+        {/if}
+      {/if}
+      {last_segment_category_group_id}
+      {if segment_3_category_group_id=='2'}
+      	<span class="bold">{segment_3_category_name}</span>
+      {/if}       
       </small>
     </div>
   </div>

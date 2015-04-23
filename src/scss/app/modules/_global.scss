@@ -245,7 +245,7 @@ $pin-bg-color: white;
 	@include transform(translateY(-100%));
 	// @include flex-column-center;
 	padding: $header-height-control 0;
-	background-color: rgba($gray-darker, 0.8);
+	background-color: rgba($gray-darker, 0.95);
 	z-index: 500;
 	overflow: hidden;
 	@media #{$md-down} {
@@ -317,7 +317,7 @@ $pin-bg-color: white;
 	.filter-categories-list {
 		li {
 			padding: 0px;
-			margin-bottom: $container-fluid;
+			margin-bottom: $container-fluid / 2;
 			&:before {
 				font-family: 'icomoon';
 				content: "\e93c";
@@ -326,6 +326,7 @@ $pin-bg-color: white;
 			}
 			a {
 				color: white;
+				font-size: $font-size-h4;
 				&:hover,
 				&.active {
 					text-decoration: underline !important;

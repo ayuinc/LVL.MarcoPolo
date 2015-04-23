@@ -76,13 +76,13 @@ header.header {
 		}
 		&:hover {
 			cursor: pointer;
-			background-color: $gray-darker;
+			background-color: rgba($gray-darker, 0.95);
 			a {
 				color: white;
 			}
 		}
 		&.active {
-			background-color: $gray-darker;
+			background-color: rgba($gray-darker, 0.95);
 			a {
 				color: $brand-primary;
 				i {

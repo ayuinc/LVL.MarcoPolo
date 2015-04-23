@@ -15,7 +15,8 @@ header.header {
 	.container,
 	.container-sm,
 	.container-fluid {
-		.row {
+		.row,
+		.clearfix {
 			@include flex-row-space-between;
 		}
 	}
@@ -32,15 +33,17 @@ header.header {
 		min-height: $header-height-control;
 	}
 	.left {
-
+		width: 160px;
 	}
 	.center {
+		@include flex-grow(1);
 		text-align: center;
 	}
 	.right {
-		text-align: right;
 		@include flex-column-center;
 		@include flex-align-end;
+		text-align: right;
+		width: 280px;
 	}
 }
 .logo {

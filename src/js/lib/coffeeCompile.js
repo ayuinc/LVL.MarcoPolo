@@ -31,7 +31,6 @@
       lockBody();
       $('.filters-wrapper [class*=filter-module-]').removeClass('on-screen');
       idRef = $('a', this).attr('href');
-      console.log(idRef);
       $('.filter-triggers li').removeClass('active');
       $('.site-wrapper').addClass('filters-on');
       $(this).addClass('active');

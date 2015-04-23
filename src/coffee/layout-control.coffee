@@ -35,12 +35,13 @@ $(document).ready ->
 		bodyScrollController.scrollTo(body)
 		return
 
+	# filterWords = ['Categories', 'Industry', 'Location']
 	$('.filter-triggers li').click((e)->
-		e.preventDefault()
+		e.preventDefault()		
 		lockBody() 
 		$('.filters-wrapper [class*=filter-module-]').removeClass('on-screen')
 		idRef = $('a', this).attr('href')
-		console.log idRef
+		# console.log idRef
 		$('.filter-triggers li').removeClass 'active'
 		$('.site-wrapper').addClass 'filters-on'
 		$(this).addClass 'active'

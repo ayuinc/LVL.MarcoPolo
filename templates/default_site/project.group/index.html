@@ -1,7 +1,9 @@
-{embed="includes/head"}
+{exp:channel:entries channel="project" limit="1"}
+{project_imagenes limit="1"}
+	{embed="includes/head" titulo="{title}" descripcion="{project_descripcion}" imagen="{image:url:medium}"}
+{/project_imagenes}
 {embed="includes/header"}
 		{embed="includes/filtros"}
-		{exp:channel:entries channel="project" limit="1"}
     <main role="main" class="site-content">
       <section class="container">
         <header class="toolbar">
@@ -149,5 +151,5 @@
         </div>
       </section>
     </main>
-    {/exp:channel:entries}
+{/exp:channel:entries}
 {embed="includes/footer"}

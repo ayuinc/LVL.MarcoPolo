@@ -5896,7 +5896,7 @@ body::-webkit-scrollbar {
   animation-duration: 2s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+1) {
-  width: 46.83389%;
+  width: 4.35759%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+1) span {
   -webkit-animation-delay: 1s;
@@ -5904,7 +5904,7 @@ body::-webkit-scrollbar {
   animation-delay: 1s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+2) {
-  width: 89.91152%;
+  width: 19.12679%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+2) span {
   -webkit-animation-delay: 2s;
@@ -5912,7 +5912,7 @@ body::-webkit-scrollbar {
   animation-delay: 2s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+3) {
-  width: 3.8852%;
+  width: 79.90314%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+3) span {
   -webkit-animation-delay: 3s;
@@ -5920,7 +5920,7 @@ body::-webkit-scrollbar {
   animation-delay: 3s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+4) {
-  width: 39.65427%;
+  width: 30.00759%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+4) span {
   -webkit-animation-delay: 4s;
@@ -5928,7 +5928,7 @@ body::-webkit-scrollbar {
   animation-delay: 4s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+5) {
-  width: 2.0151%;
+  width: 19.21038%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+5) span {
   -webkit-animation-delay: 5s;
@@ -18727,8 +18727,11 @@ header.header p, header.header .p, header.header span, header.header em, header.
   }
 }
 header.header .container .row,
+header.header .container .clearfix,
 header.header .container-sm .row,
-header.header .container-fluid .row {
+header.header .container-sm .clearfix,
+header.header .container-fluid .row,
+header.header .container-fluid .clearfix {
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -18784,11 +18787,17 @@ header.header .center,
 header.header .right {
   min-height: 70px;
 }
+header.header .left {
+  width: 160px;
+}
 header.header .center {
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
+  flex-grow: 1;
+  -ms-flex-positive: 1;
   text-align: center;
 }
 header.header .right {
-  text-align: right;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -18821,6 +18830,8 @@ header.header .right {
   -o-align-items: flex-end;
   align-items: flex-end;
   -ms-flex-align: end;
+  text-align: right;
+  width: 280px;
 }
 
 .logo, header.header-mobile .logo {

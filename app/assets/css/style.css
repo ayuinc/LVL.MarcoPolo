@@ -5896,7 +5896,7 @@ body::-webkit-scrollbar {
   animation-duration: 2s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+1) {
-  width: 4.35759%;
+  width: 88.79409%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+1) span {
   -webkit-animation-delay: 1s;
@@ -5904,7 +5904,7 @@ body::-webkit-scrollbar {
   animation-delay: 1s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+2) {
-  width: 19.12679%;
+  width: 90.30516%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+2) span {
   -webkit-animation-delay: 2s;
@@ -5912,7 +5912,7 @@ body::-webkit-scrollbar {
   animation-delay: 2s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+3) {
-  width: 79.90314%;
+  width: 78.54889%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+3) span {
   -webkit-animation-delay: 3s;
@@ -5920,7 +5920,7 @@ body::-webkit-scrollbar {
   animation-delay: 3s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+4) {
-  width: 30.00759%;
+  width: 47.99308%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+4) span {
   -webkit-animation-delay: 4s;
@@ -5928,7 +5928,7 @@ body::-webkit-scrollbar {
   animation-delay: 4s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+5) {
-  width: 19.21038%;
+  width: 42.32519%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+5) span {
   -webkit-animation-delay: 5s;
@@ -6002,7 +6002,7 @@ body::-webkit-scrollbar {
   -o-transform: translateY(-100%);
   transform: translateY(-100%);
   padding: 70px 0;
-  background-color: rgba(62, 63, 64, 0.8);
+  background-color: rgba(62, 63, 64, 0.95);
   z-index: 500;
   overflow: hidden;
 }
@@ -6090,7 +6090,7 @@ body::-webkit-scrollbar {
 }
 .filters-wrapper .filter-categories-list li {
   padding: 0px;
-  margin-bottom: 14px;
+  margin-bottom: 7px;
 }
 .filters-wrapper .filter-categories-list li:before {
   font-family: 'icomoon';
@@ -6100,6 +6100,7 @@ body::-webkit-scrollbar {
 }
 .filters-wrapper .filter-categories-list li a {
   color: white;
+  font-size: 18px;
 }
 .filters-wrapper .filter-categories-list li a:hover, .filters-wrapper .filter-categories-list li a.active {
   text-decoration: underline !important;
@@ -18898,13 +18899,13 @@ header.header .right {
 }
 .filter-triggers li:hover {
   cursor: pointer;
-  background-color: #3E3F40;
+  background-color: rgba(62, 63, 64, 0.95);
 }
 .filter-triggers li:hover a {
   color: white;
 }
 .filter-triggers li.active {
-  background-color: #3E3F40;
+  background-color: rgba(62, 63, 64, 0.95);
 }
 .filter-triggers li.active a {
   color: #EC008B;

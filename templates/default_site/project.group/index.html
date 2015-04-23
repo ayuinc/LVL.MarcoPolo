@@ -59,15 +59,21 @@
             <div class="mb-42">
               <div class="info-block">
                 <h4 class="medium">Category</h4>
-                {categories show_group="1"}{category_name}{/categories}
+                {categories show_group="1"}
+                	<a href="{site_url}content/resultados_categorias/{category_url_title}">{category_name}</a>
+                {/categories}
               </div>
               <div class="info-block">
                 <h4 class="medium">Industry</h4>
-                {categories show_group="3"}{category_name}{/categories}
+                {categories show_group="3"}
+                	<a href="{site_url}content/resultados_categorias/{category_url_title}">{category_name}</a>
+                {/categories}
               </div>
               <div class="info-block">
                 <h4 class="medium">Location</h4>
-                {categories show_group="2"}{category_name}{/categories}
+                {categories show_group="2"}
+                	<a href="{site_url}content/resultados_categorias/{category_url_title}">{category_name}</a>
+                {/categories}
               </div>
               <div class="info-block">
 								{exp:rating:form

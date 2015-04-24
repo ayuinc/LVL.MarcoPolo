@@ -97,7 +97,7 @@
         </ul>
       </div>
       <div class="right">
-				<form action="{path='content/resultados'}/" method="post">
+				<form action="{path='content/resultados'}/" method="post" name="desktop">
 					<div class="input-group">
 				    <input type="hidden" name="csrf_token" value="{csrf_token}" /> <!-- Important! -->
 	          <input type="search" name="keywords" class="form-control" id="keywords" value="" placeholder="Buscar" autofocus>
@@ -126,7 +126,7 @@
       <div class="mobile-nav-display-triggers">
         <ul>
 	        <li>
-						<form action="{path='content/resultados'}/" method="post">
+						<form action="{path='content/resultados'}/" method="post" name="movil">
 							<div class="input-group">
 						    <input type="hidden" name="csrf_token" value="{csrf_token}" /> <!-- Important! -->
 			          <input type="search" name="keywords" class="form-control" id="keywords" value="" placeholder="Buscar" autofocus>

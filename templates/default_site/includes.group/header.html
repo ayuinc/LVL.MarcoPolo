@@ -100,6 +100,7 @@
 				<form action="{path='content/resultados'}/" method="post" name="desktop">
 					<div class="input-group">
 				    <input type="hidden" name="csrf_token" value="{csrf_token}" /> <!-- Important! -->
+				    <input type="hidden" name="XID" value="{XID_HASH}" />
 	          <input type="search" name="keywords" class="form-control" id="keywords" value="" placeholder="Buscar" autofocus>
 	          <span class="input-group-btn">
 	            <button class="btn btn-gray-darker" type="button"><i class="icon-magnifier"></i></button>
@@ -129,6 +130,7 @@
 						<form action="{path='content/resultados'}/" method="post" name="movil">
 							<div class="input-group">
 						    <input type="hidden" name="csrf_token" value="{csrf_token}" /> <!-- Important! -->
+						    <input type="hidden" name="XID" value="{XID_HASH}" />
 			          <input type="search" name="keywords" class="form-control" id="keywords" value="" placeholder="Buscar" autofocus>
 			          <span class="input-group-btn">
 			            <button class="btn btn-gray-darker" type="button"><i class="icon-magnifier"></i></button>

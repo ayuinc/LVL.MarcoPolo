@@ -125,6 +125,17 @@
     <section class="mobile-menu"> 
       <div class="mobile-nav-display-triggers">
         <ul>
+	        <li>
+						<form action="{path='content/resultados'}/" method="post">
+							<div class="input-group">
+						    <input type="hidden" name="csrf_token" value="{csrf_token}" /> <!-- Important! -->
+			          <input type="search" name="keywords" class="form-control" id="keywords" value="" placeholder="Buscar" autofocus>
+			          <span class="input-group-btn">
+			            <button class="btn btn-gray-darker" type="button"><i class="icon-magnifier"></i></button>
+			          </span>			    
+							</div>
+						</form>	        
+	        </li>
 	       	{if segment_2=='resultados_categorias'}
 				 		{if segment_3!='' AND segment_4==''}
 		       		{if segment_3_category_group_id=='1'}

@@ -115,13 +115,15 @@ header.header-mobile {
 	z-index: 1000;
 	display: none;
 	width: 100%;
+	// padding-top: $container-fluid; 
+	height: $header-height-control;
 	@media #{$md-down} {
-		display: block;
+		@include flex-column-center;
 	}
 	.top,
 	.center,
 	.bottom {
-		padding-top: $container-fluid;
+		// padding-top: $container-fluid;
 	}
 	.top {
 		text-align: center;

@@ -29,7 +29,7 @@ body {
 	padding-top: ($header-height-control + ($header-height-control / 2));
 	min-height: 100vh;
 	@media #{$md-down} {
-		padding-top: $header-mobile-height-control;
+		padding-top: $header-height-control + 21;
 	}
 }
 
@@ -247,10 +247,10 @@ $pin-bg-color: white;
 	padding: $header-height-control 0;
 	background-color: rgba($gray-darker, 0.95);
 	z-index: 500;
-	overflow: hidden;
+	overflow-y: scroll;
 	@media #{$md-down} {
 		// display: block;
-		padding-top: $header-mobile-height-control;
+		padding-top: $header-height-control + 21;
 	}
 	.filters-close {
 		@include position(absolute, ($header-height-control + $container-fluid) 0 null 0);
@@ -270,7 +270,10 @@ $pin-bg-color: white;
 		// opacity: 0;
 		width: 100%;
 		@media #{$md-down} {
-			@include position(absolute, ($header-mobile-height-control + 70) null null null);
+			@include position(absolute, ($header-mobile-height-control) null null null);
+			&:last-child {
+				@include transform(translateX(200%));
+			}
 		}
 		&.on-screen {
 			@include transform(translateX(0));

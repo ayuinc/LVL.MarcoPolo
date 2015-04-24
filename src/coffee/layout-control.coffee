@@ -59,6 +59,7 @@ $(document).ready ->
 		return
 		)
 
+
 	# POSTS GALLERY
 	$gallery = $('.gallery')
 	$gallery.flickity({

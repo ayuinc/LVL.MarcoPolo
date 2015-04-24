@@ -22,6 +22,7 @@ $config['allow_extensions'] = 'y';
 $config['cache_driver'] = 'file';
 $config['cookie_prefix'] = '';
 $config['cookie_httponly'] = 'y';
+$config['disable_csrf_protection'] = "y";
 
 
 // END EE config items

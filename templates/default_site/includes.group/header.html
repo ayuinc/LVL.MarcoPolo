@@ -129,7 +129,6 @@
     <div class="bottom">
       <ul class="filter-triggers">
 	       	{if segment_2=='resultados_categorias'}
-
 				 		{if segment_3!='' AND segment_4==''}
 		       		{if segment_3_category_group_id=='1'}
 		       			<li><a href="">{segment_3_category_name} <i class="icon-chevron-down"></i></a></li>
@@ -220,3 +219,177 @@
     </div>
   </div>
 </header>
+
+
+
+<header class="header-mobile">
+  <div class="container-fluid">
+    <div class="top flex-row-space-between">
+      <div class="left minh-70 flex-column-center">
+        <a href="#" class="logo"></a>
+      </div>
+      <div class="right minh-70 flex-column-center">
+        <div class="menu-trigger"><a href="#filter-module-1" class="icon-menu h3"></a></div>
+      </div>
+    </div>
+  </div>
+</header>
+    <section class="mobile-menu"> 
+      <div class="mobile-nav-display-triggers">
+        <ul>
+	       	{if segment_2=='resultados_categorias'}
+				 		{if segment_3!='' AND segment_4==''}
+		       		{if segment_3_category_group_id=='1'}
+		       			<li><a href="">{segment_3_category_name}</a></li>
+				        <li><a href="#mobile-nav-display-2">Industry</a></li>
+								<li><a href="#mobile-nav-display-3">Location</a></li>	
+		       		{/if}
+		       		{if segment_3_category_group_id=='3'}
+					 			<li><a href="#mobile-nav-display-1">Categories</a></li>
+					 			<li><a href="">{segment_3_category_name}</a></li>
+					 			<li><a href="#mobile-nav-display-3">Location</a></li>
+		       		{/if}
+		       		{if segment_3_category_group_id=='2'}
+		       			<li><a href="#mobile-nav-display-1">Categories</a></li>
+		       			<li><a href="#mobile-nav-display-2">Industry</a></li>
+					 			<li><a href="">{segment_3_category_name}</a></li>
+		       		{/if}  
+	       		{/if}
+	       		{if segment_3!='' AND segment_4!='' AND segment_5==''}  			       		
+		       		{if segment_3_category_group_id=='1' AND segment_4_category_group_id=='3'}
+					 			<li><a href="">{segment_3_category_name}</a></li>
+					 			<li><a href="">{segment_4_category_name}</a></li>
+					 			<li><a href="#mobile-nav-display-3">Location</a></li>
+		       		{/if}	       				       		
+		       		{if segment_3_category_group_id=='1' AND segment_4_category_group_id=='2'}
+					 			<li><a href="">{segment_3_category_name}</a></li>
+					 			<li><a href="#mobile-nav-display-2">Industry</a></li>
+					 			<li><a href="">{segment_4_category_name}</a></li>
+		       		{/if}	 
+		       		{if segment_3_category_group_id=='2' AND segment_4_category_group_id=='1'}
+					 			<li><a href="">{segment_4_category_name}</a></li>
+					 			<li><a href="#mobile-nav-display-2">Industry</a></li>
+					 			<li><a href="">{segment_3_category_name}</a></li>
+		       		{/if}	       				       		
+		       		{if segment_3_category_group_id=='2' AND segment_4_category_group_id=='3'}
+					 			<li><a href="#mobile-nav-display-1">Categories</a></li>
+					 			<li><a href="">{segment_4_category_name}</a></li>
+					 			<li><a href="">{segment_3_category_name}</a></li>
+		       		{/if}	
+		       		{if segment_3_category_group_id=='3' AND segment_4_category_group_id=='1'}
+					 			<li><a href="">{segment_4_category_name}</a></li>
+					 			<li><a href="">{segment_3_category_name}</a></li>
+					 			<li><a href="#mobile-nav-display-3">Location</a></li>
+		       		{/if}	       				       		
+		       		{if segment_3_category_group_id=='3' AND segment_4_category_group_id=='2'}
+					 			<li><a href="#mobile-nav-display-1">Categories</a></li>
+					 			<li><a href="">{segment_3_category_name}</a></li>
+					 			<li><a href="">{segment_4_category_name}</a></li>
+		       		{/if}			       		 		       				       		
+	       		{/if}
+				 		{if segment_3!='' AND segment_4!='' AND segment_5!=''}
+		       		{if segment_3_category_group_id=='1' AND segment_4_category_group_id=='3' AND segment_5_category_group_id=='2'}
+					 			<li><a href="">{segment_3_category_name}</a></li>
+					 			<li><a href="">{segment_4_category_name}</a></li>
+					 			<li><a href="">{segment_5_category_name}</a></li>
+		       		{/if}	 
+		       		{if segment_3_category_group_id=='1' AND segment_4_category_group_id=='2' AND segment_5_category_group_id=='3'}
+					 			<li><a href="">{segment_3_category_name}</a></li>
+					 			<li><a href="">{segment_5_category_name}</a></li>
+					 			<li><a href="">{segment_4_category_name}</a></li>
+		       		{/if}	 
+		       		{if segment_3_category_group_id=='2' AND segment_4_category_group_id=='1' AND segment_5_category_group_id=='3'}
+					 			<li><a href="">{segment_4_category_name}</a></li>
+					 			<li><a href="">{segment_5_category_name}</a></li>
+					 			<li><a href="">{segment_3_category_name}</a></li>
+		       		{/if}	 
+		       		{if segment_3_category_group_id=='2' AND segment_4_category_group_id=='3' AND segment_5_category_group_id=='1'}
+					 			<li><a href="">{segment_5_category_name}</a></li>
+					 			<li><a href="">{segment_4_category_name}</a></li>
+					 			<li><a href="">{segment_3_category_name}</a></li>
+		       		{/if}	
+		       		{if segment_3_category_group_id=='3' AND segment_4_category_group_id=='2' AND segment_5_category_group_id=='1'}
+					 			<li><a href="">{segment_5_category_name}</a></li>
+					 			<li><a href="">{segment_3_category_name}</a></li>
+					 			<li><a href="">{segment_4_category_name}</a></li>
+		       		{/if}	
+		       		{if segment_3_category_group_id=='3' AND segment_4_category_group_id=='1' AND segment_5_category_group_id=='2'}
+					 			<li><a href="">{segment_4_category_name}</a></li>
+					 			<li><a href="">{segment_3_category_name}</a></li>
+					 			<li><a href="">{segment_5_category_name}</a></li>
+		       		{/if}			       				       		 		       				       				       		
+				 		{/if} 
+		      {if:else}       
+	          <li><a href="#mobile-nav-display-1">Category</a></li>
+	          <li><a href="#mobile-nav-display-2">Industry</a></li>
+	          <li><a href="#mobile-nav-display-3">Location</a></li>		        
+		      {/if}  
+		    </ul>      
+      </div>
+      <div class="mobile-nav-display" id="mobile-nav-display-1">
+        <div class="top">
+          <a class="back"><i class="icon-chevron-left"></i> Back</a>
+          <h3>Category</h3>
+        </div>
+        <div class="center">
+          <ul>
+						{exp:channel:categories category_group="1" style="linear"}
+							{if segment_3==''}
+								<li><a href="{site_url}content/resultados_categorias/{category_url_title}">{category_name}</a></li>
+							{/if}	
+							{if segment_3!='' AND segment_4==''}
+								<li><a href="{site_url}content/resultados_categorias/{segment_3}/{category_url_title}">{category_name}</a></li>
+							{/if}								
+							{if segment_3!='' AND segment_4!='' AND segment_5==''}
+								<li><a href="{site_url}content/resultados_categorias/{segment_3}/{segment_4}/{category_url_title}">{category_name}</a></li>
+							{/if}	
+						{/exp:channel:categories}        
+          </ul>
+        </div>
+        <div class="bottom"></div>
+      </div>
+      <div class="mobile-nav-display" id="mobile-nav-display-2">
+        <div class="top">
+          <a class="back"><i class="icon-chevron-left"></i> Back</a>
+          <h3>Industry</h3>
+        </div>
+        <div class="center">
+          <ul>
+						{exp:channel:categories category_group="3" style="linear"}
+							{if segment_3==''}
+								<li><a href="{site_url}content/resultados_categorias/{category_url_title}">{category_name}</a></li>
+							{/if}	
+							{if segment_3!='' AND segment_4==''}
+								<li><a href="{site_url}content/resultados_categorias/{segment_3}/{category_url_title}">{category_name}</a></li>
+							{/if}								
+							{if segment_3!='' AND segment_4!='' AND segment_5==''}
+								<li><a href="{site_url}content/resultados_categorias/{segment_3}/{segment_4}/{category_url_title}">{category_name}</a></li>
+							{/if}									
+						{/exp:channel:categories}
+          </ul>
+        </div>
+        <div class="bottom"></div>
+      </div>
+      <div class="mobile-nav-display" id="mobile-nav-display-3">
+        <div class="top">
+          <a class="back"><i class="icon-chevron-left"></i> Back</a>
+          <h3>Location</h3>
+        </div>
+        <div class="center">
+          <ul>
+						{exp:channel:categories category_group="2" style="linear"}
+							{if segment_3==''}
+								<li><a href="{site_url}content/resultados_categorias/{category_url_title}">{category_name}</a></li>
+							{/if}	
+							{if segment_3!='' AND segment_4==''}
+								<li><a href="{site_url}content/resultados_categorias/{segment_3}/{category_url_title}">{category_name}</a></li>
+							{/if}								
+							{if segment_3!='' AND segment_4!='' AND segment_5==''}
+								<li><a href="{site_url}content/resultados_categorias/{segment_3}/{segment_4}/{category_url_title}">{category_name}</a></li>
+							{/if}
+						{/exp:channel:categories}
+          </ul>
+        </div>
+        <div class="bottom"></div>
+      </div>
+    </section>

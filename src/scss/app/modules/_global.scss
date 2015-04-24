@@ -104,7 +104,7 @@ $pin-bg-color: white;
 			overflow: hidden;
 			position: relative;
 			@media #{$md-down} {
-				height: $pin-height-control - 80;
+				height: $pin-height-control - 140;
 			}
 			img {
 				// @include transition(all 0.3s ease-in-out);

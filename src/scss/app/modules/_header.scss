@@ -44,6 +44,9 @@ header.header {
 		@include flex-align-end;
 		text-align: right;
 		width: 280px;
+		form {
+			width: 280px;
+		}
 	}
 }
 .logo {

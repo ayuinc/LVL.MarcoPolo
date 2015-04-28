@@ -245,7 +245,7 @@ $pin-bg-color: white;
 	@include transform(translateY(-100%));
 	// @include flex-column-center;
 	padding: $header-height-control 0;
-	background-color: rgba($gray-darker, 0.95);
+	background-color: rgba($gray-darker, 1);
 	z-index: 500;
 	overflow-y: scroll;
 	@media #{$md-down} {

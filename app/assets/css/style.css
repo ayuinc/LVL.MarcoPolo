@@ -5896,7 +5896,7 @@ body::-webkit-scrollbar {
   animation-duration: 2s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+1) {
-  width: 88.28293%;
+  width: 57.71506%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+1) span {
   -webkit-animation-delay: 1s;
@@ -5904,7 +5904,7 @@ body::-webkit-scrollbar {
   animation-delay: 1s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+2) {
-  width: 40.82526%;
+  width: 38.19412%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+2) span {
   -webkit-animation-delay: 2s;
@@ -5912,7 +5912,7 @@ body::-webkit-scrollbar {
   animation-delay: 2s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+3) {
-  width: 32.61808%;
+  width: 0.81149%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+3) span {
   -webkit-animation-delay: 3s;
@@ -5920,7 +5920,7 @@ body::-webkit-scrollbar {
   animation-delay: 3s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+4) {
-  width: 86.78743%;
+  width: 81.04472%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+4) span {
   -webkit-animation-delay: 4s;
@@ -5928,7 +5928,7 @@ body::-webkit-scrollbar {
   animation-delay: 4s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+5) {
-  width: 5.99115%;
+  width: 78.9577%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+5) span {
   -webkit-animation-delay: 5s;
@@ -6002,7 +6002,7 @@ body::-webkit-scrollbar {
   -o-transform: translateY(-100%);
   transform: translateY(-100%);
   padding: 70px 0;
-  background-color: rgba(62, 63, 64, 0.95);
+  background-color: #3e3f40;
   z-index: 500;
   overflow-y: scroll;
 }
@@ -18844,7 +18844,7 @@ header.header .right form {
   background-repeat: no-repeat;
   background-size: 100%;
   height: 40px;
-  width: 160px;
+  width: 112px;
   background-image: url(../img/logo_LVL.MarcoPolo.png);
 }
 .logo img, header.header-mobile .logo img {

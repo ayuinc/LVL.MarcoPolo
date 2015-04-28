@@ -14,7 +14,7 @@
 		background-color: $gray-darker;
 		@include clearfix;
 		padding: $container-fluid;
-		border-bottom: 1px solid $gray-lighter;
+		// border-bottom: 1px solid $gray-lighter;
 		@include normalize-text;
 		.title {
 			float: left;

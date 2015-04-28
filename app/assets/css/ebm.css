@@ -24544,51 +24544,51 @@ a.bg-hover-linkedin:not(.btn):hover,
 }
 .grid-list.grid-list-1 .grid-list-item,
 .grid-list.grid-list-1 > li {
-  width: 99.7%;
+  width: 99.95%;
 }
 .grid-list.grid-list-2 .grid-list-item,
 .grid-list.grid-list-2 > li {
-  width: 49.7%;
+  width: 49.95%;
 }
 .grid-list.grid-list-3 .grid-list-item,
 .grid-list.grid-list-3 > li {
-  width: 33.03333%;
+  width: 33.28333%;
 }
 .grid-list.grid-list-4 .grid-list-item,
 .grid-list.grid-list-4 > li {
-  width: 24.7%;
+  width: 24.95%;
 }
 .grid-list.grid-list-5 .grid-list-item,
 .grid-list.grid-list-5 > li {
-  width: 19.7%;
+  width: 19.95%;
 }
 .grid-list.grid-list-6 .grid-list-item,
 .grid-list.grid-list-6 > li {
-  width: 16.36667%;
+  width: 16.61667%;
 }
 .grid-list.grid-list-7 .grid-list-item,
 .grid-list.grid-list-7 > li {
-  width: 13.98571%;
+  width: 14.23571%;
 }
 .grid-list.grid-list-8 .grid-list-item,
 .grid-list.grid-list-8 > li {
-  width: 12.2%;
+  width: 12.45%;
 }
 .grid-list.grid-list-9 .grid-list-item,
 .grid-list.grid-list-9 > li {
-  width: 10.81111%;
+  width: 11.06111%;
 }
 .grid-list.grid-list-10 .grid-list-item,
 .grid-list.grid-list-10 > li {
-  width: 9.7%;
+  width: 9.95%;
 }
 .grid-list.grid-list-11 .grid-list-item,
 .grid-list.grid-list-11 > li {
-  width: 8.79091%;
+  width: 9.04091%;
 }
 .grid-list.grid-list-12 .grid-list-item,
 .grid-list.grid-list-12 > li {
-  width: 8.03333%;
+  width: 8.28333%;
 }
 @media only screen and (max-width: 480px) {
   .grid-list.grid-list-1-xs .grid-list-item,

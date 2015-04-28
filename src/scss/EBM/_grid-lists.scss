@@ -19,7 +19,7 @@ $grid-list-item-height: 350px;
 		&.grid-list-#{$i} {
 			.grid-list-item,
 			> li {
-				width: percentage(1/$i) - 0.30;
+				width: percentage(1/$i) - 0.05;
 			}
 		}
 	}

@@ -96,7 +96,7 @@
 							    anonymous="yes" 
 								}
 								<input type="hidden" name="rating" id="rating" value="1">
-                <button type="submit" name="submit" value="Vota" class="btn btn-icon-custom btn-gray-darker btn-icon-left">
+                <button type="submit" name="submit" value="Vota" class="btn btn-icon-custom btn-gray-darker btn-sm btn-icon-left">
                   <i>
                     {exp:rating:stats entry_id="{entry_id}"}
                       {overall_count}
@@ -112,6 +112,12 @@
 								{/exp:rating:form}
               </div>
             </div>
+          </aside>
+        </div>
+        <div class="row mb-ch-21">
+          <article class="col-sm-8 pr-70-sm">
+          </article>
+          <aside class="col-sm-4 pl-70-sm">
             <div class="normalize-text">
               <h6 class="uppercase">Tags</h6>
               <div class="separator separator-gray-light separator-full-width"></div>
@@ -119,13 +125,13 @@
             <div class="mb-42">
               <div class="info block">
                 <nav class="mb-ch-7">
-	                {exp:tag:tags
-									    entry_id="{entry_id}"
-									    backspace="2"
-									    orderby="tag_name"
-									    sort="desc"
-									    limit="15"
-									}
+                  {exp:tag:tags
+                      entry_id="{entry_id}"
+                      backspace="2"
+                      orderby="tag_name"
+                      sort="desc"
+                      limit="15"
+                  }
                   <a href="{path='content/resultados_tags'}/{websafe_tag}" class="btn btn-outline btn-sm btn-gray-light">{tag}</a>
                   {/exp:tag:tags}
                 </nav>
@@ -138,13 +144,8 @@
                 <span class="input-group-addon">URL</span>
                 <input type="text" class="form-control" value="{site_url}project/{url_title}" aria-describedby="posturl" onclick="this.select()">
               </div>
-              <nav class="pv-14 lead-ch text-gray share-icons-bar">	
-								<!-- Go to www.addthis.com/dashboard to customize your tools -->
-								<div class="addthis_sharing_toolbox"></div>					
-                <!--
-	              <a href="#" class="flaticon-social122"></a>
-                <a href="#" class="flaticon-social136"></a>
-                -->
+              <nav class="pv-14 lead-ch text-gray share-icons-bar"> 
+                <div class="addthis_sharing_toolbox"></div>     
               </nav>
             </div>
           </aside>

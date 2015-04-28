@@ -266,7 +266,7 @@ $pin-bg-color: white;
 	[class*="filter-module-"] {
 		@include position(absolute, 35% null null null);
 		@include transform(translateX(100%));
-		@include transition(all 0.2s $ease-out-quint);
+		// @include transition(all 0.2s $ease-out-quint);
 		// opacity: 0;
 		width: 100%;
 		@media #{$md-down} {
@@ -277,7 +277,7 @@ $pin-bg-color: white;
 		}
 		&.on-screen {
 			@include transform(translateX(0));
-			@include transition(all 0.2s $ease-out-quint);
+			// @include transition(all 0.2s $ease-out-quint);
 		}
 		&.animated {
 			// opacity: 1;
@@ -347,7 +347,7 @@ $gallery-cell-height-control: 490px;
 		// margin: 0 -($container-fluid / 2);
 		.gallery-cell {
 			@include bg-img-control-top; 
-			width: 100%;
+			width: 101%;
 			height: $gallery-cell-height-control;
 			height: rem($gallery-cell-height-control);
 		}

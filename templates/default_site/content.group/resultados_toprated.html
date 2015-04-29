@@ -7,8 +7,8 @@
         <div class="row grid-list grid-list-4 grid-list-2-sm grid-list-1-xs pins-grid grid-list-2-md">
 				{!--embed="content/scroll_toprated"--}
 
-				{exp:query sql="SELECT * FROM `exp_ratings`"}
-        {title}
+				{exp:query sql="SELECT screen_name FROM exp_members"}
+        {screen_name}<br>
 				{/exp:query}
 	
         </div>

@@ -7,7 +7,7 @@
         <div class="row grid-list grid-list-4 grid-list-2-sm grid-list-1-xs pins-grid grid-list-2-md">
 				
 
-				{exp:query sql="SELECT count(rating), entry_id as cantidad_votos FROM exp_ratings group by entry_id order by cantidad_votos DESC"}
+				{exp:query sql="SELECT entry_id, count(rating) as cantidad_votos FROM exp_ratings group by entry_id order by cantidad_votos DESC"}
         {cantidad_votos} {entry_id}<br>
         {!--embed="content/scroll_toprated"--}
 				{/exp:query}

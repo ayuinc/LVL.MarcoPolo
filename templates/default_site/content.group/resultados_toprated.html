@@ -8,7 +8,6 @@
 				{!--embed="content/scroll_toprated"--}
 
 				{exp:query sql="SELECT entry_id, count(rating) as cantidad_votos FROM exp_ratings group by entry_id order by cantidad_votos DESC"}
-        {cantidad_votos} {entry_id}
         {exp:channel:entries channel="project" limit="1" entry_id="{entry_id}" dynamic="off"}
         <div class="grid-list-item">
 	        <div class="pin">

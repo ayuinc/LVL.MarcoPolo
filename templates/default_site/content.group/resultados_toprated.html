@@ -5,7 +5,22 @@
       <section class="container">
 				{embed="includes/sort"}
         <div class="row grid-list grid-list-4 grid-list-2-sm grid-list-1-xs pins-grid grid-list-2-md">
-				{embed="content/scroll_toprated"}
+				{!--embed="content/scroll_toprated"--}
+				<ul>
+				{exp:rating:rank
+				    limit="10"
+				}
+				    <li>
+				        {exp:rating:stats
+				            entry_id="{entry_id}"
+				            precision="1"
+				        }
+				            {stars_avg_rating} ({avg_rating}/5)
+				        {/exp:rating:stats}
+				        <a href="{url_title_path='blog/article'}/">{title}</a>
+				    </li>
+				{/exp:rating:rank}
+				<ul>
         </div>
       </section>
     </main>

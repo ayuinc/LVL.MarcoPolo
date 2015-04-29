@@ -7,7 +7,7 @@
         <div class="row grid-list grid-list-4 grid-list-2-sm grid-list-1-xs pins-grid grid-list-2-md">
 				{!--embed="content/scroll_toprated"--}
 
-	{exp:channel:entries require_entry="yes"}
+	{exp:channel:entries require_entry="yes" channel="project"}
 
     <h2>{title}</h2>
     <p>{body}</p>
@@ -23,7 +23,7 @@
         {/if}
     {/exp:rating:stats}
 
-{/exp:channel:entries}
+	{/exp:channel:entries}
 	
         </div>
       </section>

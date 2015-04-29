@@ -7,23 +7,9 @@
         <div class="row grid-list grid-list-4 grid-list-2-sm grid-list-1-xs pins-grid grid-list-2-md">
 				{!--embed="content/scroll_toprated"--}
 
-	{exp:channel:entries channel="project" limit="12" dynamic="off"}
-
-    <h2>{title}</h2>
-    <p>{body}</p>
-
-    <h4>Rating Stats for this Entry:</h4>
-    {exp:rating:stats
-        entry_id="{entry_id}"
-    }
-        <p>Rated: {stars_overall_avg} ({overall_avg}/5), based on 
-            {overall_count} review{if overall_count != "1"}s{/if}</p>
-        {if rating_no_results}
-            <p>No ratings have been submitted for this entry yet.</p>
-        {/if}
-    {/exp:rating:stats}
-
-	{/exp:channel:entries}
+				{exp:query sql="SELECT count(rating),entry_id,title FROM exp_ratings group by entry_id order by count(rating) DESC "}
+        {title}
+				{/exp:query}
 	
         </div>
       </section>

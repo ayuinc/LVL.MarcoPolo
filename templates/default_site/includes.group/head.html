@@ -68,6 +68,8 @@
     <link rel="apple-touch-icon" sizes="76x76" href="#">
     <link rel="apple-touch-icon" href="#">  
   
-  {exp:authentic username='herman' password='herman001' realm='Control de Ingreso'}
+  {exp:channel:entries channel='autentificacion'}
+    {exp:authentic username='{username_auth}' password='{password_auth}' realm='{title}'}
+	{/exp:channel:entries}
  
   <div class="site-wrapper"> <!-- Body -->

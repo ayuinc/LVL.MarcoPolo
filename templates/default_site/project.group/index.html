@@ -15,10 +15,10 @@
           <div class="right">
             <nav class="toolbar-filters">
 							{exp:channel:prev_entry}
-							  <a href="{path='project'}"><i class="icon-chevron-right"></i> Anterior</a>
+							  <a href="{path='project'}"><i class="icon-chevron-left"></i> Anterior</a>
 							{/exp:channel:prev_entry}	  
 							{exp:channel:next_entry}
-							  <a href="{path='project'}">Siguiente <i class="icon-chevron-left"></i></a>
+							  <a href="{path='project'}">Siguiente <i class="icon-chevron-right"></i></a>
 							{/exp:channel:next_entry}	   
             </nav>
           </div>
@@ -35,10 +35,14 @@
               <div class="panel-body">
                 <div class="gallery-wrapper">
                   <div class="gallery-control-left">
-                    <a href="#" class="gallery-button-left"><i class="icon-chevron-right"></i></a>
+	                  {exp:channel:prev_entry}
+                    <a href="{path='project'}" class="gallery-button-left"><i class="icon-chevron-right"></i></a>
+                    {/exp:channel:prev_entry}
                   </div>
                   <div class="gallery-control-right">
-                    <a href="#" class="gallery-button-right"><i class="icon-chevron-left"></i></a>
+	                  {exp:channel:next_entry}
+                    <a href="{path='project'}" class="gallery-button-right"><i class="icon-chevron-left"></i></a>
+                    {/exp:channel:next_entry}
                   </div>
                   <div class="gallery">
                     {project_imagenes}

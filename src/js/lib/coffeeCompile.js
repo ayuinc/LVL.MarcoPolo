@@ -8,8 +8,9 @@
 (function() {
   'use-strict';
   $(document).ready(function() {
-    var $gallery, $galleryControlLeft, $galleryControlRight, bodyScrollController, lockBody;
+    var $body, $gallery, $galleryControlLeft, $galleryControlRight, bodyScrollController, lockBody;
     bodyScrollController = new ScrollMagic.Controller();
+    $body = 'body';
     bodyScrollController.scrollTo(function(newpos) {
       TweenMax.to(window, 0.5, {
         scrollTo: {
@@ -18,13 +19,14 @@
       });
     });
     lockBody = function() {
-      var body;
-      body = 'body';
-      $(body).css({
+      $($body).css({
         overflow: 'hidden'
       });
-      bodyScrollController.scrollTo(body);
+      bodyScrollController.scrollTo($body);
     };
+    $('.back-to-top').click(function(e) {
+      bodyScrollController.scrollTo($body);
+    });
     $('.filter-triggers li').click(function(e) {
       var idRef;
       e.preventDefault();

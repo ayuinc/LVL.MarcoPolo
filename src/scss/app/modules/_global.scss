@@ -449,6 +449,7 @@ $gallery-cell-height-control: 490px;
 	&:hover,
 	&.active {
 		background-color: darken(#fff, 3%);
+		cursor: pointer;
 		i {
 			color: darken($brand-primary, 3%);
 		}

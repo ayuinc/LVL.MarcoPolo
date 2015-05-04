@@ -20,6 +20,7 @@ $(document).ready ->
 	# TRANSFORM ICONS INITIALIZE
 	# transformicons.add('.tcon')
 	bodyScrollController = new ScrollMagic.Controller()
+	$body = 'body'
 
 	# SCROLL TO
 	bodyScrollController.scrollTo((newpos)->
@@ -28,12 +29,17 @@ $(document).ready ->
 		)
 
 	lockBody = ()->
-		body = 'body'
-		$(body).css({
+		$($body).css({
 			overflow: 'hidden'
 			})
-		bodyScrollController.scrollTo(body)
+		bodyScrollController.scrollTo($body)
 		return
+
+	# Back to top
+	$('.back-to-top').click((e)->
+		bodyScrollController.scrollTo($body)
+		return
+		)
 
 	# filterWords = ['Categories', 'Industry', 'Location']
 	$('.filter-triggers li').click((e)->

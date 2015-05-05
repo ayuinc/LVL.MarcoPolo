@@ -324,29 +324,30 @@ input[type="submit"].btn,
 	@for $i from 1 through length($brand-colors-sufix-list) {
 		&.btn-#{nth($brand-colors-sufix-list, $i)}.btn-icon-custom {
 			@include background(linear-gradient(#{lighten(nth($brand-colors-list, $i), 7%), nth($brand-colors-list, $i)} top repeat));
+			@include box-shadow(0 1px 1px 0px rgba($gray-darker, 0.3));
+			@include clearfix;
 			border: $buttons-custom-border-size $buttons-custom-border-style #{darken(nth($brand-colors-list, $i), 9%)};
 			border-radius: $border-radius-base;
 			// color: #{nth($brand-colors-list, $i)};
-			@include box-shadow(0 1px 1px 0px rgba($gray-darker, 0.3));
 			padding: 0;
-			@include clearfix;
 			span,
 			i {
-				display: inline-block;
+				@include flex-row-center;
+				@include flex-align-center;
 				height: $button-icon-height-control;
-				@include flex-column-center;
+				display: inline-block;
 			}
 			span {
-				float: left;
 				padding: 0 $padding-base-horizontal;
+				float: left;
 			}
 			i {
-				width: $button-icon-height-control;
-				float: right;
+				@include border-right-radius($border-radius-base);
 				border-left: $buttons-custom-border-size $buttons-custom-border-style #{nth($brand-colors-list, $i)};
+				width: $button-icon-height-control;
 				background-color: white;
 				color: $brand-primary;
-				@include border-right-radius($border-radius-base);
+				float: right;
 			}
 			&:hover {
 				@include background(linear-gradient(#{lighten(nth($brand-colors-list, $i), 7%), nth($brand-colors-list, $i)} bottom repeat)); 
@@ -424,14 +425,16 @@ input[type="submit"].btn,
 			@include clearfix;
 			span,
 			i {
-				display: inline-block;
-				height: $button-icon-height-control;
-				@include flex-column-center;
+				@include flex-row-center;
+				@include flex-align-center;
 				@include light;
+				mih-height: $button-icon-height-control - 15;
+				padding: ($container-fluid / 2) 0;
+				display: inline-block;
 			}
 			span {
+				padding: ($container-fluid / 2) $padding-base-horizontal;
 				float: left;
-				padding: 0 $padding-base-horizontal;
 			}
 			i {
 				width: $button-icon-height-control;
@@ -483,10 +486,10 @@ input[type="submit"].btn,
 			&.btn-sm {
 				span, 
 				i {
-					height: $button-icon-height-control - $padding-small-horizontal;
+					min-height: $button-icon-height-control - 18;
 				}
 				span {
-					padding: 0 $padding-small-horizontal;
+					padding: 5px $padding-small-horizontal;
 				}
 				i {
 					width: $button-icon-height-control - $padding-small-horizontal;

@@ -6,7 +6,7 @@
 		{embed="includes/filtros"}
     <main role="main" class="site-content">
       <section class="container">
-        <header class="toolbar">
+        <header class="toolbar hidden-print">
           <div class="left">
             <div class="toolbar-results">
               <!--<small><a href="{site_url}"><i class="icon-chevron-left"></i> Regresar al inicio</a></small>-->
@@ -109,7 +109,7 @@
                 	<br><a href="{project_link_adicional}" target="_blank">Información adicional <i class="icon-arrow-right"></i></a>
                 {/if}
               </div>
-              <div class="info-block mb-42">
+              <div class="info-block mb-42 hidden-print">
 								{exp:rating:form
 							    entry_id="{entry_id}"
 							    collection="Votos"
@@ -130,7 +130,7 @@
                 </button>     
 								{/exp:rating:form}
               </div>
-	            <div class="normalize-text">
+	            <div class="normalize-text hidden-print">
 	              <h6 class="uppercase">Compartir</h6>
 	              <div class="separator separator-gray-light separator-full-width"></div>
 	              <div class="input-group">

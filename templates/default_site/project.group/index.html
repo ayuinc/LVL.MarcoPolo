@@ -6,7 +6,7 @@
 		{embed="includes/filtros"}
     <main role="main" class="site-content">
       <section class="container">
-        <header class="toolbar">
+        <header class="toolbar hidden-print">
           <div class="left">
             <div class="toolbar-results">
               <!--<small><a href="{site_url}"><i class="icon-chevron-left"></i> Regresar al inicio</a></small>-->
@@ -24,7 +24,7 @@
           </div>
         </header>
         <div class="row pv-42 mb-ch-21">
-          <article class="col-sm-8 pr-70-sm">
+          <article class="col-sm-8 pr-70-sm hidden-print">
             <div class="panel">
               <div class="panel-head">
                 <div class="title">
@@ -109,7 +109,7 @@
                 	<br><a href="{project_link_adicional}" target="_blank">Información adicional <i class="icon-arrow-right"></i></a>
                 {/if}
               </div>
-              <div class="info-block mb-42">
+              <div class="info-block mb-42 hidden-print">
 								{exp:rating:form
 							    entry_id="{entry_id}"
 							    collection="Votos"
@@ -126,13 +126,11 @@
                       {/if}
                     {/exp:rating:stats}
                   </i>
-                  <span>
-                    VOTAR
-                  </span>
+                  <span><small>VOTAR</small> <small class="icon-check ml-7"></small></span>
                 </button>     
 								{/exp:rating:form}
               </div>
-	            <div class="normalize-text">
+	            <div class="normalize-text hidden-print">
 	              <h6 class="uppercase">Compartir</h6>
 	              <div class="separator separator-gray-light separator-full-width"></div>
 	              <div class="input-group">

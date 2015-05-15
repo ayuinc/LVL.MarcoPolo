@@ -434,8 +434,31 @@ $gallery-cell-height-control: 490px;
 	}
 }
 
-
-
+/*
+	Back to top
+*/
+.back-to-top {
+	@include position(absolute, null $container-fluid $container-fluid null);
+	@include flex-column-center;
+	@include flex-align-center;
+	@include box-shadow-default;
+	background-color: #fff;
+	border-radius: 50%;	
+	height: 56px;
+	width: 56px;
+	&:hover,
+	&.active {
+		background-color: darken(#fff, 3%);
+		cursor: pointer;
+		i {
+			color: darken($brand-primary, 3%);
+		}
+	}
+	i {
+		color: $brand-primary;
+		font-size: $font-size-h3;
+	}
+}
 
 
 

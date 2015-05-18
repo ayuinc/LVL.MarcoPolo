@@ -5728,7 +5728,7 @@ body::-webkit-scrollbar {
 .pin .pin-top,
 .pin .pin-center,
 .pin .pin-bottom {
-  min-height: 123px;
+  min-height: 110px;
 }
 .pin .pin-top:before, .pin .pin-top:after,
 .pin .pin-center:before,
@@ -5896,7 +5896,7 @@ body::-webkit-scrollbar {
   animation-duration: 2s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+1) {
-  width: 5.81039%;
+  width: 98.39804%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+1) span {
   -webkit-animation-delay: 1s;
@@ -5904,7 +5904,7 @@ body::-webkit-scrollbar {
   animation-delay: 1s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+2) {
-  width: 3.62243%;
+  width: 30.78833%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+2) span {
   -webkit-animation-delay: 2s;
@@ -5912,7 +5912,7 @@ body::-webkit-scrollbar {
   animation-delay: 2s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+3) {
-  width: 9.40252%;
+  width: 42.20108%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+3) span {
   -webkit-animation-delay: 3s;
@@ -5920,7 +5920,7 @@ body::-webkit-scrollbar {
   animation-delay: 3s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+4) {
-  width: 55.42506%;
+  width: 50.65133%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+4) span {
   -webkit-animation-delay: 4s;
@@ -5928,7 +5928,7 @@ body::-webkit-scrollbar {
   animation-delay: 4s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+5) {
-  width: 7.25213%;
+  width: 50.54439%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+5) span {
   -webkit-animation-delay: 5s;
@@ -5938,9 +5938,6 @@ body::-webkit-scrollbar {
 .pin .pin-category,
 .pin .pin-title {
   text-transform: uppercase;
-}
-.pin small .pin-category {
-  line-height: 100% !important;
 }
 .pin .pin-title {
   -webkit-transition: color 0.3s ease-in-out;

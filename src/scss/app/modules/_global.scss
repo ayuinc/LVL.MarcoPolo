@@ -62,7 +62,7 @@ body {
 }
 
 /* Pins */
-$pin-height-control: 375px;
+$pin-height-control: 350px;
 $pin-bg-color: white;
 .pin {
 	@include box-shadow(0px 1px 3px 0px rgba($gray-light, 0.3));
@@ -90,7 +90,8 @@ $pin-bg-color: white;
 	.pin-center,
 	.pin-bottom {
 		@include clearfix;
-		min-height: $pin-height-control / 7;
+		//min-height: $pin-height-control / 7;
+		min-height: 123px;
 	}
 	.pin-top {
 		@include border-top-radius($border-radius-base);

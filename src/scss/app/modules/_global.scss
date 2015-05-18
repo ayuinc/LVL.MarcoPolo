@@ -196,7 +196,8 @@ $pin-bg-color: white;
 	.pin-title {
 		@include transition(color 0.3s ease-in-out);
 		color: $gray-darker;
-		font-size: $font-size-h4;
+		//font-size: $font-size-h4;
+		font-size: 15px;
 		margin: 3px 0;
 		margin: rem(3px) 0;
 		a {

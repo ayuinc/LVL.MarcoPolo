@@ -5728,7 +5728,7 @@ body::-webkit-scrollbar {
 .pin .pin-top,
 .pin .pin-center,
 .pin .pin-bottom {
-  min-height: 57.14286px;
+  min-height: 53.57143px;
 }
 .pin .pin-top:before, .pin .pin-top:after,
 .pin .pin-center:before,
@@ -5754,13 +5754,13 @@ body::-webkit-scrollbar {
   overflow: hidden;
 }
 .pin .pin-center .pin-pic {
-  height: 230px;
+  height: 205px;
   overflow: hidden;
   position: relative;
 }
 @media only screen and (max-width: 992px) {
   .pin .pin-center .pin-pic {
-    height: 260px;
+    height: 235px;
   }
 }
 .pin .pin-center .pin-pic img {
@@ -5815,7 +5815,7 @@ body::-webkit-scrollbar {
 .pin .pin-onload .pin-onload-top,
 .pin .pin-onload .pin-onload-center,
 .pin .pin-onload .pin-onload-bottom {
-  min-height: 57.14286px;
+  min-height: 53.57143px;
 }
 .pin .pin-onload .pin-onload-top,
 .pin .pin-onload .pin-onload-bottom {
@@ -5857,7 +5857,7 @@ body::-webkit-scrollbar {
   -o-justify-content: center;
   justify-content: center;
   -ms-flex-pack: center;
-  min-height: 400px;
+  min-height: 375px;
   color: #b5b6b7;
 }
 .pin .pin-onload-content {
@@ -5896,7 +5896,7 @@ body::-webkit-scrollbar {
   animation-duration: 2s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+1) {
-  width: 72.307%;
+  width: 33.56954%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+1) span {
   -webkit-animation-delay: 1s;
@@ -5904,7 +5904,7 @@ body::-webkit-scrollbar {
   animation-delay: 1s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+2) {
-  width: 32.64302%;
+  width: 65.19541%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+2) span {
   -webkit-animation-delay: 2s;
@@ -5912,7 +5912,7 @@ body::-webkit-scrollbar {
   animation-delay: 2s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+3) {
-  width: 21.35383%;
+  width: 29.4373%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+3) span {
   -webkit-animation-delay: 3s;
@@ -5920,7 +5920,7 @@ body::-webkit-scrollbar {
   animation-delay: 3s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+4) {
-  width: 32.47522%;
+  width: 77.18214%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+4) span {
   -webkit-animation-delay: 4s;
@@ -5928,7 +5928,7 @@ body::-webkit-scrollbar {
   animation-delay: 4s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+5) {
-  width: 52.26456%;
+  width: 92.03611%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+5) span {
   -webkit-animation-delay: 5s;

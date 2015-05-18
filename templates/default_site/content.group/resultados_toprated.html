@@ -22,7 +22,14 @@
 					      <img src="{image:url:small}" alt="Grid 1" class="ignore-srcset">
 					      {/project_imagenes}
 					      <a href="{site_url}project/{url_title}" class="overlay">
-						      <div class="pin-bottom"></div>
+						      <div class="pin-bottom">
+							      <button class="btn btn-icon-custom btn-gray-darker btn-icon-left">
+							      	<i>{exp:rating:stats entry_id="{entry_id}"}{overall_count}{if rating_no_results}0{/if}{/exp:rating:stats}</i>
+											<span>
+												<small class="icon-check"></small>
+											</span>
+										</button>
+						      </div>
 						    </a>
 						  </div>
 						</div>

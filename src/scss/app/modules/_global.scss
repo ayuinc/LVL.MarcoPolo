@@ -192,7 +192,9 @@ $pin-bg-color: white;
 	.pin-title {
 		text-transform: uppercase;
 	}
-	.pin-category {}
+	.pin-category {
+		line-height: 100% !important;
+	}
 	.pin-title {
 		@include transition(color 0.3s ease-in-out);
 		color: $gray-darker;

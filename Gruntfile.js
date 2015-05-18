@@ -425,11 +425,7 @@ module.exports = function (grunt) {
     'coffee:dev',
     // 'sass:ebm',
     // 'sass:dev',
-<<<<<<< HEAD
-     'bower:dev',
-=======
-    'bower:dev',
->>>>>>> 8e0225e4b8b5d236e48ac2966e35647dabfffd33
+    // 'bower:dev',
     // 'autoprefixer:dev',
     // 'cssmin:dev',
     // 'jshint',

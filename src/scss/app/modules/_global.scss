@@ -90,7 +90,8 @@ $pin-bg-color: white;
 	.pin-center,
 	.pin-bottom {
 		@include clearfix;
-		min-height: $pin-height-control / 7;
+		//min-height: $pin-height-control / 7;
+		min-height: 115px;
 	}
 	.pin-top {
 		@include border-top-radius($border-radius-base);
@@ -191,11 +192,11 @@ $pin-bg-color: white;
 	.pin-title {
 		text-transform: uppercase;
 	}
-	.pin-category {}
 	.pin-title {
 		@include transition(color 0.3s ease-in-out);
 		color: $gray-darker;
-		font-size: $font-size-h4;
+		//font-size: $font-size-h4;
+		font-size: 15px;
 		margin: 3px 0;
 		margin: rem(3px) 0;
 		a {

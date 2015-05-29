@@ -265,7 +265,7 @@ $pin-bg-color: white;
 		}
 	}
 	[class*="filter-module-"] {
-		@include position(absolute, 6% null null null);
+		@include position(absolute, 250px null null null);
 		@include transform(translateX(100%));
 		// @include transition(all 0.2s $ease-out-quint);
 		// opacity: 0;

@@ -445,7 +445,7 @@ module.exports = function (grunt) {
    */
   grunt.registerTask('build', [
     'sass:dist',
-    'bower:dist',
+    // 'bower:dist',
     // 'autoprefixer:dist',
     'cssmin:dist',
     'clean:dist',

@@ -91,7 +91,7 @@ $pin-bg-color: white;
 	.pin-bottom {
 		@include clearfix;
 		//min-height: $pin-height-control / 7;
-		min-height: 115px;
+		min-height: 130px;
 	}
 	.pin-top {
 		@include border-top-radius($border-radius-base);

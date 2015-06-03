@@ -439,7 +439,7 @@ $gallery-cell-height-control: 490px;
 	Back to top
 */
 .back-to-top {
-	@include position(absolute, null $container-fluid $container-fluid null);
+	@include position(fixed, null $container-fluid $container-fluid null);
 	@include flex-column-center;
 	@include flex-align-center;
 	@include box-shadow-default;

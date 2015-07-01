@@ -36,12 +36,10 @@
 					parse="inward" 
 					category="{segment_3_category_id}"
 				}
-				{segment_3_category_id}
 			{/if}	 			
 			{if segment_3!='' AND segment_4!='' AND segment_5==''}
 				{exp:channel:entries 
-					channel="project" 
-					limit="12" 
+					channel="project"  
 					sort="desc" 
 					orderby="date" 
 					paginate="bottom" 
@@ -52,8 +50,7 @@
 			{/if}	 		
 			{if segment_3!='' AND segment_4!='' AND segment_5!=''}
 				{exp:channel:entries 
-					channel="project" 
-					limit="12" 
+					channel="project"  
 					sort="desc" 
 					orderby="date" 
 					paginate="bottom" 

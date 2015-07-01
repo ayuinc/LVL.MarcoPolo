@@ -29,10 +29,10 @@
 			{if segment_3!='' AND segment_4==''}
 				{exp:channel:entries 
 					channel="project" 
-					limit="12" 
 					sort="desc" 
 					orderby="date" 
 					paginate="bottom" 
+					dynamic="no" 
 					parse="inward" 
 					category="{segment_3_category_id}"
 				}

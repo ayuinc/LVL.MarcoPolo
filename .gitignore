@@ -24,7 +24,6 @@ node_modules
 
 ## Bower
 src/components
-lib
 
 ## Images
 # app/assets/img/*.jpg

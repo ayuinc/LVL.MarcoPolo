@@ -15,7 +15,7 @@ $config['app_version'] = '293';
 $config['license_contact'] = 'herman.marin@gmail.com';
 $config['license_number'] = '5343-3237-2705-9088';
 $config['debug'] = '1';
-$config['cp_url'] = 'http://45.55.166.73/admin.php';
+$config['cp_url'] = 'http://marcopolo.dev/admin.php';
 $config['doc_url'] = 'http://ellislab.com/expressionengine/user-guide/';
 $config['is_system_on'] = 'y';
 $config['allow_extensions'] = 'y';
@@ -24,8 +24,10 @@ $config['cookie_prefix'] = '';
 $config['cookie_httponly'] = 'y';
 $config['disable_csrf_protection'] = "y";
 
+$config['index_page'] = 'index.php';
 
 // END EE config items
+
 
 /*
 |--------------------------------------------------------------------------

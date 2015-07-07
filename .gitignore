@@ -1,3 +1,7 @@
+# CMS
+system/expressionengine/config/config.php
+system/expressionengine/config/database.php
+
 # EBM
 # http://soygus.com
 # @author MadeByGus

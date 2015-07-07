@@ -266,10 +266,11 @@ $pin-bg-color: white;
 	}
 	[class*="filter-module-"] {
 		@include position(absolute, 200px null null null);
-		@include transform(translateX(100%));
+		//@include transform(translateX(100%));
 		// @include transition(all 0.2s $ease-out-quint);
 		// opacity: 0;
 		width: 100%;
+		display:none;
 		@media #{$md-down} {
 			@include position(absolute, ($header-mobile-height-control) null null null);
 			&:last-child {
@@ -277,8 +278,9 @@ $pin-bg-color: white;
 			}
 		}
 		&.on-screen {
-			@include transform(translateX(0));
+			//@include transform(translateX(0));
 			// @include transition(all 0.2s $ease-out-quint);
+			display:block;
 		}
 		&.animated {
 			// opacity: 1;

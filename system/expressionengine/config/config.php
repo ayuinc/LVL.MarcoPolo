@@ -24,8 +24,10 @@ $config['cookie_prefix'] = '';
 $config['cookie_httponly'] = 'y';
 $config['disable_csrf_protection'] = "y";
 
+$config['index_page'] = 'index.php';
 
 // END EE config items
+
 
 /*
 |--------------------------------------------------------------------------

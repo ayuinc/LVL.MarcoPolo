@@ -1,7 +1,7 @@
 # CMS
 system/expressionengine/config/config.php
 system/expressionengine/config/database.php
-
+*/expressionengine/cache/*
 # EBM
 # http://soygus.com
 # @author MadeByGus

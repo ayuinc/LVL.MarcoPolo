@@ -10,7 +10,8 @@
 
 				 		{if segment_3!='' AND segment_4==''}
 		       		{if segment_3_category_group_id=='1'}
-		       			<li>{segment_3_category_name} <i class="icon-chevron-down"></i></li>
+		       			<li id="apagado"><a href="">{segment_3_category_name} <i class="icon-chevron-down"></i></a></li>
+		       			<script>document.getElementById('apagado').style.pointerEvents = 'none';</script>
 				        <li><a href="#filter-module-2">Industria <i class="icon-chevron-down"></i></a></li>
 								<li><a href="#filter-module-3">Ubicación <i class="icon-chevron-down"></i></a></li>	
 		       		{/if}

@@ -5,8 +5,8 @@ $active_record = TRUE;
 
 $db['expressionengine']['hostname'] = 'localhost';
 $db['expressionengine']['username'] = 'root';
-$db['expressionengine']['password'] = 'UvJmtqDYbr';
-$db['expressionengine']['database'] = 'lvlmarcopolo';
+$db['expressionengine']['password'] = '';
+$db['expressionengine']['database'] = 'marcopolo';
 $db['expressionengine']['dbdriver'] = 'mysql';
 $db['expressionengine']['pconnect'] = TRUE;
 $db['expressionengine']['dbprefix'] = 'exp_';

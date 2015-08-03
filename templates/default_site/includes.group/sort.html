@@ -1,14 +1,14 @@
-<header class="toolbar hidden-print">
+	<header class="toolbar hidden-print">
   <div class="left">
     <div class="toolbar-results">
       {if segment_2!='resultados_newer' AND segment_2!='resultados_toprated'} 
 	      <small>Mostrado resultados para:
-      	{if segment_1==''} 
-        	<span class="bold">TODAS LAS CATEGORÍAS</span>
+      	{if segment_1=='' OR segment_1=='content'} 
+        	<span>TODAS LAS CATEGORÍAS</span>
         {/if}
         
         {if segment_2=='resultados_tags'} 
-        	<span class="bold">{segment_3}</span>
+        	<span>{segment_3}</span>
         {/if}
 
         {if segment_2=='resultados'}
@@ -49,7 +49,9 @@
       {if segment_5_category_group_id=='3'}
 				<a href="{site_url}content/resultados_categorias/{segment_3}/{segment_4}" class="label label-default">{segment_5_category_name}<i class="icon-cross"></i></a>
       {/if} 
-      	<a href="{site_url}" class="label label-default">Reset<i class="icon-cross"></i></a>                              
+      {if segment_1==''}
+      	<a href="{site_url}" class="label label-default">Reset<i class="icon-cross"></i></a>  
+      {/if}                            
       </small>
     </div>
   </div>

@@ -25,7 +25,8 @@
       });
     });
   </script>
-	 
+	<?php $count = 0; ?> 
+	
 			{if segment_3!='' AND segment_4==''}
 				{exp:channel:entries 
 					channel="project" 
@@ -74,7 +75,16 @@
     <script>
     $container.append(itemTempl).isotope('appended', itemTempl);
     </script>
+    <?php $count++; ?>
     {/exp:channel:entries}
+    
+    <?php if ($count==0) { ?>
+	    <div class="row">
+		    <div class="col-sm-12 p-28">
+	      	<h4>No hay resultados para tu busqueda. Intentelo nuevamente, <span class="brand-primary"><a href="{site_url}">regresa al inicio</a></span></h4>
+		    </div>
+	    </div>
+    <?php } ?>    
 
   {infinite_scroll_container_bottom}
   </div><!-- End of # ajax_container -->

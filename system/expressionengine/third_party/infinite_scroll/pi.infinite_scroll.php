@@ -876,7 +876,7 @@ infiniteScroll<?=@$tag_count?>.addEvent(window, 'load', infiniteScroll<?=@$tag_c
   //  Plugin Usage
   // ----------------------------------------
   
-  function usage()
+ public static function usage()
   {
     ob_start(); 
 ?>

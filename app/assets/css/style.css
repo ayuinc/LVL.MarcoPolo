@@ -5896,7 +5896,7 @@ body::-webkit-scrollbar {
   animation-duration: 2s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+1) {
-  width: 0.18502%;
+  width: 14.16803%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+1) span {
   -webkit-animation-delay: 1s;
@@ -5904,7 +5904,7 @@ body::-webkit-scrollbar {
   animation-delay: 1s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+2) {
-  width: 10.12644%;
+  width: 28.04154%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+2) span {
   -webkit-animation-delay: 2s;
@@ -5912,7 +5912,7 @@ body::-webkit-scrollbar {
   animation-delay: 2s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+3) {
-  width: 99.51103%;
+  width: 40.71748%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+3) span {
   -webkit-animation-delay: 3s;
@@ -5920,7 +5920,7 @@ body::-webkit-scrollbar {
   animation-delay: 3s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+4) {
-  width: 16.10098%;
+  width: 25.57345%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+4) span {
   -webkit-animation-delay: 4s;
@@ -5928,7 +5928,7 @@ body::-webkit-scrollbar {
   animation-delay: 4s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+5) {
-  width: 93.31285%;
+  width: 19.09825%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+5) span {
   -webkit-animation-delay: 5s;
@@ -19527,3 +19527,16 @@ html.no-js .flex-space-between .right {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.lnr {
+    font-family: Linearicons-Free;
+    speak: none;
+    font-size: 40px !important;
+    font-style: normal;
+    font-weight: 900 !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

@@ -728,7 +728,7 @@ infiniteScroll<?=@$tag_count?> = {
       infiniteScroll<?=@$tag_count?>.continuous_scroll_completed_segment = pagination_url_segment;
     }
     else {
-      alert(response);
+      //alert(response);
     }
   },
   

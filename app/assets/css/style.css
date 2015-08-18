@@ -19540,3 +19540,7 @@ html.no-js .flex-space-between .right {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+.lh-xs{
+  line-height:1.2 !important;
+}

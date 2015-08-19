@@ -193,6 +193,11 @@ $pin-bg-color: white;
 		text-transform: uppercase;
 	}
 	.pin-title {
+		@media screen(max-width:480px){
+			.pin .pin-title {
+			    line-height: 1.3 !important;
+			}
+		}
 		@include transition(color 0.3s ease-in-out);
 		color: $gray-darker;
 		//font-size: $font-size-h4;

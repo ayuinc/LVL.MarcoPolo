@@ -19,10 +19,6 @@ html {
     h6, .h6 {
       margin-top: rem(($line-height-computed / 2));
       margin-bottom: rem(($line-height-computed / 2));
-    }
-    .lh-xs,
-     h2{
-      line-height: 1.2 !important;
     }    
   }
   @media #{$xs-only} {
@@ -41,10 +37,6 @@ html {
     h6, .h6 {
       margin-top: rem(($line-height-computed / 2));
       margin-bottom: rem(($line-height-computed / 2));
-    }
-    .lh-xs,
-     h2{
-      line-height: 1.2 !important;
     }
   }
 }

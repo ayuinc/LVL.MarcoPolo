@@ -19541,6 +19541,8 @@ html.no-js .flex-space-between .right {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.lh-xs{
-  line-height:1.2 !important;
-}
+@media (min-width:481px) { 
+  .lh-xs{
+    line-height: 1.3 !important;
+  } 
+ }

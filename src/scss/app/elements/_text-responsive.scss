@@ -7,7 +7,7 @@ html {
     font-size: $font-size-base - 2;
     h1, h3, h4, h5, h6,
     .h1, .h3, .h4, .h5, .h6 {
-      line-height: 1.2;
+      line-height: 1.2 !important;
     }
     h1, .h1,
     h3, .h3 {
@@ -22,10 +22,10 @@ html {
     }    
   }
   @media #{$xs-only} {
-    font-size: $font-size-base - 3;
+    // font-size: $font-size-base - 3;
     h1, h3, h4, h5, h6,
     .h1, .h3, .h4, .h5, .h6 {
-      line-height: 1.2;
+      line-height: 1.2 !important;
     }
     h1, .h1,
     h3, .h3 {

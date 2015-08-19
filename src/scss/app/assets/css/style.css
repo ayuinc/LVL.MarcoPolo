@@ -3664,11 +3664,10 @@ html {
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     html {
       font-size: 12px; }
-      html h1, html h2, html h3, html h4, html h5, html h6,
-      html .h1, html .h2, html .h3, html .h4, html .h5, html .h6 {
-        line-height: 1; }
+      html h1, html h3, html h4, html h5, html h6,
+      html .h1, html .h3, html .h4, html .h5, html .h6 {
+        line-height: 1.2 !important; }
       html h1, html .h1,
-      html h2, html .h2,
       html h3, html .h3 {
         margin-top: 1.42857rem;
         margin-bottom: 0.71429rem; }
@@ -3678,21 +3677,18 @@ html {
         margin-top: 0.71429rem;
         margin-bottom: 0.71429rem; } }
   @media only screen and (max-width: 480px) {
-    html {
-      font-size: 11px; }
-      html h1, html h2, html h3, html h4, html h5, html h6,
-      html .h1, html .h2, html .h3, html .h4, html .h5, html .h6 {
-        line-height: 0.9; }
-      html h1, html .h1,
-      html h2, html .h2,
-      html h3, html .h3 {
-        margin-top: 1.42857rem;
-        margin-bottom: 0.71429rem; }
-      html h4, html .h4,
-      html h5, html .h5,
-      html h6, html .h6 {
-        margin-top: 0.71429rem;
-        margin-bottom: 0.71429rem; } }
+    html h1, html h3, html h4, html h5, html h6,
+    html .h1, html .h3, html .h4, html .h5, html .h6 {
+      line-height: 1.2 !important; }
+    html h1, html .h1,
+    html h3, html .h3 {
+      margin-top: 1.42857rem;
+      margin-bottom: 0.71429rem; }
+    html h4, html .h4,
+    html h5, html .h5,
+    html h6, html .h6 {
+      margin-top: 0.71429rem;
+      margin-bottom: 0.71429rem; } }
 
 /* TEXT IN REMS */
 p.lead, .p.lead, span.lead, em.lead, strong.lead, label.lead, a.lead, i.lead, ul.lead, ol.lead, li.lead {
@@ -4711,31 +4707,31 @@ body {
           -moz-animation-duration: 2s;
           animation-duration: 2s; }
         .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+1) {
-          width: 1.94099%; }
+          width: 86.2529%; }
           .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+1) span {
             -webkit-animation-delay: 1s;
             -moz-animation-delay: 1s;
             animation-delay: 1s; }
         .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+2) {
-          width: 47.07887%; }
+          width: 44.57498%; }
           .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+2) span {
             -webkit-animation-delay: 2s;
             -moz-animation-delay: 2s;
             animation-delay: 2s; }
         .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+3) {
-          width: 23.36958%; }
+          width: 4.46115%; }
           .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+3) span {
             -webkit-animation-delay: 3s;
             -moz-animation-delay: 3s;
             animation-delay: 3s; }
         .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+4) {
-          width: 32.69286%; }
+          width: 6.86821%; }
           .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+4) span {
             -webkit-animation-delay: 4s;
             -moz-animation-delay: 4s;
             animation-delay: 4s; }
         .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+5) {
-          width: 25.62434%; }
+          width: 53.85698%; }
           .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+5) span {
             -webkit-animation-delay: 5s;
             -moz-animation-delay: 5s;
@@ -5038,6 +5034,9 @@ body {
     color: #EC008B;
     font-size: 24px; }
 
+@media (max-width: 480px) {
+  .pin .pin-title {
+    line-height: 1.3 !important; } }
 a.btn.form-control,
 button.btn.form-control,
 input[type="submit"].btn.form-control,

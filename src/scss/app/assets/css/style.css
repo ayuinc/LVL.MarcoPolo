@@ -4707,31 +4707,31 @@ body {
           -moz-animation-duration: 2s;
           animation-duration: 2s; }
         .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+1) {
-          width: 86.2529%; }
+          width: 5.9094%; }
           .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+1) span {
             -webkit-animation-delay: 1s;
             -moz-animation-delay: 1s;
             animation-delay: 1s; }
         .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+2) {
-          width: 44.57498%; }
+          width: 27.14572%; }
           .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+2) span {
             -webkit-animation-delay: 2s;
             -moz-animation-delay: 2s;
             animation-delay: 2s; }
         .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+3) {
-          width: 4.46115%; }
+          width: 59.18822%; }
           .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+3) span {
             -webkit-animation-delay: 3s;
             -moz-animation-delay: 3s;
             animation-delay: 3s; }
         .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+4) {
-          width: 6.86821%; }
+          width: 2.95592%; }
           .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+4) span {
             -webkit-animation-delay: 4s;
             -moz-animation-delay: 4s;
             animation-delay: 4s; }
         .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+5) {
-          width: 53.85698%; }
+          width: 62.662%; }
           .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+5) span {
             -webkit-animation-delay: 5s;
             -moz-animation-delay: 5s;
@@ -11624,7 +11624,7 @@ input[type="submit"].btn.btn-white.btn-icon-custom,
   -moz-osx-font-smoothing: grayscale; }
 
 .lnr-menu {
-  color: #0F52BA;
+  color: gray;
   font-size: 40px; }
 
 .icon-home:before {
@@ -15682,8 +15682,8 @@ header.header {
   display: inline-block;
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 40px;
-  width: 112px;
+  height: 30px;
+  width: 156px;
   background-image: url(../img/logo_LVL.MarcoPolo.png); }
   .logo img, header.header-mobile .logo img {
     width: 88px;

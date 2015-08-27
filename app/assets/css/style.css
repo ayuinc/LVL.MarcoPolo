@@ -4447,12 +4447,11 @@ html {
   html {
     font-size: 12px;
   }
-  html h1, html h2, html h3, html h4, html h5, html h6,
-  html .h1, html .h2, html .h3, html .h4, html .h5, html .h6 {
-    line-height: 1;
+  html h1, html h3, html h4, html h5, html h6,
+  html .h1, html .h3, html .h4, html .h5, html .h6 {
+    line-height: 1.2 !important;
   }
   html h1, html .h1,
-  html h2, html .h2,
   html h3, html .h3 {
     margin-top: 1.42857rem;
     margin-bottom: 0.71429rem;
@@ -4465,15 +4464,11 @@ html {
   }
 }
 @media only screen and (max-width: 480px) {
-  html {
-    font-size: 11px;
-  }
-  html h1, html h2, html h3, html h4, html h5, html h6,
-  html .h1, html .h2, html .h3, html .h4, html .h5, html .h6 {
-    line-height: 1.3 !important;
+  html h1, html h3, html h4, html h5, html h6,
+  html .h1, html .h3, html .h4, html .h5, html .h6 {
+    line-height: 1.2 !important;
   }
   html h1, html .h1,
-  html h2, html .h2,
   html h3, html .h3 {
     margin-top: 1.42857rem;
     margin-bottom: 0.71429rem;
@@ -5896,7 +5891,7 @@ body::-webkit-scrollbar {
   animation-duration: 2s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+1) {
-  width: 14.16803%;
+  width: 10.94328%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+1) span {
   -webkit-animation-delay: 1s;
@@ -5904,7 +5899,7 @@ body::-webkit-scrollbar {
   animation-delay: 1s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+2) {
-  width: 28.04154%;
+  width: 3.72601%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+2) span {
   -webkit-animation-delay: 2s;
@@ -5912,7 +5907,7 @@ body::-webkit-scrollbar {
   animation-delay: 2s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+3) {
-  width: 40.71748%;
+  width: 90.28068%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+3) span {
   -webkit-animation-delay: 3s;
@@ -5920,7 +5915,7 @@ body::-webkit-scrollbar {
   animation-delay: 3s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+4) {
-  width: 25.57345%;
+  width: 3.52269%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+4) span {
   -webkit-animation-delay: 4s;
@@ -5928,7 +5923,7 @@ body::-webkit-scrollbar {
   animation-delay: 4s;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+5) {
-  width: 19.09825%;
+  width: 40.10543%;
 }
 .pin .pin-onload-content .pin-onload-placeholder li:nth-child(n+5) span {
   -webkit-animation-delay: 5s;
@@ -5948,12 +5943,6 @@ body::-webkit-scrollbar {
   margin: 3px 0;
   margin: 0.21429rem 0;
 }
-
-@media screen(max-width:480px){
-  .pin .pin-title {
-      line-height: 1.3 !important;
-  }
-}  
 .pin .pin-title a {
   color: #3E3F40;
 }
@@ -6294,6 +6283,11 @@ body::-webkit-scrollbar {
   font-size: 24px;
 }
 
+@media (max-width: 480px) {
+  .pin .pin-title {
+    line-height: 1.3 !important;
+  }
+}
 a.btn.form-control,
 button.btn.form-control,
 input[type="submit"].btn.form-control,
@@ -13668,16 +13662,20 @@ input[type="submit"].btn.btn-white.btn-icon-custom.btn-lg i,
   font-style: normal;
 }
 [class^="icon-"], [class*=" icon-"] {
-  font-family: 'icomoon' !important;
   speak: none;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.lnr-menu {
+  color: #0F52BA;
+  font-size: 40px;
 }
 
 .icon-home:before {
@@ -19050,8 +19048,8 @@ header.header .right form {
   display: inline-block;
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 40px;
-  width: 112px;
+  height: 30px;
+  width: 156px;
   background-image: url(../img/logo_LVL.MarcoPolo.png);
 }
 .logo img, header.header-mobile .logo img {
@@ -19533,17 +19531,3 @@ html.no-js .flex-space-between .right {
 }
 
 /*# sourceMappingURL=style.css.map */
-
-.lnr {
-    font-family: Linearicons-Free;
-    speak: none;
-    font-size: 40px !important;
-    font-style: normal;
-    font-weight: 900 !important;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
